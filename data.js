@@ -6,7 +6,7 @@ export const data = [
     prix: 10,
     // Description de 30 mots
     description:
-      "L’humeur hautaine de Julien fut choquée de l’insolence des laquais. Il se mit à parcourir les dortoirs de l’antique abbaye, secouant toutes les portes qu’il rencontrait. Une fort petite céda à ses efforts, et il se trouva dans une cellule au milieu des valets de chambre de Monseigneur, en habits noirs et la chaîne au cou. À son air pressé ces messieurs le crurent mandé par l’évêque et le laissèrent passer. Il fit quelques pas et se trouva dans une immense salle gothique extrêmement sombre, et toute lambrissée de chêne noir ; à l’exception d’une seule, les fenêtres en ogive avaient été murées avec des briques.",
+      "L’humeur hautaine t toutes les portes évêque et le laissèrent passer. Il fit quelques pas et se trouva dans une immense salle gothique extrêmement sombre, et toute lambrissée de chêne noir ; à l’exception d’une seule, les fenêtres en ogive avaient été murées avec des briques.",
     categorie: "homme",
   },
   {
@@ -106,7 +106,7 @@ export const data = [
     prix: 10,
     // Description de 30 mots
     description:
-      "L’humeur hautaine de Julien fut choquée de l’insolence des laquais. Il se mit à parcourir les dortoirs de l’antique abbaye, secouant toutes les portes qu’il rencontrait. Une fort petite céda à ses efforts, et il se trouva dans une cellule au milieu des valets de chambre de Monseigneur, en habits noirs et la chaîne au cou. À son air pressé ces messieurs le crurent mandé par l’évêque et le laissèrent passer. Il fit quelques pas et se trouva dans une immense salle gothique extrêmement sombre, et toute lambrissée de chêne noir ; à l’exception d’une seule, les fenêtres en ogive avaient été murées avec des briques.",
+      "L’humeur hautaine de Julien fut hoquée de l’insolence des laquais. Il se mit à parcourir les dortoirs de l’antique abbaye, secouant toutes les portes qu’il rencontrait. Une fort petite céda à ses efforts, et il se trouva dans une cellule au milieu des valets de chambre de Monseigneur, en habits noirs et la chaîne au cou. À son air pressé ces messieurs le crurent mandé par l’évêque et le laissèrent passer. Il fit quelques pas et se trouva dans une immense salle gothique extrêmement sombre, et toute lambrissée de chêne noir ; à l’exception d’une seule, les fenêtres en ogive avaient été murées avec des briques.",
     categorie: "homme",
   },
   {
