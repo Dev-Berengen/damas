@@ -102,8 +102,7 @@ export function generateProductHTML(product) {
             <img src='${product.img}' alt="" />
             <div class="icons">
               <div class="first">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                 <i class="fa-solid fa-truck-fast"></i>
               </div>
               <div class="last">
                 <i class="fa-solid fa-star"></i>
@@ -118,12 +117,7 @@ export function generateProductHTML(product) {
 
           <div class="footer">
             <div class="prix">
-              <p class="prix-actuel">$ ${product.prix}</p>
-            </div>
-            <div class="color">
-              <div class="item-color"></div>
-              <div class="item-color"></div>
-              <div class="item-color"></div>
+              <p class="prix-actuel">Fcfa: ${product.prix}</p>
             </div>
           </div>
       
