@@ -355,6 +355,22 @@ main .filtre {
   background-color: #5f69d5;
 } */
 
+
+.adresse{
+ 
+  background-color: var(--color-white);
+  display: flex;
+  height: 8rem;
+  border-top: #74ad47 solid 1px;
+  justify-content:space-around;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+.social{
+  display: flex;
+  gap: 3rem;
+}
+
 @media screen and (max-width: 768px) {
   html {
     --padding: 0 1rem;
