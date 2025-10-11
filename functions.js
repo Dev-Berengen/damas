@@ -111,13 +111,11 @@ export function generateProductHTML(product) {
             </div>
           </div>
           <div class="text">
-            <p class="nom">${product.categorie}</p>
             <h3>${product.nom}</h3>
           </div>
-
           <div class="footer">
             <div class="prix">
-              <p class="prix-actuel">Fcfa: ${product.prix}</p>
+              <p class="prix-actuel">cfa : ${product.prix}</p>
             </div>
           </div>
       
