@@ -357,8 +357,6 @@ main .filtre {
 
 
 .adresse{
- 
-  background-color: var(--color-white);
   display: flex;
   height: 8rem;
   border-top: #74ad47 solid 1px;
