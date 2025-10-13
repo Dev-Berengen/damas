@@ -863,7 +863,7 @@ footer {
   height: 44px;
   margin-right: 10px;
   color: #ffffff;
-  background-color: var(--color-orange);
+  background-color: var(--color-primary);
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
@@ -874,7 +874,7 @@ footer {
 }
 
 .wrapper .footer-widget .socials li a:hover {
-  background-color: #037ef3;
+  background-color: var(--color-orange);
 }
 
 .wrapper .footer-widget h6 {
@@ -898,7 +898,7 @@ footer {
 }
 
 .wrapper .footer-widget .links li a:hover {
-  color: #037ef3;
+  color: var(--color-orange);
 }
 
 .copyright-wrapper {
