@@ -1,8 +1,8 @@
 export const data = [
   {
     id: 1,
-    img: "./assets/im1.png",
-    nom: "Chapeau de paille",
+    img: "./assets/105.jpg",
+    nom: "Nokia 105 |Double Sim ",
     prix: 10,
     // Description de 30 mots
     description:
@@ -11,8 +11,8 @@ export const data = [
   },
   {
     id: 2,
-    img: "./assets/im2.png",
-    nom: "Chapeau cowboy",
+    img: "./assets/BOSE7000.jpg",
+    nom: "Bosse 700",
     prix: 7,
     // Description de 30 mots
     description:
@@ -21,8 +21,8 @@ export const data = [
   },
   {
     id: 3,
-    img: "./assets/im3.png",
-    nom: "Men's hat class",
+    img: "./assets/PB_10000mah.jpg",
+    nom: "POWER BANK | 10.000mah",
     prix: 15,
     // Description de 30 mots
     description:
@@ -31,7 +31,7 @@ export const data = [
   },
   {
     id: 4,
-    img: "./assets/im4.png",
+    img: "./assets/USB.jpg",
     nom: "Man's hat swag",
     prix: 10,
     // Description de 30 mots
@@ -41,7 +41,7 @@ export const data = [
   },
   {
     id: 5,
-    img: "./assets/im5.png",
+    img: "./assets/USB_32GB.jpg",
     nom: "Chapeau nike air",
     prix: 40,
     // Description de 30 mots
@@ -51,7 +51,7 @@ export const data = [
   },
   {
     id: 6,
-    img: "./assets/im5.png",
+    img: "./assets/USB_64GB.jpg",
     nom: "Chapeau class homme",
     prix: 10,
     // Description de 30 mots
@@ -61,7 +61,7 @@ export const data = [
   },
   {
     id: 7,
-    img: "./assets/im7.png",
+    img: "./assets/Type_USB_67W.jpg",
     nom: "Swag hat co",
     prix: 10,
     // Description de 30 mots
@@ -71,7 +71,7 @@ export const data = [
   },
   {
     id: 8,
-    img: "./assets/im8.png",
+    img: "./assets/JBL _K73.jpg",
     nom: "Chapeau uhulu",
     prix: 4,
     // Description de 30 mots
@@ -81,7 +81,7 @@ export const data = [
   },
   {
     id: 9,
-    img: "./assets/im9.png",
+    img: "./assets/Chargeur_C_Iphone.jpg",
     nom: "Chapeau groute",
     prix: 2,
     // Description de 30 mots
@@ -91,7 +91,7 @@ export const data = [
   },
   {
     id: 10,
-    img: "./assets/im10.png",
+    img: "./assets/Cable_C-C.jpg",
     nom: "Hat break fasion",
     prix: 10,
     // Description de 30 mots
@@ -101,7 +101,7 @@ export const data = [
   },
   {
     id: 11,
-    img: "./assets/im11.png",
+    img: "./assets/Filaire_Type C.jpg",
     nom: "Jackpot hat for man",
     prix: 10,
     // Description de 30 mots
@@ -111,7 +111,7 @@ export const data = [
   },
   {
     id: 12,
-    img: "./assets/im12.png",
+    img: "./assets/Chargeur_C_Iphone.jpg",
     nom: "Men's swag style",
     prix: 10,
     // Description de 30 mots
@@ -121,7 +121,7 @@ export const data = [
   },
     {
     id: 12,
-    img: "./assets/im12.png",
+    img: "./assets/Souris_Chargable.jpg",
     nom: "Men's swag style",
     prix: 10,
     // Description de 30 mots
@@ -131,7 +131,7 @@ export const data = [
   },
     {
     id: 12,
-    img: "./assets/im12.png",
+    img: "./assets/Support Ordinateur.jpg",
     nom: "Men's swag style",
     prix: 10,
     // Description de 30 mots
@@ -141,7 +141,7 @@ export const data = [
   },
   {
     id: 13,
-    img: "./assets/im13.png",
+    img: "./assets/K30.jpg",
     nom: "Men's swag style",
     prix: 10,
     // Description de 30 mots
