@@ -480,11 +480,11 @@ dialog section .product-page {
   width: 100%;
 }
 
-.gauche img:hover {
+/* .gauche img:hover {
   transform: scale(1.16);
   transition: all 0.3s ease-in;
   cursor: grab;
-}
+} */
 .product-page .droite {
   flex: 2;
   background-color: var(--color-white);
@@ -502,8 +502,8 @@ dialog section .product-page {
 }
 
 .titre h1 {
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .titre .last {
@@ -521,7 +521,7 @@ dialog section .product-page {
   margin-top: 1rem;
 }
 
-.droite .colors {
+/* .droite .colors {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -550,18 +550,18 @@ dialog section .product-page {
 }
 .color-container .color:nth-child(3) {
   background-color: #5f69d5;
-}
+} */
 
-.droite .sizes {
+/* .droite .sizes {
   display: flex;
   gap: 10px;
   margin-top: 1rem;
   align-items: center;
-}
+} */
 
 /* Hidding scroll bar */
 
-.sizes p {
+/* .sizes p {
   font-weight: 600;
 }
 .sizes .container {
@@ -586,7 +586,7 @@ dialog section .product-page {
 .container .size:hover {
   background-color: #f2eded;
   transition: all 0.2s ease-in;
-}
+} */
 
 .droite .prix {
   margin-top: 1rem;
@@ -602,7 +602,7 @@ dialog section .product-page {
   align-items: center;
 }
 
-.footer .counter {
+/* .footer .counter {
   width: 130px;
   border-radius: 1rem;
   padding: 1.3rem 1rem;
@@ -615,7 +615,7 @@ dialog section .product-page {
 
 .counter i {
   cursor: pointer;
-}
+} */
 
 .footer button {
   border: none;
@@ -632,22 +632,17 @@ dialog section .product-page {
   align-items: center;
 }
 
-.footer button.ajoute {
+/* .footer button.ajoute {
   background-color: rgb(214, 71, 71);
-}
+} */
 .footer button .icon {
-  font-size: 1.2rem;
-  border: 1px solid var(--color-white);
-  width: 20px;
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 1.5rem;
 }
 
-.footer .like {
+/* .footer .like {
   width: 50px;
   height: 50px;
   background-color: #fff;
@@ -666,7 +661,7 @@ dialog section .product-page {
 .footer .like i {
   color: var(--color-primary);
   font-size: 1.2rem;
-}
+} */
 
 .accessoire {
   width: 100%;
@@ -674,13 +669,13 @@ dialog section .product-page {
   margin-top: 2rem;
   gap: 3rem;
 }
-.bottom {
+/* .bottom {
   flex: 1;
   display: flex;
   gap: 10px;
-}
+} */
 
-.bottom .carte-cat {
+/* .bottom .carte-cat {
   width: 80px;
   height: 80px;
   background-color: #fff;
@@ -699,14 +694,14 @@ dialog section .product-page {
   font-weight: bold;
   color: var(--grey);
   text-align: center;
-}
+} */
 
 .accessoire .avantages {
   flex: 2;
   display: flex;
   background-color: #fff;
   border-radius: 20px;
-  align-items: center;
+  align-items:self-start;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -750,7 +745,7 @@ dialog section .product-page {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .sizes .container {
+  /* .sizes .container {
     width: 100%;
     overflow-x: auto;
   }
@@ -761,7 +756,7 @@ dialog section .product-page {
   .sizes .container::-webkit-scrollbar {
     width: 0.4em;
     border-radius: 10px;
-  }
+  } */
   .product-page .gauche {
     padding: 1rem;
   }
@@ -792,6 +787,9 @@ dialog section .product-page {
     gap: 2rem;
   }
 }
+
+
+/* footer */
 footer {
   position: relative;
   width: 100%;
@@ -955,7 +953,7 @@ footer {
   }
 }
 /* menu-bars */
-.logo-bars{
+.bars{
   display: flex;
   gap: 8px;
   color: var(--color-primary);

@@ -16,34 +16,16 @@ export const generateDialogHTML = (product) => {
           ${product.description}
         </p>
         </div>
-        <div class="prix">$ ${product.prix}</div>
-
+        <div class="prix"> ${product.prix}</div>
         <div class="footer">
-          <div class="counter">
-            <i class="fa-solid fa-minus"></i>
-            <p class="qte">5</p>
-
-            <i class="fa-solid fa-plus"></i>
-          </div>
           <button class="ajouter">
-            <div class="icon"><i class="fa-solid fa-plus"></i></div>
-            <p>Ajouter au panier</p>
+            <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
+            <p>commander</p>
           </button>
         </div>
       </div>
     </div>
     <div class="accessoire">
-      <div class="bottom">
-        <div class="carte-cat">
-          <img src="/assets/im6.png" />
-        </div>
-        <div class="carte-cat">
-          <img src="/assets/im6.png" />
-        </div>
-        <div class="carte-cat">
-          <img src="/assets/im6.png" />
-        </div>
-      </div>
       <div class="avantages">
         <div class="carte-service">
           <div class="icone">
@@ -55,7 +37,7 @@ export const generateDialogHTML = (product) => {
           <div class="icone">
             <i class="fa-solid fa-undo"></i>
           </div>
-          <p>Retour gratuit     </p>
+          <p>Retour gratuit</p>
         </div>
         <div class="carte-service">
           <div class="icone">

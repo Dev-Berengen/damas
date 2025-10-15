@@ -10,7 +10,7 @@ let currentItem = null;
 
 // Items in cart
 let cartItems = [];
-cartNumber.textContent = cartItems.length;
+// cartNumber.textContent = cartItems.length;
 let produitAffciher = data;
 
 // Code pour looper entre différents produits et les afficher
@@ -48,10 +48,10 @@ input.addEventListener("keyup", (e) => {
 });
 // Fonction pour tester si une fois un produit existe dans le panier
 
-const testerSiExiste = (produit, arr) => {
-  const ele = arr.find((p) => p.id === produit.id);
-  return ele ? true : false;
-};
+// const testerSiExiste = (produit, arr) => {
+//   const ele = arr.find((p) => p.id === produit.id);
+//   return ele ? true : false;
+// };
 
 const actionProduit = () => {
   // Ajout de l'action pour afficher la boite de dialogue
@@ -76,88 +76,80 @@ const actionProduit = () => {
       dialog.appendChild(section);
 
       // Selection element carte
-      const btnAdd = document.querySelector(".ajouter");
-      const qte = document.querySelector(".qte");
-      let existedeja = false;
-      const numberOfTimeIncart = cartItems.filter(
-        (item) => item.id === currentItem.id
-      );
-      qte.textContent = numberOfTimeIncart.length;
+      // const btnAdd = document.querySelector(".ajouter");
+      // const qte = document.querySelector(".qte");
+      // let existedeja = false;
+      // const numberOfTimeIncart = cartItems.filter(
+      //   (item) => item.id === currentItem.id
+      // );
+      // qte.textContent = numberOfTimeIncart.length;
 
       // Incrémenter la valeur
-      const btnDimunuer = document.querySelector(".counter .fa-minus");
-      const btnAjouter = document.querySelector(".counter .fa-plus");
+      // const btnDimunuer = document.querySelector(".counter .fa-minus");
+      // const btnAjouter = document.querySelector(".counter .fa-plus");
 
-      btnAjouter.addEventListener("click", () => {
-        qte.textContent = numberOfTimeIncart.length++;
-      });
+      // btnAjouter.addEventListener("click", () => {
+      //   qte.textContent = numberOfTimeIncart.length++;
+      // });
 
-      btnDimunuer.addEventListener("click", () => {
-        if (parseInt(qte.textContent) > 0) {
-          qte.textContent = numberOfTimeIncart.length--;
-        }
-      });
+      // btnDimunuer.addEventListener("click", () => {
+      //   if (parseInt(qte.textContent) > 0) {
+      //     qte.textContent = numberOfTimeIncart.length--;
+      //   }
+      // });
 
       // Ajouter dans le panier
-      if (testerSiExiste(currentItem, cartItems)) {
-        btnAdd.textContent = "Efface du panier";
-        btnAdd.classList.add("ajoute");
-        qte.textContent = 1;
-      }
+      // if (testerSiExiste(currentItem, cartItems)) {
+      //   btnAdd.textContent = "Efface du panier";
+      //   btnAdd.classList.add("ajoute");
+      //   qte.textContent = 1;
+      // }
 
-      btnAdd.addEventListener("click", () => {
-        if (testerSiExiste(currentItem, cartItems)) {
-          const b = `  <div class="icon"><i class="fa-solid fa-plus"></i></div>
-            <p>Ajouter au panier</p>`;
-          btnAdd.innerHTML = b;
-          cartItems = cartItems.filter((item) => item.id !== currentItem.id);
-          qte.textContent = 0;
-          btnAdd.classList.remove("ajoute");
-        } else {
-          cartNumber.textContent = cartItems.length;
-          btnAdd.textContent = "Efface du panier";
-          btnAdd.classList.add("ajoute");
-          qte.textContent = 1;
-          console.log(cartItems);
-          existedeja = true;
-          cartItems.push(currentItem);
-        }
-        cartNumber.textContent = cartItems.length;
-        console.log(btnAdd.dataset);
-      });
+      // btnAdd.addEventListener("click", () => {
+      //   if (testerSiExiste(currentItem, cartItems)) {
+      //     const b = `  <div class="icon"><i class="fa-solid fa-plus"></i></div>
+      //       <p>Ajouter au panier</p>`;
+      //     btnAdd.innerHTML = b;
+      //     cartItems = cartItems.filter((item) => item.id !== currentItem.id);
+      //     qte.textContent = 0;
+      //     btnAdd.classList.remove("ajoute");
+      //   } else {
+      //     cartNumber.textContent = cartItems.length;
+      //     btnAdd.textContent = "Efface du panier";
+      //     btnAdd.classList.add("ajoute");
+      //     qte.textContent = 1;
+      //     console.log(cartItems);
+      //     existedeja = true;
+      //     cartItems.push(currentItem);
+      //   }
+      //   cartNumber.textContent = cartItems.length;
+      //   console.log(btnAdd.dataset);
+      // });
 
-      const bgPng = document.querySelector(".gauche");
+      // const bgPng = document.querySelector(".gauche");
       // Colors
-      const colors = document.querySelectorAll(".color.change");
-      colors.forEach((item, key) => {
-        item.addEventListener("click", () => {
-          switch (key) {
-            case 0:
-              bgPng.style.background = "#ff6b58";
-              break;
-            case 1:
-              bgPng.style.background = "#3333";
-              console.log(key);
-            case 2:
-              bgPng.style.background = "#5f69d5";
-            default:
-              break;
-          }
-        });
-      });
+      // const colors = document.querySelectorAll(".color.change");
+      // colors.forEach((item, key) => {
+      //   item.addEventListener("click", () => {
+      //     switch (key) {
+      //       case 0:
+      //         bgPng.style.background = "#ff6b58";
+      //         break;
+      //       case 1:
+      //         bgPng.style.background = "#3333";
+      //         console.log(key);
+      //       case 2:
+      //         bgPng.style.background = "#5f69d5";
+      //       default:
+      //         break;
+      //     }
+      //   });
+      // });
     });
   });
 };
 
 actionProduit();
-// bars de navigation
-const navigation = document.querySelector(".navigation");
- navigation.addEventListener("click", () => {
-      bars.showModal();
-      bars.scrollTo(0, 0);
-  });
-
-
 // Close popover
 const btnClose = document.querySelector(".close");
 btnClose.addEventListener("click", () => {
