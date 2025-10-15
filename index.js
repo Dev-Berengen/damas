@@ -151,8 +151,8 @@ const actionProduit = () => {
 
 actionProduit();
 // bars de navigation
-const bars = document.querySelector(".bars");
- bars.addEventListener("click", () => {
+const navigation = document.querySelector(".navigation");
+ navigation.addEventListener("click", () => {
       bars.showModal();
       bars.scrollTo(0, 0);
   });

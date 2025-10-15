@@ -954,3 +954,15 @@ footer {
     margin: 0 10px 50px;
   }
 }
+/* menu-bars */
+.logo-bars{
+  display: flex;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+.menu a{
+  list-style: none;
+  color: var(--color-grey);
+  font-size: 1.3rem;
+}
