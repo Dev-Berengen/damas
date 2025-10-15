@@ -88,7 +88,7 @@ export function generateProductHTML(product) {
           </div>
           <div class="footer">
             <div class="prix">
-              <p class="prix-actuel">cfa : ${product.prix}</p>
+              <p class="prix-actuel">${product.prix}</p>
             </div>
           </div>
       

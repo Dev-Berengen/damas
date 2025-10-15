@@ -2,8 +2,8 @@ export const data = [
   {
     id: 1,
     img: "./assets/105.jpg",
-    nom: "Nokia 105 |Double Sim ",
-    prix: 10,
+    nom: "Nokia 105 | Double Sim ",
+    prix: "6.000 Fcfa",
     // Description de 30 mots
     description:
       "L’humeur hautaine t toutes les portes évêque et le laissèrent passer. Il fit quelques pas et se trouva dans une immense salle gothique extrêmement sombre, et toute lambrissée de chêne noir ; à l’exception d’une seule, les fenêtres en ogive avaient été murées avec des briques.",

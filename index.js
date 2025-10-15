@@ -61,6 +61,7 @@ const actionProduit = () => {
     card.addEventListener("click", () => {
       // Selection des elements
       const dialog = document.querySelector("dialog");
+      
 
       // Effacer le contenu d'avant
       const dialogContent = document.querySelector(".dialog-menu");
@@ -149,6 +150,13 @@ const actionProduit = () => {
 };
 
 actionProduit();
+// bars de navigation
+const bars = document.querySelector(".bars");
+ bars.addEventListener("click", () => {
+      bars.showModal();
+      bars.scrollTo(0, 0);
+  });
+
 
 // Close popover
 const btnClose = document.querySelector(".close");
