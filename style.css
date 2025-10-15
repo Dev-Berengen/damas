@@ -260,7 +260,7 @@ main .filtre {
   padding: 0.7rem;
   border-radius: 15px;
   cursor: pointer;
-  background-color: var(--color-white);
+  background-color:#fff;
   margin-bottom: 1rem;
 }
 
