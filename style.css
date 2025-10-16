@@ -11,11 +11,17 @@
 html {
   --color-primary: #74ad47;
   --color-secondary: #f5f5bb;
-  --color-white: #fffafa;
+  --color-white: #f5f5dc;
   --color-orange: #f88825;
   --padding: 0 5rem;
   --dark: #333;
-  --grey: #777;
+  --primaire: #007bc4;
+  --rouge:#fc0000;
+  --co-primary: #00a666;
+  --co-black: #222;
+  --co-dark: #444;
+  --co-gris: #777;
+  --co-footer:#2d2e33;
 }
 
 /* Mis en forme body */
@@ -60,9 +66,9 @@ main header .logo {
   font-weight: bold;
 }
 
-/* .logo i {
-  color: var(--color-primary);
-} */
+.logo i ,.navigation i {
+  color: var(--co-dark);
+}
 
 header nav {
   flex: 1;
@@ -207,10 +213,10 @@ main .filtre {
 
 .breadcumb p {
   font-size: 0.8rem;
-  color: var(--grey);
+  color: var(--co-gris);
 }
 .breadcumb i {
-  color: var(--grey);
+  color: var(--co-gris);
   font-size: 0.6rem;
 }
 
@@ -302,7 +308,7 @@ main .filtre {
 }
 .last p {
   font-size: 0.7rem;
-  color: var(--grey);
+  color: var(--co-gris);
 }
 .img img {
   width: 70%;
@@ -315,7 +321,7 @@ main .filtre {
 }
 .text p {
   font-size: 0.9rem;
-  color: var(--grey);
+  color: var(--co-gris);
 }
 
 .text h3 {
@@ -409,7 +415,7 @@ dialog::-webkit-scrollbar-track {
 }
 
 dialog::-webkit-scrollbar-thumb {
-  background-color: var(--grey);
+  background-color: var(--co-gris);
   outline: 1px solid slategrey;
   border-radius: 10px;
 }
@@ -699,7 +705,7 @@ dialog section .product-page {
 .carte-cat p {
   font-size: 1rem;
   font-weight: bold;
-  color: var(--grey);
+  color: var(--co-gris);
   text-align: center;
 } */
 
@@ -843,7 +849,7 @@ footer {
   line-height: 24px;
   color: var(--dark);
   padding: 15px 0;
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--co-gris);
 
  
   
@@ -864,7 +870,7 @@ footer {
   height: 44px;
   margin-right: 10px;
   color: #ffffff;
-  background-color: var(--color-primary);
+  background-color: var(--co-primary);
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
@@ -900,16 +906,16 @@ footer {
 
 .wrapper .footer-widget .links li a:hover {
   border-bottom: solid 1px;
-  color: var(--grey)
+  color: var(--co-gris)
 }
 
 .copyright-wrapper {
   padding: 20px 0;
-  border-top: 1px solid var(--grey);
+  border-top: 1px solid var(--co-gris);
 }
 
 .copyright-wrapper p {
-  color: var(--grey);
+  color: var(--co-gris);
   font-size: 14px;
   font-weight: 500;
   text-align: center;
