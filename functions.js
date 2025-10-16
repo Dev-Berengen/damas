@@ -21,7 +21,7 @@ export const generateDialogHTML = (product) => {
           <button class="ajouter">
             <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
             <p>
-             <a href="${product.liens}"> 
+           
             commander</p>
           </button>
         </div>
@@ -39,7 +39,7 @@ export const generateDialogHTML = (product) => {
           <div class="icone">
            <i class="fa-solid fa-truck"></i> 
           </div>
-          <p>Livraison gratuite</p>
+          <p>Livraison disponible</p>
         </div>
         <div class="carte-service">
           <div class="icone">
