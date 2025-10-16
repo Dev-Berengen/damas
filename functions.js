@@ -20,7 +20,9 @@ export const generateDialogHTML = (product) => {
         <div class="footer">
           <button class="ajouter">
             <div class="icon"><i class="fa-solid fa-comments-dollar"></i></div>
-            <p>commander</p>
+            <p>
+             <a href="${product.liens}"> 
+            commander</p>
           </button>
         </div>
       </div>

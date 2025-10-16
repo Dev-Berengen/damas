@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* Création des valeurs que nous allons utiliser */
@@ -630,6 +631,12 @@ dialog section .product-page {
   text-transform: uppercase;
   font-weight: 600;
   align-items: center;
+}
+.ajouter a{
+    color: var(--color-white);
+}
+.footer button:hover{
+  background-color: var(--color-orange)
 }
 
 /* .footer button.ajoute {
