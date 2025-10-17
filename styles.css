@@ -4,20 +4,13 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
- --police: font-family: "Lato", sans-serif;
  --header-height: 3rem;
   --hue: 174;
   --sat: 63%;
   --padding: 0 5rem;
   --co-primary: #00a666;
   --co-secondary: #ff8833;
-  --co-belge: #f5f5dc;
-  --co-white: #ffffff;
-  --co-black: #222;
-  --co-dark: #444;
-  --co-grey: #777;
-  --co-gris: #888;
-  --co-footer:#2d2e33;
+  
 }
 /* ------------------------------------- */
 * {
@@ -39,7 +32,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--co-white);
+  background-color: var(--color-secondary);
   z-index: 100;
   transition: .4s;
   border-bottom: solid 0.1px var(--co-primary);
@@ -460,7 +453,7 @@ main .filtre {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.3rem;
+  margin-top: 4rem;
 }
 
 .filtre .breadcumb {
