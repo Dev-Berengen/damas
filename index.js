@@ -155,3 +155,5 @@ const btnClose = document.querySelector(".close");
 btnClose.addEventListener("click", () => {
   dialog.close();
 });
+
+

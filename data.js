@@ -99,5 +99,68 @@ export const data = [
     description:"",
     liens: "",
   },
+  {
+    id: 12,
+    img: "./assets/USB-64GB.jpg",
+    nom: "CLE USB | 64GB",
+    prix: "5.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 13,
+    img: "./assets/USB-32GB.jpg",
+    nom: "CLE USB | 32GB",
+    prix: "4.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 14,
+    img: "./assets/USB-16GB.jpg",
+    nom: "CLE USB | 16GB",
+    prix: "3.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+   {
+    id: 15,
+    img: "./assets/Memoire-64GB.jpg",
+    nom: "CARTE MEMOIRE | 64GB",
+    prix: "5.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 16,
+    img: "./assets/Memoire-32GB.jpg",
+    nom: "CARTE MEMOIRE | 32GB",
+    prix: "4.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 17,
+    img: "./assets/PBL-30000mah.jpg",
+    nom: "POWER BANK | 30.000MAH",
+    prix: "11.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 18,
+    img: "./assets/PBL-20000mah.jpg",
+    nom: "POWER BANK | 20.000MAH",
+    prix: "8.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
 ];
 // Dernier numero id:
