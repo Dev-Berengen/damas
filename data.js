@@ -83,8 +83,17 @@ export const data = [
   },
   {
     id: 10,
-    img: "./assets/PBL-20000mah.jpg",
-    nom: "POWER BANK | 20.000MAH",
+    img: "./assets/USB-67W.jpg",
+    nom: "CHARGEUR 67W | USB-C",
+    prix: "3.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 11,
+    img: "./assets/USB-128GB.jpg",
+    nom: "CLE USB | 128GB",
     prix: "8.000 Fcfa",
     // Description de 20 mots Max
     description:"",
