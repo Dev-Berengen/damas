@@ -1,2 +1,0 @@
-# damas
-e-commerce 

@@ -1,27 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DAMAS GLOBAL</title>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome CDN Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-        <!-- Google Fonts CDN Link -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  </head>
-  <body>
-    <main>
+    <html lang="fr">
+    <head>
+       <!-- Date de debut de création du site 18/08/2024 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--For  PWA  -->
+        <meta name="theme-color" content="#f5f5dc">
+        <meta name="msapplication-navbutton-color" content="#1e1043">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5dc">
+         <!--=============== Fontawesone-icones ===============-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+        <title>KBA | DIGITAL</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="logo">
+                <a href="#" class="Logo-kba">KBA<br><span>Digital</span>  </a>
+            </div>
+              <!-- Barre de recherche -->
+              <form>
+                <input
+                  type="text"
+                  name="nom"
+                  id=""
+                  class="recherche"
+                  placeholder="Chercher Produit ..."
+                />
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <!-- fin Barre de recherche -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#tranding" class="nav__link active-link">
+                                <i class="fa-solid fa-globe nav__icon"></i>
+                                <span class="nav__name">I-TECH</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                          <a href="#skills" class="nav__link">
+                              <i class="fa-solid fa-book nav__icon"></i>
+                              <span class="nav__name">Librairie</span>
+                          </a>
+                      </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="fa-solid fa-layer-group nav__icon"></i>
+                                <span class="nav__name">Catégorie</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="fa-solid fa-comments nav__icon"></i>
+                                <span class="nav__name">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+          <main>
       <!-- BarS de Navigation -->
-      <header>
+      <!-- <header>
         <div class="logo">
           <i class="fa-solid fa-shop"></i>
           <p>DAMAS GLOBAL</p>
@@ -56,7 +110,7 @@
           <div class="navigation">
             <i class="fa-solid fa-bars"></i>
         </div>
-      </header>
+      </header> -->
       <!-- articles -->
       <div class="main-content">
         <section class="filtre">
@@ -142,5 +196,6 @@
       </dialog>
     </main>
     <script type="module" src="index.js"></script>
-  </body>
+
+    </body>
 </html>
