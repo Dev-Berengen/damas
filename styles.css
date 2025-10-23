@@ -96,7 +96,7 @@ header form button {
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
-  color: var(--co-dark);
+  color: var(--color-primary);
   font-weight: 600;
 }
 
