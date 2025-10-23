@@ -754,7 +754,7 @@ dialog section .product-page {
 }
 
 .titre h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -1025,7 +1025,7 @@ dialog section .product-page {
     align-items: center;
   }
   .titre h1 {
-    font-size: 2rem;
+    font-size: 0.7rem;
   }
   .droite .description {
     width: 95%;

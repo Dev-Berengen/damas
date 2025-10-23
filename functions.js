@@ -12,6 +12,7 @@ export const generateDialogHTML = (product) => {
             <p>4.5</p>
           </div>
         </div>
+        
         <p class="description">
           ${product.description}
         </p>
