@@ -96,7 +96,7 @@ header form button {
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
-  color: var(--color-primary);
+  color: var(--co-dark);
   font-weight: 600;
 }
 
@@ -126,8 +126,8 @@ header form button {
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
-/*---------------Fin  Navigation----------------------------- */
-/*--------------------- MEDIA QUERIES ---------------------------------*/
+
+/* MEDIA QUERIES*/
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
@@ -164,7 +164,7 @@ header form button {
     bottom: -.75rem;
     width: 4px;
     height: 4px;
-    background-color: var( --color-primary);
+    background-color: var( --co-dark);
     border-radius: 50%;
   }
   
@@ -1115,7 +1115,7 @@ footer {
   height: 44px;
   margin-right: 10px;
   color: #ffffff;
-  background-color: var(--co-primary);
+  background-color: var(--color-primary);
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
