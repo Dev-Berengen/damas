@@ -60,8 +60,8 @@ form {
 }
 
 header form input {
-  font-size: 0.8rem;
-  width: clamp(400px, 50%, 400px);
+  font-size: 0.7rem;
+  width: clamp(800px, 50%, 800px);
   padding: 0.8rem 0.1rem;
   border: none;
   outline: none;
