@@ -638,7 +638,7 @@ main .filtre {
 /* Mis en form du modal */
 
 dialog {
-  width: 90%;
+  width: 95%;
   margin: auto;
   border: none;
   outline: none;
@@ -651,17 +651,17 @@ dialog {
 }
 
 dialog::-webkit-scrollbar {
-  width: 0.4em;
-  border-radius: 10px;
+  width: 0.2em;
+  border-radius: 1px;
 }
 
 dialog::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 dialog::-webkit-scrollbar-thumb {
   background-color: var(--co-gris);
-  outline: 1px solid slategrey;
+  outline: 1px solid rgb(6, 6, 6);
   border-radius: 10px;
 }
 
@@ -715,7 +715,7 @@ dialog .close {
 
 dialog section .product-page {
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
   padding-right: 1rem;
 }
 .product-page .gauche {
@@ -741,10 +741,10 @@ dialog section .product-page {
   flex: 2;
   background-color: var(--color-white);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .droite .titre {
@@ -769,7 +769,7 @@ dialog section .product-page {
 }
 
 .droite .description {
-  width: 75%;
+  width: 50%;
   margin-top: 1rem;
 }
 
@@ -1019,7 +1019,7 @@ dialog section .product-page {
     padding: 0.8rem;
   }
   .product-page .droite {
-    padding: 0rem 1rem;
+    padding: 0.8rem;
   }
   .droite .titre {
     align-items: center;
@@ -1027,9 +1027,9 @@ dialog section .product-page {
   .titre h1 {
     font-size: 0.7rem;
   }
-  .droite .description {
-    width: 95%;
-  }
+  /* .droite .description {
+    width: 10%;
+  } */
 
   .accessoire {
     flex-direction: column;
