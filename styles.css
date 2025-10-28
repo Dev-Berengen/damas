@@ -1042,12 +1042,35 @@ footer {
 
 /* ---------------------------For medium devices-------------------------- */
 @media screen and (min-width: 576px) {
+
   .nav__list {
     justify-content: space-around;
     column-gap: 1.5rem;
   }
 }
 @media (max-width:500px) {
+    .produits {
+  padding: var(--padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-top: 1.3rem;
+  /* center items */
+  place-items: center;
+}
+.text h3 {
+  font-size: 0.5rem;
+  color: var(--co-dark);
+  font-weight: bold;
+  padding-top: 0.2rem;
+}
+.footer .prix p {
+  font-size: 0.5rem;
+  font-weight: 800;
+}
+.last p {
+  font-size: 0.4rem;
+}
   .food-rating {
     padding-top:0.5rem;
     }
