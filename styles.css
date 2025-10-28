@@ -1055,7 +1055,7 @@ footer {
 }
 /* -----------------------------For small devices--------------------------------- */
 /* Remove if you choose, the minimalist design */
-@media screen and (max-width:320px) {
+@media screen and (max-width:455px) {
     .produits {
   padding: 0 1rem;
   display: grid;
