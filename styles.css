@@ -10,8 +10,8 @@
 
 /* Création des valeurs que nous allons utiliser */
 * {
-  --color-primary: #d93426;
-  --color-secondary: #f4f9fe;
+  --color-primary:#1d6340 ;
+  --color-secondary: #f6fffb;
   --color-white: #f0f2f5;
   --color-orange: #fa0;
   --padding: 0 5rem;
