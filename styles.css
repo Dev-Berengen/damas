@@ -1048,7 +1048,15 @@ footer {
   }
 }
 @media (max-width:500px) {
-  .produits {
+
+  .food-rating {
+    padding-top:0.5rem;
+    }
+}
+/* -----------------------------For small devices--------------------------------- */
+/* Remove if you choose, the minimalist design */
+@media screen and (max-width:840px) {
+    .produits {
   padding: 0 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1057,14 +1065,6 @@ footer {
   /* center items */
   place-items: center;
 }
-
-  .food-rating {
-    padding-top:0.5rem;
-    }
-}
-/* -----------------------------For small devices--------------------------------- */
-/* Remove if you choose, the minimalist design */
-@media screen and (min-width: 320px) {
  
   .produits .carte-produit {
   width: 170px;
