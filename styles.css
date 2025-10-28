@@ -1,17 +1,29 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-  a {
+  padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
-}
-ul {
-  list-style: none;
-}
+  a {text-decoration: none};
+  ul{list-style: none};
 }
 
-
+/* Création des valeurs que nous allons utiliser */
+* {
+  --color-primary: #d93426;
+  --color-secondary: #f4f9fe;
+  --color-white: #f0f2f5;
+  --color-orange: #fa0;
+  --padding: 0 5rem;
+  --dark: #333;
+  --primaire: #007bc4;
+  --rouge:#fc0000;
+  --co-bleuciel: #00a666;
+  --co-black: #222;
+  --co-dark: #444;
+  --co-gris: #777;
+  --co-footer:#2d2e33;
+}
 /*Header*/
 .header {
   position: fixed;
@@ -199,7 +211,7 @@ header form button {
       header form input {
       width: 15rem;
       padding: 0.4rem 0.1rem;
-      font-size: 0.8rem;
+      font-size: 0.4rem;
 
       }
       header form button{
@@ -243,31 +255,8 @@ header form button {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
 
-/* Création des valeurs que nous allons utiliser */
 
-html {
-  --color-primary: #74ad47;
-  --color-secondary: #f5f5bb;
-  --color-white: #ffffdd;
-  --color-orange: #f88825;
-  --padding: 0 5rem;
-  --dark: #333;
-  --primaire: #007bc4;
-  --rouge:#fc0000;
-  --co-bleuciel: #00a666;
-  --co-black: #222;
-  --co-dark: #444;
-  --co-gris: #777;
-  --co-footer:#2d2e33;
-}
 
 /* Mis en forme body */
 body {
@@ -350,7 +339,7 @@ header form {
 }
 
 header form input {
-  width: clamp(200px, 50%, 400px);
+  width: clamp(250px, 50%, 400px);
   padding: 0.8rem 0.1rem;
   border: none;
   outline: none;
