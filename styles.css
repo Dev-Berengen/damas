@@ -1055,11 +1055,11 @@ footer {
 }
 /* -----------------------------For small devices--------------------------------- */
 /* Remove if you choose, the minimalist design */
-@media screen and (max-width:840px) {
+@media screen and (max-width:320px) {
     .produits {
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.7rem;
   margin-top: 0.7rem;
   /* center items */
@@ -1067,7 +1067,7 @@ footer {
 }
  
   .produits .carte-produit {
-  width: 170px;
+  width: 130px;
   gap: 0.5rem;
   padding: 0.7rem;
   border-radius: 15px;
