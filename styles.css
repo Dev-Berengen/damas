@@ -10,19 +10,13 @@
 
 /* Création des valeurs que nous allons utiliser */
 * {
-   --co-one:#206141;
-   --co-two: #fa0;
-  --color-secondary: #f5fbf8;
-  --color-white: #fff;
   --padding: 0 5rem;
-  --dark: #333;
-  --primaire: #007bc4;
-  --rouge:#a11a1a;
-  --co-bleuciel: #00a666;
-  --co-black: #222;
-  --co-dark: #444;
+  --co-one:#206141;
+  --co-two: #fa0;
+  --co-tree: #f5fbf8;
+  --co-white: #fff;
+  --co-dark: #333;
   --co-gris: #777;
-  --co-footer:#2d2e33;
 }
 /*Header*/
 .header {
@@ -30,7 +24,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-white);
+  background-color: var(--co-white);
   z-index: 100;
   transition: .4s;
   border-bottom: solid 0.1px var(--co-primary);
@@ -39,7 +33,7 @@
 .logo {
  border-radius: 10%;
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 700;
   align-items: center;
   display: inline-block;
   text-align: center;
@@ -47,7 +41,7 @@
   padding: 0.1rem;
 }
 .logo span {
-  border-top: 1px solid var( --co-one);
+  border-top: 2px solid var( --co-two);
 }
 
 .nav {
@@ -56,19 +50,19 @@
   align-items: center;
 }
 /* Barre de recherche */
-form {
+/* form {
   height: 2.5rem;
-  border: 0.8px solid var(--co-primary);
+  border: 1px solid var(--co-gris);
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.1rem 0.3rem;
-  background-color:var(--co-belge);
+  background-color:var(--co-tree);
  
-}
+} */
 
-header form input {
+/* header form input {
   font-size: 0.7rem;
   width: clamp(800px, 50%, 800px);
   padding: 0.8rem 0.1rem;
@@ -92,9 +86,100 @@ header form button {
   cursor: pointer;
   font-size: 1rem;
   color: var(--co-belge);
+} */
+/* jjjjjjjjjjjjjjjjj */
+/* Mis en forme header (barre de navigation) */
+/* main header {
+  width: 100%;
+  background-color: var(--co-white);
+  height: 65px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  padding: var(--padding) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
+main header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: var(--padding);
+}
 
+.logo p {
+  font-weight: bold;
+}
+
+.logo i ,.navigation i {
+  color: var(--co-dark);
+} */
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.4rem;
+}
+
+header ul li a {
+  padding: 10px 12px;
+  color: var(--co-dark);
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: var( --co-two);
+  transition: all 0.2s ease-in;
+}
+
+header form {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0.5rem;
+  background-color: var(--co-tree);
+  backdrop-filter: blur(15px);
+}
+
+header form input {
+  width: clamp(300px, 50%, 400px);
+  padding: 0.8rem 0.1rem;
+  border: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+header form input:focus {
+  border: none;
+  outline: none;
+  background-color:var(--co-tree);
+}
+header form button {
+  border: none;
+  outline: none;
+  background-color: var( --co-one);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--co-white);
+}
+
+header form button:hover {
+  background-color: var( --co-two);
+  transition: all 0.2s ease-in;
+}
 /* Navigation */
 .nav__list, 
 .nav__link {
@@ -114,7 +199,7 @@ header form button {
 }
 
 .nav__name {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: var(--co-dark);
 }.nav__list
 .nav__name:hover {
@@ -122,13 +207,13 @@ header form button {
 }
 
 .nav__icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /*Active link*/
 .active-link {
   position: relative;
-  color: var(  --co-two);
+  color: var(--co-two);
   transition: .3s;
 }
 /* Change background header */
@@ -139,16 +224,16 @@ header form button {
 /* MEDIA QUERIES*/
 
 /* For large devices */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 @media screen and (min-width: 767px) {
-  body {
+  /* body {
     margin: 0;
-  }
+  } */
   .nav {
     height: calc(var(4.5rem)); /* 4.5rem */
   }
@@ -173,7 +258,7 @@ header form button {
     bottom: -.75rem;
     width: 4px;
     height: 4px;
-    background-color: var(  --co-one);
+    background-color: var(--co-one);
     border-radius: 50%;
   }
   
@@ -192,7 +277,7 @@ header form button {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: var(--co-tree);
     box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
     width: 100%;
     height: 4rem;
@@ -206,15 +291,15 @@ header form button {
   
 @media screen and (max-width: 724px) {
       header form input {
-      width: 15rem;
+      /* width: 188rem; */
       padding: 0.4rem 0.1rem;
-      font-size: 0.4rem;
+      font-size: 0.7rem;
 
       }
       header form button{
       border: none;
       outline: none;
-      background-color: var(--co-primary);
+      background-color: var(--co-one);
       width: 2rem;
       height: 2rem;
       border-radius: 25%;
@@ -227,7 +312,7 @@ header form button {
 @media screen and (min-width: 576px) {
   .nav__list {
     justify-content: space-around;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
   }
 }
 @media (max-width:500px) {
@@ -259,7 +344,7 @@ header form button {
 body {
   width: 100%;
   height: 100vh;
-  background-color: var(--color-secondary);
+  background-color: var(--co-tree);
   font-family: "Spectral", serif;
   
 }
@@ -268,100 +353,6 @@ body {
 body main {
   width: 100%;
   min-height: 100vh;
-}
-
-/* Mis en forme header (barre de navigation) */
-main header {
-  width: 100%;
-  background-color: var(--color-white);
-  height: 65px;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
-  backdrop-filter: blur(10px);
-  padding: var(--padding) 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-main header .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: var(--padding);
-}
-
-.logo p {
-  font-weight: bold;
-}
-
-.logo i ,.navigation i {
-  color: var(--co-dark);
-}
-
-header nav {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header nav ul {
-  display: flex;
-  list-style: none;
-  gap: 0.4rem;
-}
-
-header ul li a {
-  padding: 10px 12px;
-  color: var(--dark);
-  text-decoration: none;
-}
-
-header ul li a:hover {
-  color: var( --co-two);
-  transition: all 0.2s ease-in;
-}
-
-header form {
-  border: 1px solid var(--color-secondary);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0 0 0.5rem;
-  background-color: #fff;
-  backdrop-filter: blur(10px);
-}
-
-header form input {
-  width: clamp(250px, 50%, 400px);
-  padding: 0.8rem 0.1rem;
-  border: none;
-  outline: none;
-  border: none;
-  background-color: transparent;
-}
-header form input:focus {
-  border: none;
-  outline: none;
-  background-color: #fff;
-}
-header form button {
-  border: none;
-  outline: none;
-  background-color: var( --co-one);
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: var(--color-white);
-}
-
-header form button:hover {
-  background-color: var( --co-two);
-  transition: all 0.2s ease-in;
 }
 
 .actions {
@@ -394,7 +385,7 @@ header form button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--co-white);
   font-size: 0.6rem;
 }
 
@@ -428,7 +419,7 @@ header form button:hover {
 } */
 
 main .filtre {
-  padding: var(--padding);
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -465,13 +456,13 @@ main .filtre {
   height: 40px;
   border-radius: 10px;
   cursor: pointer;
-  color: var(--color-white);
+  color: var(--co-white);
 }
 .filtre-vrai .options {
   position: absolute;
   top: 50px;
   right: 0;
-  background-color: var(--color-white);
+  background-color: var(--co-white);
   border-radius: 10px;
   padding: 0.5rem;
   display: none;
@@ -557,7 +548,7 @@ main .filtre {
 
 .text h3 {
   font-size: 1rem;
-  color: var(--dark);
+  color: var(--co-dark);
   font-weight: bold;
   padding-top: 0.3rem;
 }
@@ -570,7 +561,7 @@ main .filtre {
 }
 .footer .prix p {
   font-size: 1rem;
-  color: var(--dark);
+  color: var(--co-dark);
   font-weight: 900;
 }
 
@@ -608,9 +599,9 @@ main .filtre {
   header nav {
     display: none;
   }
-  header form input {
+  /* header form input {
     width: 100%;
-  }
+  } */
 
   .produits .carte-produit {
     width: 98%;
@@ -629,7 +620,7 @@ dialog {
   border: none;
   outline: none;
   border-radius: 8px;
-  background-color: var(--color-secondary);
+  background-color: var(--co-tree);
   padding: 15px;
   position: relative;
   animation: animate 0.3s ease;
@@ -725,7 +716,7 @@ dialog section .product-page {
 } */
 .product-page .droite {
   flex: 2;
-  background-color: var(--color-white);
+  background-color: var(--co-white);
   border-radius: 20px;
   padding: 1rem;
   display: flex;
@@ -860,7 +851,7 @@ dialog section .product-page {
   outline: none;
   background-color: var( --co-one);
   cursor: pointer;
-  color: var(--color-white);
+  color: var(--co-white);
   display: flex;
   gap: 0.5rem;
   border-radius: 1rem;
@@ -870,7 +861,7 @@ dialog section .product-page {
   align-items: center;
 }
 .ajouter a{
-    color: var(--color-white);
+    color: var(--co-white);
 }
 .footer button:hover{
   background-color: var( --co-two)
@@ -1040,7 +1031,7 @@ footer {
   width: 100%;
   height: auto;
   padding-top: 80px;
-  background-color: var(--color-white);
+  background-color: var(--co-white);
 }
 
 .container {
@@ -1079,7 +1070,7 @@ footer {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  color: var(--dark);
+  color: var(--co-dark);
   padding: 15px 0;
   border-bottom: 1px solid var(--co-gris);
 
@@ -1117,7 +1108,7 @@ footer {
 }
 
 .wrapper .footer-widget h6 {
-  color: var(--dark);
+  color: var(--co-dark);
   margin: 10px 0 35px;
   font-size: 20px;
   font-weight: 600;
@@ -1128,7 +1119,7 @@ footer {
 }
 
 .wrapper .footer-widget .links li a {
-  color: var(--dark);
+  color: var(--co-dark);
   font-size: 16px;
   text-decoration: none;
   text-transform: capitalize;
