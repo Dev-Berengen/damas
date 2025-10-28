@@ -1048,7 +1048,7 @@ footer {
   }
 }
 @media (max-width:500px) {
-    .produits {
+  .produits {
   padding: 0 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1057,7 +1057,16 @@ footer {
   /* center items */
   place-items: center;
 }
-.produits .carte-produit {
+
+  .food-rating {
+    padding-top:0.5rem;
+    }
+}
+/* -----------------------------For small devices--------------------------------- */
+/* Remove if you choose, the minimalist design */
+@media screen and (min-width: 320px) {
+ 
+  .produits .carte-produit {
   width: 170px;
   gap: 0.5rem;
   padding: 0.7rem;
@@ -1103,18 +1112,13 @@ footer {
 .last p {
   font-size: 0.4rem;
 }
-  .food-rating {
-    padding-top:0.5rem;
-    }
+
 }
-/* -----------------------------For small devices--------------------------------- */
-/* Remove if you choose, the minimalist design */
+
 @media screen and (max-width: 320px) {
   .nav__name {
     display: none;
   }
-
+  
 }
-
-
 
