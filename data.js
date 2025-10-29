@@ -90,6 +90,15 @@ export const data = [
     description:"",
     liens: "",
   },
+    {
+    id: 20,
+    img: "./assets/USB-67W-2.jpg",
+    nom: "CHARGEUR 67W | USB-C",
+    prix: "3.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
   {
     id: 11,
     img: "./assets/USB-128GB.jpg",
@@ -126,6 +135,33 @@ export const data = [
     description:"",
     liens: "",
   },
+    {
+    id: 17,
+    img: "./assets/USB-8GB.jpg",
+    nom: "CLE USB | 8GB",
+    prix: "3.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+    {
+    id: 18,
+    img: "./assets/USB-4GB.jpg",
+    nom: "CLE USB | 4GB",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+   {
+    id: 19,
+    img: "./assets/USB-2GB.jpg",
+    nom: "CLE USB | 2GB",
+    prix: "2.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
    {
     id: 15,
     img: "./assets/Memoire-64GB.jpg",
@@ -144,23 +180,123 @@ export const data = [
     description:"",
     liens: "",
   },
-  {
-    id: 17,
-    img: "./assets/PBL-30000mah.jpg",
-    nom: "POWER BANK | 30.000MAH",
-    prix: "11.000 Fcfa",
+   {
+    id: 21,
+    img: "./assets/Pose-Téléphone.jpg",
+    nom: "Pose-Téléphone | Alu ",
+    prix: "2.000 Fcfa",
     // Description de 20 mots Max
     description:"",
     liens: "",
   },
   {
-    id: 18,
+    id: 22,
+    img: "./assets/PB-10000mah.jpg",
+    nom: "Power Bank | 10.000mah ",
+    prix: "5.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 23,
     img: "./assets/PBL-20000mah.jpg",
-    nom: "POWER BANK | 20.000MAH",
+    nom: "Power Bank | 20.000mah ",
     prix: "8.000 Fcfa",
     // Description de 20 mots Max
     description:"",
     liens: "",
   },
+  {
+    id: 24,
+    img: "./assets/PBL-30000mah.jpg",
+    nom: "Power Bank | 30.000mah ",
+    prix: "11.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+   {
+    id: 25,
+    img: "./assets/Cable-C-iphone.jpg",
+    nom: "CABLE - C-IPHONE ",
+    prix: "1.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 27,
+    img: "./assets/Cable-USB-C.jpg",
+    nom: "CABLE-USB-C ",
+    prix: "1.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 26,
+    img: "./assets/Cable-iphone.jpg",
+    nom: "CABLE-USB-IPHONE ",
+    prix: "1.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 28,
+    img: "./assets/Cable-USB--C.jpg",
+    nom: "CABLE-USB-C ",
+    prix: "1.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 29,
+    img: "./assets/Cable-USB-V8.jpg",
+    nom: "CABLE-USB-V8 ",
+    prix: "1.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 30,
+    img: "./assets/Chargeur-USB-IPHONE.jpg",
+    nom: "CHARGEUR-USB-IPHONE",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 31,
+    img: "./assets/Chargeur-USB-C.jpg",
+    nom: "CHARGEUR-USB-C",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 32,
+    img: "./assets/Chargeur-V8.jpg",
+    nom: "CHARGEUR-V8",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  {
+    id: 33,
+    img: "./assets/Chargeur-C-Iphone.jpg",
+    nom: "CHARGEUR-C-IPHONE",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "",
+  },
+  
 ];
-// Dernier numero id:
+// Dernier numero id:33
