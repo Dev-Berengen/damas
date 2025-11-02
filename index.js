@@ -1,5 +1,5 @@
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('header[id]')
 
 function scrollActive(){
     const scrollY = window.pageYOffset
@@ -25,6 +25,9 @@ function scrollHeader(){
     if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+
 // PPPPPPPPPPPPPPPPPPPPP
 import { data } from "./data.js";
 import { generateDialogHTML, generateProductHTML } from "./functions.js";

@@ -885,6 +885,17 @@ footer {
 .copyright-wrapper p a:hover {
   color: #037ef3;
 }
+
+/* accuiel */
+.presentation{
+  height: 50px;
+  width: 100%;
+}
+.pvideos{
+  height: 50px;
+  width: 100%;
+}
+
 /*----------------- MEDIA QUERIES----------------------------------*/
 @media (max-width: 992px) {
   .container {
