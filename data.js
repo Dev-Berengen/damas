@@ -5,8 +5,7 @@ export const data = [
     nom: "NOKIA 105 | DOUBLE SIM",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
-    description:
-      "",
+    description:"",
     liens: "",
   },
   {
@@ -90,7 +89,8 @@ export const data = [
     description:"",
     liens: "",
   },
-    {
+
+  {
     id: 20,
     img: "./assets/USB-67W-2.jpg",
     nom: "CHARGEUR 67W | USB-C",

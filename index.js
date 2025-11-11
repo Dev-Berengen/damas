@@ -1,121 +1,6 @@
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('header[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop - 50,
-            sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-function scrollHeader(){
-    const header = document.getElementById('header')
-    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
-
-
-// Section page d'accueill
-	// Access the Images
-	let slideImages = document.querySelectorAll('img');
-	// Access the next and prev buttons
-	let next = document.querySelector('.next');
-	let prev = document.querySelector('.prev');
-	// Access the indicators
-	let dots = document.querySelectorAll('.dot');
-
-	var counter = 0;
-
-	// Code for next button
-	next.addEventListener('click', slideNext);
-	function slideNext(){
-	slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-	if(counter >= slideImages.length-1){
-		counter = 0;
-	}
-	else{
-		counter++;
-	}
-	slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-	indicators();
-	}
-
-	// Code for prev button
-	prev.addEventListener('click', slidePrev);
-	function slidePrev(){
-	slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-	if(counter == 0){
-		counter = slideImages.length-1;
-	}
-	else{
-		counter--;
-	}
-	slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
-	indicators();
-	}
-
-	// Auto slideing
-	function autoSliding(){
-		deletInterval = setInterval(timer, 3000);
-		function timer(){
-			slideNext();
-			indicators();
-		}
-	}
-	autoSliding();
-
-	// Stop auto sliding when mouse is over
-	const container = document.querySelector('.slide-container');
-	container.addEventListener('mouseover', function(){
-		clearInterval(deletInterval);
-	});
-
-	// Resume sliding when mouse is out
-	container.addEventListener('mouseout', autoSliding);
-
-	// Add and remove active class from the indicators
-	function indicators(){
-		for(i = 0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(' active', '');
-		}
-		dots[counter].className += ' active';
-	}
-
-	// Add click event to the indicator
-	function switchImage(currentImage){
-		currentImage.classList.add('active');
-		var imageId = currentImage.getAttribute('attr');
-		if(imageId > counter){
-		slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-		counter = imageId;
-		slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-		}
-		else if(imageId == counter){
-			return;
-		}
-		else{
-		slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-		counter = imageId;
-		slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';	
-		}
-		indicators();
-	}
-
-
-
 // Section des Articles
+// Use relative imports so modules load correctly in the browser when
+// `index.js` is included as a module in the HTML page.
 import { data } from "./data.js";
 import { generateDialogHTML, generateProductHTML } from "./functions.js";
 
@@ -273,5 +158,126 @@ const btnClose = document.querySelector(".close");
 btnClose.addEventListener("click", () => {
   dialog.close();
 });
+
+
+
+
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('header[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 50,
+            sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader(){
+    const header = document.getElementById('header')
+    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+
+// Section page d'accueill
+	// Access the Images
+	let slideImages = document.querySelectorAll('img');
+	// Access the next and prev buttons
+	let next = document.querySelector('.next');
+	let prev = document.querySelector('.prev');
+	// Access the indicators
+	let dots = document.querySelectorAll('.dot');
+
+	var counter = 0;
+
+	// Code for next button
+	next.addEventListener('click', slideNext);
+	function slideNext(){
+	slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+	if(counter >= slideImages.length-1){
+		counter = 0;
+	}
+	else{
+		counter++;
+	}
+	slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+	indicators();
+	}
+
+	// Code for prev button
+	prev.addEventListener('click', slidePrev);
+	function slidePrev(){
+	slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+	if(counter == 0){
+		counter = slideImages.length-1;
+	}
+	else{
+		counter--;
+	}
+	slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+	indicators();
+	}
+
+	// Auto slideing
+	function autoSliding(){
+		deletInterval = setInterval(timer, 3000);
+		function timer(){
+			slideNext();
+			indicators();
+		}
+	}
+	autoSliding();
+
+	// Stop auto sliding when mouse is over
+	const container = document.querySelector('.slide-container');
+	container.addEventListener('mouseover', function(){
+		clearInterval(deletInterval);
+	});
+
+	// Resume sliding when mouse is out
+	container.addEventListener('mouseout', autoSliding);
+
+	// Add and remove active class from the indicators
+	function indicators(){
+		for(i = 0; i < dots.length; i++){
+			dots[i].className = dots[i].className.replace(' active', '');
+		}
+		dots[counter].className += ' active';
+	}
+
+	// Add click event to the indicator
+	function switchImage(currentImage){
+		currentImage.classList.add('active');
+		var imageId = currentImage.getAttribute('attr');
+		if(imageId > counter){
+		slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+		}
+		else if(imageId == counter){
+			return;
+		}
+		else{
+		slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';	
+		}
+		indicators();
+	}
+
 
 
