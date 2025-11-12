@@ -1,8 +1,9 @@
 export const generateDialogHTML = (product) => {
+  const link = product.liens && product.liens.toString().trim() !== "" ? product.liens : `./product.html?id=${product.id}`;
   return `
     <div class="product-page">
       <div class="gauche">
-        <img src="${product.img}" />
+        <img src="${product.img}" alt="Image de ${product.nom}"/>
       </div>
       <div class="droite">
         <div class="titre">
@@ -20,7 +21,7 @@ export const generateDialogHTML = (product) => {
         <div class="prix"> ${product.prix}</div>
         <div class="footer">
           <button class="ajouter">
-            <div class="icon">
+            <div class="icon"> 
              <i class="fa-solid fa-cart-arrow-down"></i></div>
             <p>commander</p>
           </button>
@@ -54,27 +55,27 @@ export const generateDialogHTML = (product) => {
 
 // On crée une fonction qui va nous permettre de générer le HTML pour chaque produit
 export function generateProductHTML(product) {
+  const link = product.liens && product.liens.toString().trim() !== "" ? product.liens : `./product.html?id=${product.id}`;
   return `
     <div class="img">
-            <img src='${product.img}' alt="" />
-            <div class="icons">
-              <div class="first">
-                 <i class="fa-solid fa-truck-fast"></i>
-              </div>
-              <div class="last">
-                <i class="fa-solid fa-star"></i>
-                <p>4.5</p>
-              </div>
-            </div>
-          </div>
-          <div class="text">
-            <h3>${product.nom}</h3>
-          </div>
-          <div class="footer">
-            <div class="prix">
-              <p class="prix-actuel">${product.prix}</p>
-            </div>
-          </div>
-      
+      <img src='${product.img}' alt="${product.nom}" />
+      <div class="icons">
+        <div class="first">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="last">
+          <i class="fa-solid fa-star"></i>
+          <p>4.5</p>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h3>${product.nom}</h3>
+    </div>
+    <div class="footer">
+      <div class="prix">
+        <p class="prix-actuel">${product.prix}</p>
+      </div>
+    </div>
     `;
 }

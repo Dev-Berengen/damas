@@ -78,6 +78,20 @@ const actionProduit = () => {
       section.innerHTML = generateDialogHTML(currentItem);
       dialog.appendChild(section);
 
+      // Rendre le bouton "commander" cliquable pour ouvrir le lien du produit
+      const btnAdd = dialog.querySelector('.ajouter');
+      if (btnAdd) {
+        btnAdd.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          ev.stopPropagation();
+          const link = currentItem.liens && currentItem.liens.toString().trim() !== ''
+            ? currentItem.liens
+            : `./product.html?id=${currentItem.id}`;
+          // ouvrir dans un nouvel onglet
+          window.open(link, '_blank', 'noopener');
+        });
+      }
+
       // Selection element carte
       // const btnAdd = document.querySelector(".ajouter");
       // const qte = document.querySelector(".qte");

@@ -6,7 +6,7 @@ export const data = [
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/8074613042593108/22890381883",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const data = [
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/26634452412867674/22890381883",
   },
    {
     id: 3,
