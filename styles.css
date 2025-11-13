@@ -1005,9 +1005,46 @@ footer {
 }
 .pvideos{
   height: 50px;
-  width: 100%;
+  width: 90%;
+  
 }
-
+.carousel {
+  margin: 100px auto;
+  width: 100%;
+  /* border: 5px solid red  ; */
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  animation: spin 20s linear infinite;
+  padding-right: 1em;
+}
+.card{
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  background-color: lightblue;
+  border-radius: .2em;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+}
+@keyframes spin{
+  from{
+    translate:0;
+  }
+  to{
+    translate:-100%;
+  } 
+}
 /*----------------- MEDIA QUERIES----------------------------------*/
 @media (max-width: 992px) {
   .container {
