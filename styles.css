@@ -1137,13 +1137,14 @@ footer{
 .socialIcons{
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 .socialIcons a{
     text-decoration: none;
-    padding:  10px;
+    padding:  8px;
+    margin: 8px;
     background-color: white;
-    margin: 10px;
-    border-radius: 50%;
+    border-radius: 8%;
 }
 .socialIcons a i{
     font-size: 2em;
@@ -1162,23 +1163,17 @@ footer{
 .footerNav{
     margin: 30px 0;
 }
-.footerNav ul{
+.footerNav ul p{
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
-.footerNav ul li a{
+.footerNav ul li p{
     color:white;
     margin: 20px;
-    text-decoration: none;
     font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
+}
 
-}
-.footerNav ul li a:hover{
-    opacity: 1;
-}
 .footerBottom{
     background-color: #000;
     padding: 20px;
@@ -1187,13 +1182,7 @@ footer{
 .footerBottom p{
     color: white;
 }
-.designer{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
-}
+
 @media (max-width: 700px){
     .footerNav ul{
         flex-direction: column;
