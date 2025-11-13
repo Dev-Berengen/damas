@@ -36,9 +36,10 @@ const input = document.querySelector(".recherche");
 
 input.addEventListener("keyup", (e) => {
   console.log(e.target.value);
-  const resultat = data.filter((p) =>
-    p.nom.toLocaleLowerCase().includes(e.target.value)
-  );
+	const query = (e.target.value || "").toLocaleLowerCase().trim();
+	const resultat = data.filter((p) =>
+		(p.nom || "").toLocaleLowerCase().includes(query)
+	);
   productsContainer.innerHTML = "";
   if (resultat.length > 0) {
     afficherProduit(resultat);
