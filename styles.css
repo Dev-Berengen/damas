@@ -1011,7 +1011,7 @@ footer {
 .carousel {
   margin: 100px auto;
   width: 100%;
-  /* border: 5px solid red  ; */
+  border: 2px solid var(--co-two) ;
   display: flex;
   overflow-x: auto;
   gap: 1em;
@@ -1024,7 +1024,7 @@ footer {
   gap: 1em;
   justify-content: center;
   align-items: center;
-  animation: spin 20s linear infinite;
+  animation: spin 60s linear infinite;
   padding-right: 1em;
 }
 .card{
