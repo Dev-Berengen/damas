@@ -1196,6 +1196,9 @@ footer{
         padding: 8px;
         margin: 4px;
     }
+    .primo{
+      font-size: 0.9rem;
+    }
 }
 /*----------------- MEDIA QUERIES----------------------------------*/
 @media (max-width: 992px) {
