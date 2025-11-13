@@ -68,7 +68,7 @@ header ul li a #share-btn{
   text-decoration: none;
 }
 header ul li #share-btn {
-  color: var(--co-white);
+  background-color: var(--co-white);
 
   border: none; 
 }
