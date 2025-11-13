@@ -167,13 +167,13 @@ body main {
   min-height: 100vh;
 }
 
-/* Pages d'accueille */
+/* Pages d'accueil */
 .acceuil{
 			width: 100%;
-			/* min-height: 100vh; */
 			display: flex;
 			justify-content: center;
 			align-items: center;
+      padding-top: 1rem;
 		}
 .slide-container{
 			position: relative;
@@ -997,17 +997,7 @@ footer {
 .copyright-wrapper p a:hover {
   color: #037ef3;
 }
-
-/* accuiel */
-.presentation{
-  height: 50px;
-  width: 100%;
-}
-.pvideos{
-  height: 50px;
-  width: 90%;
-  
-}
+/*------------------ Carousel ---------------------*/
 .carousel {
   margin: 100px auto;
   width: 100%;
@@ -1024,7 +1014,7 @@ footer {
   gap: 1em;
   justify-content: center;
   align-items: center;
-  animation: spin 60s linear infinite;
+  animation: spin 1000s linear infinite;
   padding-right: 1em;
 }
 .card{
