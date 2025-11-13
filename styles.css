@@ -67,6 +67,19 @@ header ul li a {
   color: var(--co-dark);
   text-decoration: none;
 }
+header ul li #share-btn {
+  color: var(--co-dark);
+  padding: 10px 12px;
+  border: none;
+  background-color:var(--co-white);
+  
+  
+}
+#share-btn span {
+   font-size: 0.7rem;
+font-weight: 600;
+  font-family: "Spectral", serif;
+}
 
 header ul li a:hover {
   color: var( --co-two);
@@ -137,7 +150,7 @@ header form button:hover {
   color: var(--co-dark);
 }
 
-.nav__icon {
+.nav__icon  {
   font-size: 1rem;
 }
 
