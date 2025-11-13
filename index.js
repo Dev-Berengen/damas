@@ -34,6 +34,72 @@ afficherProduit(produitAffciher);
 // Recherche des produits
 const input = document.querySelector(".recherche");
 
+
+// ===== Partage (share) dialog =====
+(() => {
+	const shareBtn = document.getElementById('share-btn');
+	const shareDialog = document.getElementById('share-dialog');
+	const shareUrlInput = document.getElementById('share-url');
+	const copyBtn = document.getElementById('copy-link');
+	const closeShare = shareDialog && shareDialog.querySelector('.share-close');
+	const waLink = document.getElementById('share-whatsapp');
+	const fbLink = document.getElementById('share-facebook');
+	const twLink = document.getElementById('share-twitter');
+
+	if (!shareBtn || !shareDialog) return;
+
+	function populateLinks(url) {
+		const encoded = encodeURIComponent(url);
+		if (waLink) waLink.href = `https://wa.me/?text=${encoded}`;
+		if (fbLink) fbLink.href = `https://www.facebook.com/sharer/sharer.php?u=${encoded}`;
+		if (twLink) twLink.href = `https://twitter.com/intent/tweet?url=${encoded}`;
+	}
+
+	shareBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		const url = window.location.href;
+		if (shareUrlInput) shareUrlInput.value = url;
+		populateLinks(url);
+		try {
+			shareDialog.showModal();
+		} catch (err) {
+			// fallback for browsers that don't support dialog
+			shareDialog.style.display = 'block';
+		}
+	});
+
+	if (closeShare) closeShare.addEventListener('click', () => shareDialog.close());
+
+	if (copyBtn) {
+		copyBtn.addEventListener('click', async () => {
+			const text = shareUrlInput ? shareUrlInput.value : window.location.href;
+			try {
+				if (navigator.clipboard && navigator.clipboard.writeText) {
+					await navigator.clipboard.writeText(text);
+				} else {
+					const tmp = document.createElement('textarea');
+					tmp.value = text;
+					document.body.appendChild(tmp);
+					tmp.select();
+					document.execCommand('copy');
+					document.body.removeChild(tmp);
+				}
+				copyBtn.textContent = 'Copié';
+				setTimeout(() => (copyBtn.textContent = 'Copier'), 1500);
+			} catch (err) {
+				console.error('Impossible de copier', err);
+			}
+		});
+	}
+
+	// close when clicking outside (dialog backdrop already handles most cases)
+	shareDialog.addEventListener('click', (ev) => {
+		const rect = shareDialog.getBoundingClientRect();
+		if (ev.clientX < rect.left || ev.clientX > rect.right || ev.clientY < rect.top || ev.clientY > rect.bottom) {
+			try { shareDialog.close(); } catch(e) { shareDialog.style.display = 'none'; }
+		}
+	});
+})();
 input.addEventListener("keyup", (e) => {
   console.log(e.target.value);
 	const query = (e.target.value || "").toLocaleLowerCase().trim();

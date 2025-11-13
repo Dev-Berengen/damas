@@ -589,6 +589,86 @@ dialog .close {
   font-size: small;
 }
 
+/* Styles pour le dialog de partage */
+#share-dialog.share-dialog {
+  width: 90%;
+  max-width: 420px;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: var(--co-white);
+  color: var(--co-dark);
+}
+
+#share-dialog .share-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#share-dialog .share-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#share-dialog .share-close {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#share-dialog .share-body p {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.9rem;
+  color: var(--co-gris);
+}
+
+.share-input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.share-input {
+  flex: 1;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #f8f8f8;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.btn.action {
+  background-color: var(--co-one);
+  color: #fff;
+  border: none;
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.share-btn {
+  flex: 1;
+  text-align: center;
+  padding: 0.6rem 0.4rem;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.share-btn.whatsapp { background: #25D366; }
+.share-btn.facebook { background: #1877F2; }
+.share-btn.twitter { background: #1DA1F2; }
+
 dialog section .product-page {
   display: flex;
   gap: 1rem;

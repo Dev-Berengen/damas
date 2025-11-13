@@ -49,10 +49,10 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                          <a href="#skills" class="nav__link">
+                          <button id="share-btn" class="nav__link" type="button" aria-haspopup="dialog">
                               <i class="fa-solid fa-share-nodes nav__icon"></i>
                               <span class="nav__name">Partager</span>
-                          </a>
+                          </button>
                       </li>
 
                         <li class="nav__item">
@@ -144,6 +144,25 @@
         <div class="close">
           <i class="fa-solid fa-times"></i>
           <p>Fermer</p>
+        </div>
+      </dialog>
+      <!-- Dialog de partage -->
+      <dialog id="share-dialog" class="share-dialog" aria-label="Partager le site">
+        <div class="share-header">
+          <h3>Partager</h3>
+          <button class="share-close" aria-label="Fermer">×</button>
+        </div>
+        <div class="share-body">
+          <p>Copier ou partager le lien du site :</p>
+          <div class="share-input-row">
+            <input id="share-url" class="share-input" readonly>
+            <button id="copy-link" class="btn action">Copier</button>
+          </div>
+          <div class="share-buttons">
+            <a id="share-whatsapp" class="share-btn whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+            <a id="share-facebook" class="share-btn facebook" target="_blank" rel="noopener">Facebook</a>
+            <a id="share-twitter" class="share-btn twitter" target="_blank" rel="noopener">Twitter</a>
+          </div>
         </div>
       </dialog>
     </main>
