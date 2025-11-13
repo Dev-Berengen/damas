@@ -100,6 +100,7 @@ const input = document.querySelector(".recherche");
 		}
 	});
 })();
+
 input.addEventListener("keyup", (e) => {
   console.log(e.target.value);
 	const query = (e.target.value || "").toLocaleLowerCase().trim();
