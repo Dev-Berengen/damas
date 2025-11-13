@@ -1,148 +1,95 @@
 <!DOCTYPE html>
-<html lang="fr">
+    <html lang="fr">
+    <head>
+       <!-- Date de debut de création du site 18/08/2024 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--For  PWA  -->
+        <meta name="theme-color" content="#f5f5dc">
+        <meta name="msapplication-navbutton-color" content="#1e1043">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5dc">
+         <!--=============== Fontawesone-icones ===============-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+        <title>DAMAS | GLOBAL</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="logo">
+                <a href="#" class="logo">DAMAS<br><span>GLOBAL</span>  </a>
+            </div>
+              <!-- Barre de recherche -->
+              <form>
+                <input
+                  type="text"
+                  name="nom"
+                  id=""
+                  class="recherche"
+                  placeholder="Chercher Produit ..."
+                />
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <!-- fin Barre de recherche -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class="fa-solid fa-house nav__icon"></i>
+                                <span class="nav__name">Boutique</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="#skills" class="nav__link">
+                              <i class="fa-solid fa-share-nodes nav__icon"></i>
+                              <span class="nav__name">Partager</span>
+                          </a>
+                      </li>
 
-<head>
-  <!-- Date de debut de création du site 18/08/2024 -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <!--For  PWA  -->
-  <meta name="theme-color" content="#f5f5dc">
-  <meta name="msapplication-navbutton-color" content="#1e1043">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5dc">
-  <!--=============== Fontawesone-icones ===============-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="styles.css">
-  <title>DAMAS | GLOBAL</title>
-</head>
-
-<body>
-  <!--=============== HEADER ===============-->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <div class="logo">
-        <a href="#" class="logo">DAMAS<br><span>GLOBAL</span> </a>
-      </div>
-      <!-- Barre de recherche -->
-      <form>
-        <input type="text" name="nom" id="" class="recherche" placeholder="Chercher Produit ..." />
-        <button>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-      <!-- fin Barre de recherche -->
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">
-              <i class="fa-solid fa-house nav__icon"></i>
-              <span class="nav__name">Accueil</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="articles.html" class="nav__link">
-              <i class="fa-solid fa-shop nav__icon"></i>
-              <span class="nav__name">Article</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="fa-solid fa-share-nodes nav__icon"></i>
-              <span class="nav__name">Partager</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="fa-solid fa-chair nav__icon"></i>
-              <span class="nav__name">Location</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">
-              <i class="fa-solid fa-location-dot nav__icon"></i>
-              <span class="nav__name">Adresse</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!-- articles -->
-    <div class="main-content">
-      <section class="filtre">
-        <div class="breadcumb">
-          <!-- <i class="fa-solid fa-house"></i> -->
-          <p><i class="fa-solid fa-chevron-right"></i>Accueil </p>
-        </div>
-
-        <div class="filtre-vrai">
-          <button>
-            <i class="fa-solid fa-house"></i>
-          </button>
-
-          <div class="options">
-            <p class="item">Cowbow</p>
-            <p class="item">Swag</p>
-            <p class="item">General</p>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="fa-solid fa-location-dot nav__icon"></i>
+                                <span class="nav__name">Adresse</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+          <main>
+      <!-- articles -->
+      <div class="main-content">
+        <section class="filtre">
+          <div class="breadcumb">
+            <!-- <i class="fa-solid fa-house"></i> -->
+            <p><i class="fa-solid fa-chevron-right"></i>Boutique </p>
           </div>
-        </div>
-      </section>
-    </div>
-    <div class="acceuil">
-      <div class="slide-container">
-        <div class="slides">
-          <img src="assets/accueil/Bose.jpg" class="active">
-          <img src="assets/accueil/JBL-K73.jpg">
-          <img src="assets/accueil/PBL-20000mah.jpg">
-          <img src="assets/accueil/USB-16GB.jpg">
-          <img src="assets/accueil/USB-67W.jpg">
-          <img src="assets/accueil/Support-Ordinateur.jpg">
-        </div>
-        <div class="buttons">
-          <span class="next">&#10095;</span>
-          <span class="prev">&#10094;</span>
-        </div>
 
-        <div class="dotsContainer">
-          <div class="dot active" attr='0' onclick="switchImage(this)"></div>
-          <div class="dot" attr='1' onclick="switchImage(this)"></div>
-          <div class="dot" attr='2' onclick="switchImage(this)"></div>
-          <div class="dot" attr='3' onclick="switchImage(this)"></div>
-          <div class="dot" attr='4' onclick="switchImage(this)"></div>
-        </div>
+          <div class="filtre-vrai">
+            <button>
+            <i class="fa-solid fa-shop"></i>
+            </button>
+
+            <div class="options">
+              <p class="item">Cowbow</p>
+              <p class="item">Swag</p>
+              <p class="item">General</p>
+            </div>
+          </div>
+        </section>
+        <section class="produits"></section>
       </div>
-    </div>
-    <div class="carousel">
-      <div class="group">
-        <div class="card">1</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
-        <div class="card">4</div>
-        <div class="card">5</div>
-        <div class="card">6</div>
-      </div>
-      <div aria-hidden class="group">
-        <div class="card">1</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
-        <div class="card">4</div>
-        <div class="card">5</div>
-        <div class="card">6</div>
-      </div>
-    </div>
-    <!-- footer -->
-    <footer>
+      <!-- footer -->
+       <footer>
       <div class="container">
         <div class="wrapper">
           <div class="footer-widget">
@@ -170,38 +117,37 @@
           <div class="footer-widget">
             <h6>Help &amp; Support</h6>
             <ul class="links">
-              <li><a href="https://wa.me/22890381883">Whatsapps</a></li>
+                <li><a href="https://wa.me/22890381883">Whatsapps</a></li>
             </ul>
           </div>
           <div class="footer-widget">
             <h6>Service</h6>
             <ul class="links">
-              <li><a href="https://wa.me/22890381883">Ventes | Livraison</a></li>
+                <li><a href="https://wa.me/22890381883">Ventes | Livraison</a></li>
           </div>
           <div class="footer-widget">
             <h6>Localisation</h6>
             <ul class="links">
-              <li><a href="https://goo.gl/maps/sXXkW9Kt5ts2K3tC7">Geolocalisation</a></li>
+            <li><a href="https://goo.gl/maps/sXXkW9Kt5ts2K3tC7">Geolocalisation</a></li>
             </ul>
           </div>
         </div>
         <div class="copyright-wrapper">
           <p>
-            DAMAS GLOBAL
+           DAMAS GLOBAL
           </p>
         </div>
       </div>
     </footer>
-    <!-- Boite de dialogue articles -->
-    <dialog class="one-product" id="dialog">
-      <div class="close">
-        <i class="fa-solid fa-times"></i>
-        <p>Fermer</p>
-      </div>
-    </dialog>
-  </main>
-  <script type="module" src="index.js"></script>
+      <!-- Boite de dialogue articles -->
+      <dialog class="one-product" id="dialog">
+        <div class="close">
+          <i class="fa-solid fa-times"></i>
+          <p>Fermer</p>
+        </div>
+      </dialog>
+    </main>
+    <script type="module" src="index.js"></script>
 
-</body>
-
+    </body>
 </html>

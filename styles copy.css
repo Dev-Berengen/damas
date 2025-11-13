@@ -999,9 +999,9 @@ footer {
 }
 /*------------------ Carousel ---------------------*/
 .carousel {
-  margin: 10px auto;
+  margin: 100px auto;
   width: 100%;
-  /* border: 2px solid var(--co-two) ; */
+  border: 2px solid var(--co-two) ;
   display: flex;
   overflow-x: auto;
   gap: 1em;
@@ -1059,7 +1059,18 @@ footer {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  
+  /* .sizes .container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .sizes p {
+    flex: 2;
+  }
+  .sizes .container::-webkit-scrollbar {
+    width: 0.4em;
+    border-radius: 10px;
+  } */
   .product-page .gauche {
     padding: 0.8rem;
   }
@@ -1072,6 +1083,9 @@ footer {
   .titre h1 {
     font-size: 0.7rem;
   }
+  /* .droite .description {
+    width: 10%;
+  } */
 
   .accessoire {
     flex-direction: column;
