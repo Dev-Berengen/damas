@@ -62,22 +62,19 @@ header nav ul {
   gap: 0.4rem;
 }
 
-header ul li a {
+header ul li a #share-btn{
   padding: 10px 12px;
   color: var(--co-dark);
   text-decoration: none;
 }
 header ul li #share-btn {
-  color: var(--co-dark);
-  padding: 10px 12px;
-  border: none;
-  background-color:var(--co-white);
-  
-  
+  color: var(--co-white);
+
+  border: none; 
 }
 #share-btn span {
    font-size: 0.7rem;
-font-weight: 600;
+  font-weight: 600;
   font-family: "Spectral", serif;
 }
 
@@ -130,7 +127,7 @@ header form button:hover {
   display: flex;
 }
 
-.nav__link {
+.nav__link ,#share-btn {
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
