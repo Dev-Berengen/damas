@@ -1215,7 +1215,7 @@ footer{
 
   .nav__list {
     justify-content: space-around;
-    column-gap: 1.5rem;
+    column-gap: 1.9rem;
   }
 }
 @media (max-width:500px) {
@@ -1284,7 +1284,7 @@ footer{
   font-size: 0.5rem;
 }
 .text p {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 }
