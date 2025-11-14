@@ -3,6 +3,7 @@ export const data = [
     id: 1,
     img: "./assets/105.jpg",
     nom: "NOKIA 105 | DOUBLE SIM",
+    stock: "Disponible",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",

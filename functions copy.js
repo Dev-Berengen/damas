@@ -8,7 +8,12 @@ export const generateDialogHTML = (product) => {
       <div class="droite">
         <div class="titre">
           <h1>${product.nom}</h1>
+          <div class="last">
+            <i class="fa-solid fa-star"></i>
+            <p>4.5</p>
+          </div>
         </div>
+        
         <p class="description">
           ${product.description}
         </p>
@@ -53,11 +58,20 @@ export function generateProductHTML(product) {
   const link = product.liens && product.liens.toString().trim() !== "" ? product.liens : `./product.html?id=${product.id}`;
   return `
     <div class="img">
-      <img src='${product.img}' alt="${product.nom}" />  
+      <img src='${product.img}' alt="${product.nom}" />
+      <div class="icons">
+        <div class="first">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="last">
+          <i class="fa-solid fa-star"></i>
+          <p>4.5</p>
+        </div>
+      </div>
     </div>
     <div class="text">
-      <p class="nom">Stock: ${product.stock}</p>
-      <h3>${product.nom}</h3>
+       <h3>${product.nom}</h3>
+      <p class="nom">Stock :${product.categorie}</p>
     </div>
     <div class="footer">
       <div class="prix">

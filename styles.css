@@ -429,14 +429,14 @@ main .filtre {
 
 .carte-produit .img {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   margin-top: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.img .icons {
+/* .img .icons {
   position: absolute;
   top: 10px;
   width: 100%;
@@ -445,7 +445,7 @@ main .filtre {
   align-items: center;
   gap: 0.5rem;
   justify-content: space-between;
-}
+} */
 .icons .first {
    --co-one: #74ad47;
   display: flex;
@@ -467,34 +467,36 @@ main .filtre {
   color: var(--co-gris);
 }
 .img img {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  margin-top: 3.3rem;
+  /* margin-top: 3.3rem; */
 }
 
-.carte-produit .text {
+/* .carte-produit .text {
   margin-top: 1rem;
-}
+} */
 .text p {
-  font-size: 0.9rem;
-  color: var(--co-gris);
-}
-
-.text h3 {
-  font-size: 1rem;
-  color: var(--co-dark);
+ font-size: 0.8rem;
+  color: var(--co-one);
   font-weight: bold;
   padding-top: 0.3rem;
+}
+
+.text h3  {
+  font-size: 0.85rem;
+  color: var(--co-dark);
+  font-weight: bold;
+  /* padding-top: 0.3rem; */
 }
 
 .carte-produit .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.1rem;
+  /* margin-top: 1.1rem; */
 }
 .footer .prix p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--co-dark);
   font-weight: 900;
 }
@@ -817,7 +819,7 @@ dialog section .product-page {
 .footer {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   align-items: center;
 }
 
@@ -1254,7 +1256,7 @@ footer{
     justify-content: center;
     position: relative;
 }
-.img .icons {
+/* .img .icons {
     position: absolute;
     top: 8px;
     width: 100%;
@@ -1267,7 +1269,7 @@ footer{
 }
 .fa-solid, .fas {
     font-weight: 600;
-}
+} */
 .text h3 {
   font-size: 0.5rem;
   color: var(--co-dark);
