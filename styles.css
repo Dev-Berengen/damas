@@ -11,7 +11,7 @@
 /* Création des valeurs que nous allons utiliser */
 * {
   --padding: 0 2rem;
-  --co-one:#206141;
+  --co-one:#0066cc;
   --co-two: #fa0;
   --co-tree: #f5fbf8;
   --co-white: #fff;
@@ -1298,14 +1298,8 @@ footer{
 }
 
 /* about */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
     line-height: 1.6;
     color: #333;
 }
@@ -1371,8 +1365,9 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, #e4250b 0%, #0052a3 100%);
+    background: linear-gradient(135deg, #cb200a 0%, #0052a3 100%);
     color: white;
+    margin-top: 10px;
     padding: 100px 20px;
     text-align: center;
 }
@@ -1428,9 +1423,8 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-section {
-    padding: 80px 20px;
-    border-bottom: 1px solid #e9ecef;
+section  {
+    padding: 30px 20px;
 }
 
 .section-title {
@@ -1443,7 +1437,7 @@ section {
 .section-subtitle {
     font-size: 18px;
     color: #666;
-    margin-bottom: 40px;
+
     line-height: 1.8;
 }
 
@@ -1552,7 +1546,7 @@ section {
     color: #0066cc;
 }
 
-footer {
+/* footer {
     background-color: #1a1a1a;
     color: white;
     padding: 60px 20px 30px;
@@ -1593,10 +1587,10 @@ footer {
 
 .footer-section a:hover {
     color: white;
-}
+} */
 
 /* Responsive Footer */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 30px;
@@ -1609,10 +1603,10 @@ footer {
     .footer-section a {
         font-size: 12px;
     }
-}
+} */
 
 @media (max-width: 480px) {
-    .footer-grid {
+    /* .footer-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -1639,9 +1633,9 @@ footer {
     text-decoration: none;
     color: white;
     transition: background-color 0.3s;
-}
+} */
 
-.social-links a:hover {
+/* .social-links a:hover {
     background-color: #0066cc;
 }
 
@@ -1666,71 +1660,30 @@ footer {
 
 .breadcrumb a:hover {
     text-decoration: underline;
-}
+} */
 
 /* General Responsive Updates */
 @media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        padding: 15px 20px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    nav ul {
-        gap: 15px;
-        width: 100%;
-        margin-top: 15px;
-        justify-content: center;
-    }
-
     section {
-        padding: 60px 20px;
-    }
+        /* padding: 60px 20px;
+    } */
 
     .hero {
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
 
     .company-info {
         font-size: 14px;
     }
 
-    .breadcrumb {
-        padding: 15px 20px;
-        font-size: 12px;
-    }
 }
 
 @media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+  
 
-    .logo {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    nav ul {
-        gap: 10px;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    nav a {
-        font-size: 12px;
-        padding: 8px 0;
-    }
-
-    section {
+    /* section {
         padding: 40px 15px;
-    }
+    } */
 
     .hero {
         padding: 40px 15px;
@@ -1750,18 +1703,4 @@ footer {
         font-size: 13px;
     }
 
-    .social-links {
-        gap: 10px;
-    }
-
-    .social-links a {
-        width: 30px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    .breadcrumb {
-        padding: 10px 15px;
-        font-size: 11px;
-    }
 }
