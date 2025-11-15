@@ -11,7 +11,7 @@
 /* Création des valeurs que nous allons utiliser */
 * {
   --padding: 0 2rem;
-  --co-one:#0066cc;
+  --co-one:#206141;
   --co-two: #fa0;
   --co-tree: #f5fbf8;
   --co-white: #fff;
@@ -1358,14 +1358,14 @@ nav a:hover {
     color: #0052a3;
 } */
 
-.container {
+.containers {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .hero {
-    background: linear-gradient(135deg, #cb200a 0%, #0052a3 100%);
+    background: linear-gradient(135deg, #d0260f 0%, #206141 100%);
     color: white;
     margin-top: 10px;
     padding: 100px 20px;
@@ -1398,6 +1398,7 @@ nav a:hover {
 
 @media (max-width: 480px) {
     .hero h1 {
+      padding-top: 2rem;
         font-size: 24px;
     }
 
@@ -1409,7 +1410,7 @@ nav a:hover {
 .cta-button {
     display: inline-block;
     background-color: white;
-    color: #0066cc;
+    color: var(--co-one);
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -1431,7 +1432,8 @@ section  {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #0066cc;
+    color: var(--co-one);
+
 }
 
 .section-subtitle {
@@ -1489,7 +1491,7 @@ section  {
 .stat-value {
     font-size: 32px;
     font-weight: 700;
-    color: #0066cc;
+    color: var(--co-one);
     margin-bottom: 10px;
 }
 
@@ -1543,7 +1545,7 @@ section  {
 }
 
 .company-info strong {
-    color: #0066cc;
+    color: var(--co-one);
 }
 
 /* footer {
@@ -1605,7 +1607,7 @@ section  {
     }
 } */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) { */
     /* .footer-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1664,10 +1666,6 @@ section  {
 
 /* General Responsive Updates */
 @media (max-width: 768px) {
-    section {
-        /* padding: 60px 20px;
-    } */
-
     .hero {
         padding: 40px 20px;
     }
@@ -1679,11 +1677,6 @@ section  {
 }
 
 @media (max-width: 480px) {
-  
-
-    /* section {
-        padding: 40px 15px;
-    } */
 
     .hero {
         padding: 40px 15px;
@@ -1694,7 +1687,7 @@ section  {
         font-size: 14px;
     }
 
-    .container {
+    .containers {
         padding: 0 15px;
     }
 
