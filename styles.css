@@ -1351,18 +1351,18 @@ nav a:hover {
 } */
 
 /* Mobile Navigation Toggle */
-.menu-toggle {
+/* .menu-toggle {
     display: none;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
     color: #c7871a;
-}
+} */
 
-.menu-toggle:hover {
+/* .menu-toggle:hover {
     color: #0052a3;
-}
+} */
 
 .container {
     max-width: 1200px;
