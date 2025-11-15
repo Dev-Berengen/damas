@@ -1309,7 +1309,7 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
+/* 
 header {
     background-color: #f8f9fa;
     padding: 20px 0;
@@ -1348,7 +1348,7 @@ nav a {
 
 nav a:hover {
     color: #0066cc;
-}
+} */
 
 /* Mobile Navigation Toggle */
 .menu-toggle {
@@ -1357,7 +1357,7 @@ nav a:hover {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #0066cc;
+    color: #c7871a;
 }
 
 .menu-toggle:hover {
@@ -1371,7 +1371,7 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    background: linear-gradient(135deg, #e4250b 0%, #0052a3 100%);
     color: white;
     padding: 100px 20px;
     text-align: center;
