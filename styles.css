@@ -1163,6 +1163,37 @@ footer{
   }
   .nav__menu {
    
+
+/* ------------------------ Theme (Light / Dark) ------------------------ */
+:root {
+  --co-one: #206141;
+  --co-two: #fa0;
+  --co-tree: #f5fbf8;
+  --co-white: #fff;
+  --co-dark: #333;
+  --co-gris: #777;
+}
+
+/* Dark theme - override the variables when .dark-theme is present on <html> or <body> */
+.dark-theme {
+  --co-one: #88c2b0;   /* primary accent in dark */
+  --co-two: #f6b24d;   /* secondary accent */
+  --co-tree: #0b1220;  /* page background */
+  --co-white: #0b1220; /* used for header/background replacements */
+  --co-dark: #e6e9ee;  /* main text color on dark */
+  --co-gris: #9aa3ad;  /* muted text */
+}
+
+body, .header, .nav__link, .produits .carte-produit, dialog, #share-dialog.share-dialog, footer {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Ensure background & text colors follow the variables */
+body.dark-theme {
+  background-color: var(--co-tree);
+  color: var(--co-dark);
+}
+
     position: fixed;
     bottom: 0;
     left: 0;
