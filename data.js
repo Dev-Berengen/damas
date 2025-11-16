@@ -6,7 +6,7 @@ export const data = [
     stock: "Disponible",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
-    description:"LORURADIPISICINSUMDOLORSITAMETCONSECTETURADIPISICINSUTAMETCONSECTETURADIPISICINSUMDOLORSITAMETCONSECTETURADIPISICIN",
+    description:"",
     liens: "https://wa.me/p/8074613042593108/22890381883",
   },
   {
