@@ -370,11 +370,11 @@ dialog .close{
 /* Styles pour le dialog de partage */
 #share-dialog.share-dialog {
   width: 90%;
-  height: 35rem;
+  height: 20rem;
   max-width: 420px;
   padding: 1rem;
   border-radius: 12px;
-  background-color: var(--co-white);
+  background-color: var(--co-tree);
   color: var(--co-dark);
 }
 
@@ -456,8 +456,10 @@ dialog .close{
   justify-content: center;
   text-align: center;
   padding: 0.6rem 0.5rem;
-  min-height: 70px;
-  border-radius: 8px;
+  /* min-height: 70px; */
+  height: 2.8rem;
+  width: 7rem;
+  border-radius: 5px;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -491,7 +493,7 @@ dialog .close{
 .share-label {
   display: block;
   margin-top: 6px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   line-height: 1;
   opacity: 0.95;
 }
