@@ -86,6 +86,22 @@ const actionProduit = () => {
         });
       }
 
+      // Envoyer le lien du produit via WhatsApp au numéro spécifié
+      const btnWhatsapp = dialog.querySelector('.send-whatsapp');
+      if (btnWhatsapp) {
+        btnWhatsapp.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          ev.stopPropagation();
+          const link = btnWhatsapp.getAttribute('data-product-link');
+          const productName = btnWhatsapp.getAttribute('data-product-name');
+          const phoneNumber = '22890381883'; // Numéro WhatsApp sans le +
+          const message = `Bonjour, je suis intéressé par ce produit:\n${productName}\n\n${link}`;
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank', 'noopener');
+        });
+      }
+
     });
   });
 };

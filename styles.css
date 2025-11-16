@@ -579,8 +579,31 @@ dialog section .product-page {
   font-weight: 600;
   align-items: center;
 }
-.ajouter a{
+.send-whatsapp p {
     color: var(--co-white);
+  font-size: 0.7rem;
+
+    
+}
+.send-whatsapp {
+  background-color: #0aa342;
+  color: #fff;
+  border: none;
+  padding: 1.3rem 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+}
+.send-whatsapp:hover {
+  background-color: #088a38;
+}
+.send-whatsapp i {
+  line-height: 1;
 }
 .footer button:hover{
   background-color: var( --co-two)

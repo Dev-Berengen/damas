@@ -15,9 +15,8 @@ export const generateDialogHTML = (product) => {
         </div>
         <div class="prix"> ${product.prix}</div>
         <div class="footer">
-          <button class="ajouter">
-            <div class="icon"> 
-             <i class="fa-solid fa-cart-arrow-down"></i></div>
+          <button class="send-whatsapp" data-product-link="${link}" data-product-name="${product.nom}" title="Envoyer par WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
             <p>commander</p>
           </button>
         </div>
