@@ -779,6 +779,9 @@ footer {
 .footer-section a:hover {
     color: white;
 } 
+.Researche{
+  display:none;
+}
 
 /*----------------- MEDIA QUERIES----------------------------------*/
 @media (max-width: 992px) {
@@ -1071,22 +1074,11 @@ footer {
     text-align: center;
 }
 
-.breadcrumb {
-    padding: 20px;
+.breadcrumbs {
+    padding: 60px 0px 20px 40px;
     font-size: 14px;
     color: #666;
 }
-
-.breadcrumb a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
-
-
 
 @media screen and (max-width:455px) {
     .produits {
