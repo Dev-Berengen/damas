@@ -2,7 +2,7 @@
 	"name": "DAMAS | GLOBAL",
 	"short_name": "DAMAS | GLOBAL",
 	"description": "Boutique en ligne DAMAS GLOBAL — produits et contact",
-	"start_url": "./index.html",
+	"start_url": "/index.html",
 	"scope": ".",
 	"display": "standalone",
 	"orientation": "portrait-primary",
