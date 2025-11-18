@@ -16,7 +16,7 @@
   --co-tree: #f5fbf8;
   --co-white: #fff;
   --co-dark: #333;
-  --co-gris: #777;
+  --co-gris: #2f2f2f;
 }
 /*Header*/
 .header {
@@ -1192,7 +1192,7 @@ footer {
 /* PWA Install Banner */
 .install-banner {
   position: fixed;
-  bottom: 16px;
+  bottom: 80px;
   left: 16px;
   right: 16px;
   background: #ffffff;
