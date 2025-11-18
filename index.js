@@ -141,4 +141,54 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+// Register service worker for PWA functionality
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js')
+      .then((registration) => {
+        console.log('ServiceWorker registered with scope:', registration.scope);
+      })
+      .catch((error) => {
+        console.error('ServiceWorker registration failed:', error);
+      });
+  });
+}
+
+// PWA install prompt handling (Add to Home Screen)
+let deferredInstallPrompt = null;
+const installBanner = document.getElementById('install-banner');
+const installBtn = document.getElementById('install-btn');
+const installDismiss = document.getElementById('install-dismiss');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  // Show our custom install banner
+  if (installBanner) installBanner.hidden = false;
+});
+
+installBtn && installBtn.addEventListener('click', async () => {
+  if (!deferredInstallPrompt) return;
+  // Show native prompt
+  deferredInstallPrompt.prompt();
+  const choiceResult = await deferredInstallPrompt.userChoice;
+  if (choiceResult.outcome === 'accepted') {
+    console.log('User accepted the A2HS prompt');
+  } else {
+    console.log('User dismissed the A2HS prompt');
+  }
+  deferredInstallPrompt = null;
+  if (installBanner) installBanner.hidden = true;
+});
+
+installDismiss && installDismiss.addEventListener('click', () => {
+  if (installBanner) installBanner.hidden = true;
+});
+
+window.addEventListener('appinstalled', () => {
+  if (installBanner) installBanner.hidden = true;
+  console.log('PWA installed');
+});
+
 

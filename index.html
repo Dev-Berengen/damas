@@ -14,6 +14,7 @@
   <meta name="theme-color" content="#f5f5dc">
   <meta name="msapplication-navbutton-color" content="#1e1043">
   <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5dc">
+  <link rel="manifest" href="Favicons/site.webmanifest">
   <!--=============== Fontawesone-icones ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -62,6 +63,20 @@
       </div>
     </nav>
   </header>
+  <!-- PWA install banner (hidden by default, shown when available) -->
+  <div id="install-banner" hidden style="position:fixed;bottom:16px;left:16px;right:16px;background:#ffffff;padding:12px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:1200">
+    <div style="display:flex;align-items:center;gap:12px">
+      <img src="Favicons/android-chrome-192x192.png" alt="DAMAS" style="width:44px;height:44px;border-radius:6px;object-fit:cover">
+      <div>
+        <strong>Installer DAMAS</strong>
+        <div style="font-size:0.9rem;color:#444">Ajouter l'application à votre écran d'accueil</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button id="install-btn" class="btn action" style="padding:8px 12px;border-radius:6px">Installer</button>
+      <button id="install-dismiss" class="btn" style="padding:8px 10px;border-radius:6px;background:transparent">Fermer</button>
+    </div>
+  </div>
   <main>
     <!-- articles -->
     <div class="main-content">
