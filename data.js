@@ -7,7 +7,7 @@ export const data = [
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "https://wa.me/p/8074613042593108/22890381883",
+    liens: "https://wa.me/p/24136586712690699/22890381883",
   },
   {
     id: 2,
@@ -19,15 +19,15 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/26634452412867674/22890381883",
   },
-   {
-    id: 3,
-    img: "./assets/3310.jpg",
-    nom: "NOKIA 3310 | DOUBLE SIM",
-    prix: "7.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "",
-  },
+  //  {
+  //   id: 3,
+  //   img: "./assets/3310.jpg",
+  //   nom: "NOKIA 3310 | DOUBLE SIM",
+  //   prix: "7.000 Fcfa",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "",
+  // },
    {
     id: 4,
     img: "./assets/Bose.jpg",
@@ -35,7 +35,7 @@ export const data = [
     prix: "9.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/29293678393609133/22890381883",
   },
      {
     id: 5,
@@ -44,7 +44,7 @@ export const data = [
     prix: "9.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/29293678393609133/22890381883",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const data = [
     prix: "4.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24639409115754029/22890381883",
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const data = [
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/8516769631740342/22890381883",
   },
    {
     id: 8,
@@ -71,7 +71,7 @@ export const data = [
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/8226655850725442/22890381883",
   },
    {
     id: 9,
@@ -79,7 +79,7 @@ export const data = [
     nom: "SUPPORT ORDINATEUR",
     prix: "4.000 Fcfa",
     // Description de 20 mots Max
-    description:"",
+    description:"https://wa.me/p/24418000317825784/22890381883",
     liens: "",
   },
   {
@@ -89,7 +89,7 @@ export const data = [
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/8282083681910524/22890381883",
   },
 
   {
@@ -99,7 +99,7 @@ export const data = [
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24867674429549533/22890381883",
   },
   {
     id: 11,
@@ -108,7 +108,7 @@ export const data = [
     prix: "8.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/25465608686408654/22890381883",
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const data = [
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/26738841835729197/22890381883",
   },
   {
     id: 13,
@@ -126,7 +126,7 @@ export const data = [
     prix: "4.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/8074613042593108/22890381883",
   },
   {
     id: 14,
@@ -135,7 +135,7 @@ export const data = [
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/25944346401832431/22890381883",
   },
     {
     id: 17,
@@ -144,7 +144,7 @@ export const data = [
     prix: "3.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24953599607662189/22890381883",
   },
     {
     id: 18,
@@ -153,7 +153,7 @@ export const data = [
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24962381810039443/22890381883",
   },
    {
     id: 19,
@@ -162,7 +162,7 @@ export const data = [
     prix: "2.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24917413501260678/22890381883",
   },
    {
     id: 15,
@@ -171,7 +171,7 @@ export const data = [
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/31560738140239973/22890381883",
   },
   {
     id: 16,
@@ -180,7 +180,7 @@ export const data = [
     prix: "4.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24491048287189530/22890381883",
   },
    {
     id: 21,
@@ -189,7 +189,7 @@ export const data = [
     prix: "2.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/25463274176591855/22890381883",
   },
   {
     id: 22,
@@ -198,7 +198,7 @@ export const data = [
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/9012153598795910/22890381883",
   },
   {
     id: 23,
@@ -207,7 +207,7 @@ export const data = [
     prix: "8.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/9320271214653943/22890381883",
   },
   {
     id: 24,
@@ -225,7 +225,7 @@ export const data = [
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/25463274176591855/22890381883",
   },
   {
     id: 27,
@@ -243,7 +243,7 @@ export const data = [
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/25347864341488366/22890381883",
   },
   {
     id: 28,
@@ -252,7 +252,7 @@ export const data = [
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/8426782847353567/22890381883",
   },
   {
     id: 29,
@@ -261,7 +261,7 @@ export const data = [
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24960230283667071/22890381883",
   },
   {
     id: 30,
@@ -270,7 +270,7 @@ export const data = [
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24846934394963991/22890381883",
   },
   {
     id: 31,
@@ -279,7 +279,7 @@ export const data = [
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/24867674429549533/22890381883",
   },
   {
     id: 32,
@@ -288,7 +288,7 @@ export const data = [
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "",
+    liens: "https://wa.me/p/32036224049357792/22890381883",
   },
   {
     id: 33,
@@ -296,7 +296,7 @@ export const data = [
     nom: "CHARGEUR-C-IPHONE",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
-    description:"",
+    description:"https://wa.me/p/8233903843314762/22890381883",
     liens: "",
   },
   
