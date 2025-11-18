@@ -1,9 +1,9 @@
 {
 	"name": "DAMAS | GLOBAL",
-	"short_name": "DAMAS",
+	"short_name": "DAMAS | GLOBAL",
 	"description": "Boutique en ligne DAMAS GLOBAL — produits et contact",
-	"start_url": ".",
-	"scope": "/",
+	"start_url": "./index.html",
+	"scope": ".",
 	"display": "standalone",
 	"orientation": "portrait-primary",
 	"icons": [
