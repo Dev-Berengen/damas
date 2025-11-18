@@ -160,35 +160,55 @@ const installBanner = document.getElementById('install-banner');
 const installBtn = document.getElementById('install-btn');
 const installDismiss = document.getElementById('install-dismiss');
 
+console.log('PWA Install: Elements found', { installBanner: !!installBanner, installBtn: !!installBtn, installDismiss: !!installDismiss });
+
 window.addEventListener('beforeinstallprompt', (e) => {
+  console.log('beforeinstallprompt event triggered');
   // Prevent the mini-infobar from appearing on mobile
   e.preventDefault();
   deferredInstallPrompt = e;
   // Show our custom install banner
-  if (installBanner) installBanner.hidden = false;
-});
-
-installBtn && installBtn.addEventListener('click', async () => {
-  if (!deferredInstallPrompt) return;
-  // Show native prompt
-  deferredInstallPrompt.prompt();
-  const choiceResult = await deferredInstallPrompt.userChoice;
-  if (choiceResult.outcome === 'accepted') {
-    console.log('User accepted the A2HS prompt');
-  } else {
-    console.log('User dismissed the A2HS prompt');
+  if (installBanner) {
+    installBanner.style.display = 'flex';
+    console.log('Install banner shown');
   }
-  deferredInstallPrompt = null;
-  if (installBanner) installBanner.hidden = true;
 });
 
-installDismiss && installDismiss.addEventListener('click', () => {
-  if (installBanner) installBanner.hidden = true;
-});
+if (installBtn) {
+  installBtn.addEventListener('click', async () => {
+    console.log('Install button clicked', deferredInstallPrompt);
+    if (!deferredInstallPrompt) {
+      console.warn('deferredInstallPrompt is null');
+      return;
+    }
+    try {
+      // Show native prompt
+      deferredInstallPrompt.prompt();
+      const choiceResult = await deferredInstallPrompt.userChoice;
+      console.log('User choice result:', choiceResult);
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+    } catch (error) {
+      console.error('Error showing install prompt:', error);
+    }
+    deferredInstallPrompt = null;
+    if (installBanner) installBanner.style.display = 'none';
+  });
+}
+
+if (installDismiss) {
+  installDismiss.addEventListener('click', () => {
+    console.log('Dismiss button clicked');
+    if (installBanner) installBanner.style.display = 'none';
+  });
+}
 
 window.addEventListener('appinstalled', () => {
-  if (installBanner) installBanner.hidden = true;
-  console.log('PWA installed');
+  console.log('PWA installed successfully');
+  if (installBanner) installBanner.style.display = 'none';
 });
 
 
