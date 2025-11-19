@@ -751,7 +751,7 @@ dialog section .product-page {
 
     line-height: 1.8;
 }
-.vision, .mission ,.adresse {
+.vision, .mission , .adresse {
    padding: 30px 20px;
     background-color:var(--co-tree);
 }
