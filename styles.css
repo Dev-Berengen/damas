@@ -15,7 +15,7 @@
   --co-two: #fa0;
   --co-tree: #f5fbf8;
   --co-white: #fff;
-  --co-dark: #333;
+  --co-gris: #333;
   --co-gris: #2f2f2f;
 }
 /*Header*/
@@ -65,7 +65,7 @@ header nav ul {
 
 header ul li a #share-btn{
   padding: 10px 12px;
-  color: var(--co-dark);
+  color: var(--co-gris);
   text-decoration: none;
 }
 header ul li #share-btn {
@@ -142,10 +142,10 @@ header form button:hover {
 
 .nav__name {
   font-size: 0.7rem;
-  color: var(--co-dark);
+  color: var(--co-gris);
 }.nav__list
 .nav__name:hover {
-  color: var(--co-dark);
+  color: var(--co-gris);
 }
 
 .nav__icon  {
@@ -290,7 +290,7 @@ main .filtre {
 }
 .text h3  {
   font-size: 0.85rem;
-  color: var(--co-dark);
+  color: var(--co-gris);
   font-weight: bold;
 }
 
@@ -301,7 +301,7 @@ main .filtre {
 }
 .footer .prix p {
   font-size: 0.85rem;
-  color: var(--co-dark);
+  color: var(--co-gris);
   font-weight: 900;
 }
 /* Mis en form du modal */
@@ -310,7 +310,7 @@ dialog {
   margin: auto;
   border: none;
   outline: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: var(--co-tree);
   padding: 15px;
   position: relative;
@@ -375,7 +375,7 @@ dialog .close{
   padding: 1rem;
   border-radius: 12px;
   background-color: var(--co-tree);
-  color: var(--co-dark);
+  color: var(--co-gris);
 }
 
 #share-dialog .share-header {
@@ -511,7 +511,7 @@ dialog section .product-page {
 .product-page .gauche {
   flex: 1;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -617,7 +617,7 @@ dialog section .product-page {
 .accessoire {
   width: 100%;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 3rem;
 }
 .accessoire .avantages {
@@ -860,12 +860,12 @@ footer {
 @media screen and (max-width: 840px) {
   dialog {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: fixed;
   }
   dialog section .product-page {
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.5rem;
     justify-content: center;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -886,7 +886,7 @@ footer {
 
   .accessoire {
     flex-direction: column;
-    gap: 1.7rem;
+    gap: 1rem;
   }
 
   .footer button {
@@ -915,7 +915,7 @@ footer {
     /* display: block; */ /* Minimalist design, visible labels */
   }
   .nav__link:hover {
-    color: var( --co-dark);
+    color: var( --co-gris);
   }
 
   /* First design, remove if you choose the minimalist design */
@@ -1124,7 +1124,7 @@ footer {
     background-color:var(--co-tree);
     border-radius: 50%;
     text-decoration: none;
-    color: var(--co-dark);
+    color: var(--co-gris);
     transition: background-color 0.3s;
 }
 
@@ -1176,7 +1176,7 @@ footer {
 }
 .text h3 {
   font-size: 0.6rem;
-  color: var(--co-dark);
+  color: var(--co-gris);
   font-weight: bold;
 }
 .footer .prix p {
