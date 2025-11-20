@@ -16,7 +16,10 @@
   --co-tree: #f5fbf8;
   --co-white: #fff;
   --co-gris: #333;
-  --co-gris: #2f2f2f;
+  /* --co-gris: #2f2f2f; */
+  --co-retour:#ff6900;
+
+
 }
 /*Header*/
 .header {
@@ -553,7 +556,11 @@ dialog section .product-page {
   /* width: 50%; */
   margin-top: 1rem;
 }
-
+description p {
+  /* margin-top: 1rem; */
+  font-weight:600;
+  color: var(--co-gris);
+}
 .droite .prix {
   margin-top: 1rem;
   font-weight:700;
@@ -638,9 +645,9 @@ dialog section .product-page {
 .carte-service .icone {
   width: 50px;
   height: 50px;
-  background-color: var( --co-two);
+  background-color: var( --co-retour);
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   border-radius: 15px;
   display: flex;
   align-items: center;
