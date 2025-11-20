@@ -553,17 +553,11 @@ dialog section .product-page {
   
 }
 .droite .description {
-  /* width: 50%; */
-  margin-top: 1rem;
-}
-description p {
-  /* margin-top: 1rem; */
-  font-weight:600;
   color: var(--co-gris);
+  margin-top: 1rem;
 }
 .droite .prix {
   margin-top: 1rem;
-  font-weight:700;
   color: var(--co-gris);
 }
 .footer {

@@ -10,9 +10,9 @@ export const generateDialogHTML = (product) => {
           <h1>${product.nom}</h1>
         </div>
         <p class="description">
-          ${product.description}
+         <h4> ${product.description}</h4>
         </p>
-        <div class="prix"> ${product.prix}</div>
+        <div class="prix"> <h4> ${product.prix}</h4></div>
         </div>
         
         <div class="footer">
