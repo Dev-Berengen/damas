@@ -512,7 +512,7 @@ dialog section .product-page {
   padding-right: 1rem;
 }
 .product-page .gauche {
-  flex: 1;
+  flex: 2;
   background-color: #fff;
   border-radius: 8px;
   display: flex;
