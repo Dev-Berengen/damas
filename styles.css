@@ -978,6 +978,9 @@ footer {
     .section-subtitle {
         font-size: 16px;
     }
+     .section-subtitle h4 {
+        color: var(--co-gris);
+    }
      .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;

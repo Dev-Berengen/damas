@@ -13,7 +13,7 @@ export const data = [
     id: 2,
     img: "./assets/106.jpg",
     nom: "NOKIA 106 | DOUBLE SIM",
-    stock: "jean",
+    stock: "Disponible",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -32,6 +32,7 @@ export const data = [
     id: 4,
     img: "./assets/Bose.jpg",
     nom: "CASQUE | BOSE",
+    stock: "Disponible",
     prix: "9.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -41,6 +42,7 @@ export const data = [
     id: 5,
     img: "./assets/Bose-700.jpg",
     nom: "CASQUE | BOSE 700",
+    stock: "Disponible",
     prix: "9.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -50,6 +52,7 @@ export const data = [
     id: 6,
     img: "./assets/K30.jpg",
     nom: "ECOUTEUR JBL | K30",
+    stock: "Disponible",
     prix: "4.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -59,6 +62,7 @@ export const data = [
     id: 7,
     img: "./assets/JBL-K73.jpg",
     nom: "ECOUTEUR JBL | K73",
+    stock: "Disponible",
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -68,6 +72,7 @@ export const data = [
     id: 8,
     img: "./assets/Souris-Chargable.jpg",
     nom: "SOURIS CHARGABLE",
+    stock: "Disponible",
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -77,6 +82,7 @@ export const data = [
     id: 9,
     img: "./assets/Support-Ordinateur.jpg",
     nom: "SUPPORT ORDINATEUR",
+    stock: "Disponible",
     prix: "4.000 Fcfa",
     // Description de 20 mots Max
     description:"https://wa.me/p/24418000317825784/22890381883",
@@ -86,6 +92,7 @@ export const data = [
     id: 10,
     img: "./assets/USB-67W.jpg",
     nom: "CHARGEUR 67W | USB-C",
+    stock: "Disponible",
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -96,6 +103,7 @@ export const data = [
     id: 20,
     img: "./assets/USB-67W-2.jpg",
     nom: "CHARGEUR 67W | USB-C",
+    stock: "Disponible",
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -105,6 +113,7 @@ export const data = [
     id: 11,
     img: "./assets/USB-128GB.jpg",
     nom: "CLE USB | 128GB",
+    stock: "Disponible",
     prix: "8.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -114,6 +123,7 @@ export const data = [
     id: 12,
     img: "./assets/USB-64GB.jpg",
     nom: "CLE USB | 64GB",
+    stock: "Disponible",
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -123,6 +133,7 @@ export const data = [
     id: 13,
     img: "./assets/USB-32GB.jpg",
     nom: "CLE USB | 32GB",
+    stock: "Disponible",
     prix: "4.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -132,6 +143,7 @@ export const data = [
     id: 14,
     img: "./assets/USB-16GB.jpg",
     nom: "CLE USB | 16GB",
+    stock: "Disponible",
     prix: "3.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -141,6 +153,7 @@ export const data = [
     id: 17,
     img: "./assets/USB-8GB.jpg",
     nom: "CLE USB | 8GB",
+    stock: "Disponible",
     prix: "3.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -150,6 +163,7 @@ export const data = [
     id: 18,
     img: "./assets/USB-4GB.jpg",
     nom: "CLE USB | 4GB",
+    stock: "Disponible",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -159,6 +173,7 @@ export const data = [
     id: 19,
     img: "./assets/USB-2GB.jpg",
     nom: "CLE USB | 2GB",
+    stock: "Disponible",
     prix: "2.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -168,6 +183,7 @@ export const data = [
     id: 15,
     img: "./assets/Memoire-64GB.jpg",
     nom: "CARTE MEMOIRE | 64GB",
+    stock: "Disponible",
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -177,6 +193,7 @@ export const data = [
     id: 16,
     img: "./assets/Memoire-32GB.jpg",
     nom: "CARTE MEMOIRE | 32GB",
+    stock: "Disponible",
     prix: "4.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -186,6 +203,7 @@ export const data = [
     id: 21,
     img: "./assets/Pose-Téléphone.jpg",
     nom: "Pose-Téléphone | Alu ",
+    stock: "Disponible",
     prix: "2.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -195,6 +213,7 @@ export const data = [
     id: 22,
     img: "./assets/PB-10000mah.jpg",
     nom: "Power Bank | 10.000mah ",
+    stock: "Disponible",
     prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -204,6 +223,7 @@ export const data = [
     id: 23,
     img: "./assets/PBL-20000mah.jpg",
     nom: "Power Bank | 20.000mah ",
+    stock: "Disponible",
     prix: "8.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -213,6 +233,7 @@ export const data = [
     id: 24,
     img: "./assets/PBL-30000mah.jpg",
     nom: "Power Bank | 30.000mah ",
+    stock: "Disponible",
     prix: "11.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -222,6 +243,7 @@ export const data = [
     id: 25,
     img: "./assets/Cable-C-iphone.jpg",
     nom: "CABLE - C-IPHONE ",
+    stock: "Disponible",
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -231,6 +253,7 @@ export const data = [
     id: 27,
     img: "./assets/Cable-USB-C.jpg",
     nom: "CABLE-USB-C ",
+    stock: "Disponible",
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -240,6 +263,7 @@ export const data = [
     id: 26,
     img: "./assets/Cable-iphone.jpg",
     nom: "CABLE-USB-IPHONE ",
+    stock: "Disponible",
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -249,6 +273,7 @@ export const data = [
     id: 28,
     img: "./assets/Cable-USB--C.jpg",
     nom: "CABLE-USB-C ",
+    stock: "Disponible",
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -258,6 +283,7 @@ export const data = [
     id: 29,
     img: "./assets/Cable-USB-V8.jpg",
     nom: "CABLE-USB-V8 ",
+    stock: "Disponible",
     prix: "1.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -267,6 +293,7 @@ export const data = [
     id: 30,
     img: "./assets/Chargeur-USB-IPHONE.jpg",
     nom: "CHARGEUR-USB-IPHONE",
+    stock: "Disponible",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -276,6 +303,7 @@ export const data = [
     id: 31,
     img: "./assets/Chargeur-USB-C.jpg",
     nom: "CHARGEUR-USB-C",
+    stock: "Disponible",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -285,6 +313,7 @@ export const data = [
     id: 32,
     img: "./assets/Chargeur-V8.jpg",
     nom: "CHARGEUR-V8",
+    stock: "Disponible",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -294,6 +323,7 @@ export const data = [
     id: 33,
     img: "./assets/Chargeur-C-Iphone.jpg",
     nom: "CHARGEUR-C-IPHONE",
+    stock: "Disponible",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
     description:"https://wa.me/p/8233903843314762/22890381883",
