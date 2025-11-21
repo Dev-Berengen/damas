@@ -261,7 +261,7 @@ export const data = [
   },
   {
     id: 26,
-    img: "./assets/Cable-iphone.jpg",
+    img: "./assets/Cable-Iphone.jpg",
     nom: "CABLE-USB-IPHONE ",
     stock: "Disponible",
     prix: "1.500 Fcfa",
