@@ -1,333 +1,84 @@
 export const data = [
   {
     id: 1,
-    img: "./assets/105.jpg",
-    nom: "NOKIA 105 | DOUBLE SIM",
+    img: "./assets/Maintenant_ca_suffit....webp",
+    nom: "Maintenant ça suffit, il faut que ça change !",
     stock: "Disponible",
-    prix: "6.000 Fcfa",
+    prix: "10.000 Fcfa",
     // Description de 20 mots Max
-    description:"Stock: disponible",
-    liens: "https://wa.me/p/24136586712690699/22890381883",
+    description:"Auteur: Yvan Castanou",
+    liens: "https://wa.me/p/33189424173982240/22890381883",
   },
   {
     id: 2,
-    img: "./assets/106.jpg",
-    nom: "NOKIA 106 | DOUBLE SIM",
-    stock: "Disponible",
-    prix: "6.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/26634452412867674/22890381883",
-  },
-  //  {
-  //   id: 3,
-  //   img: "./assets/3310.jpg",
-  //   nom: "NOKIA 3310 | DOUBLE SIM",
-  //   prix: "7.000 Fcfa",
-  //   // Description de 20 mots Max
-  //   description:"",
-  //   liens: "",
-  // },
-   {
-    id: 4,
-    img: "./assets/Bose.jpg",
-    nom: "CASQUE | BOSE",
-    stock: "Disponible",
-    prix: "9.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/29293678393609133/22890381883",
-  },
-     {
-    id: 5,
-    img: "./assets/Bose-700.jpg",
-    nom: "CASQUE | BOSE 700",
-    stock: "Disponible",
-    prix: "9.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/29293678393609133/22890381883",
-  },
-  {
-    id: 6,
-    img: "./assets/K30.jpg",
-    nom: "ECOUTEUR JBL | K30",
-    stock: "Disponible",
-    prix: "4.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24639409115754029/22890381883",
-  },
-  {
-    id: 7,
-    img: "./assets/JBL-K73.jpg",
-    nom: "ECOUTEUR JBL | K73",
-    stock: "Disponible",
-    prix: "5.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/8516769631740342/22890381883",
-  },
-   {
-    id: 8,
-    img: "./assets/Souris-Chargable.jpg",
-    nom: "SOURIS CHARGABLE",
-    stock: "Disponible",
-    prix: "3.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/8226655850725442/22890381883",
-  },
-   {
-    id: 9,
-    img: "./assets/Support-Ordinateur.jpg",
-    nom: "SUPPORT ORDINATEUR",
-    stock: "Disponible",
-    prix: "4.000 Fcfa",
-    // Description de 20 mots Max
-    description:"https://wa.me/p/24418000317825784/22890381883",
-    liens: "",
-  },
-  {
-    id: 10,
-    img: "./assets/USB-67W.jpg",
-    nom: "CHARGEUR 67W | USB-C",
-    stock: "Disponible",
-    prix: "3.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/8282083681910524/22890381883",
-  },
-
-  {
-    id: 20,
-    img: "./assets/USB-67W-2.jpg",
-    nom: "CHARGEUR 67W | USB-C",
-    stock: "Disponible",
-    prix: "3.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24867674429549533/22890381883",
-  },
-  {
-    id: 11,
-    img: "./assets/USB-128GB.jpg",
-    nom: "CLE USB | 128GB",
-    stock: "Disponible",
-    prix: "8.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25465608686408654/22890381883",
-  },
-  {
-    id: 12,
-    img: "./assets/USB-64GB.jpg",
-    nom: "CLE USB | 64GB",
-    stock: "Disponible",
-    prix: "5.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/26738841835729197/22890381883",
-  },
-  {
-    id: 13,
-    img: "./assets/USB-32GB.jpg",
-    nom: "CLE USB | 32GB",
-    stock: "Disponible",
-    prix: "4.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/8074613042593108/22890381883",
-  },
-  {
-    id: 14,
-    img: "./assets/USB-16GB.jpg",
-    nom: "CLE USB | 16GB",
-    stock: "Disponible",
-    prix: "3.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25944346401832431/22890381883",
-  },
-    {
-    id: 17,
-    img: "./assets/USB-8GB.jpg",
-    nom: "CLE USB | 8GB",
-    stock: "Disponible",
-    prix: "3.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24953599607662189/22890381883",
-  },
-    {
-    id: 18,
-    img: "./assets/USB-4GB.jpg",
-    nom: "CLE USB | 4GB",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24962381810039443/22890381883",
-  },
-   {
-    id: 19,
-    img: "./assets/USB-2GB.jpg",
-    nom: "CLE USB | 2GB",
-    stock: "Disponible",
-    prix: "2.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24917413501260678/22890381883",
-  },
-   {
-    id: 15,
-    img: "./assets/Memoire-64GB.jpg",
-    nom: "CARTE MEMOIRE | 64GB",
-    stock: "Disponible",
-    prix: "5.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/31560738140239973/22890381883",
-  },
-  {
-    id: 16,
-    img: "./assets/Memoire-32GB.jpg",
-    nom: "CARTE MEMOIRE | 32GB",
-    stock: "Disponible",
-    prix: "4.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24491048287189530/22890381883",
-  },
-   {
-    id: 21,
-    img: "./assets/Pose-Téléphone.jpg",
-    nom: "Pose-Téléphone | Alu ",
-    stock: "Disponible",
-    prix: "2.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25463274176591855/22890381883",
-  },
-  {
-    id: 22,
-    img: "./assets/PB-10000mah.jpg",
-    nom: "Power Bank | 10.000mah ",
-    stock: "Disponible",
-    prix: "5.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/9012153598795910/22890381883",
-  },
-  {
-    id: 23,
-    img: "./assets/PBL-20000mah.jpg",
-    nom: "Power Bank | 20.000mah ",
-    stock: "Disponible",
-    prix: "8.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/9320271214653943/22890381883",
-  },
-  {
-    id: 24,
-    img: "./assets/PBL-30000mah.jpg",
-    nom: "Power Bank | 30.000mah ",
+    img: "./assets/Sortir-des-prisons-interieures.webp",
+    nom: "Sortir des prisons intérieures",
     stock: "Disponible",
     prix: "11.000 Fcfa",
     // Description de 20 mots Max
-    description:"",
-    liens: "",
+    description:"Auteur:Yvan Castanou",
+    liens: "https://wa.me/p/25317952947845250/22890381883",
   },
+ 
    {
-    id: 25,
-    img: "./assets/Cable-C-iphone.jpg",
-    nom: "CABLE - C-IPHONE ",
+    id: 4,
+    img: "./assets/La-guerre-spirituelle.webp",
+    nom: "La guerre spirituelle - Vol 1 - Les 7 armes de Dieu qui font fuir le diable",
     stock: "Disponible",
-    prix: "1.500 Fcfa",
+    prix: "11.000 Fcfa",
     // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25463274176591855/22890381883",
+    description:"Auteur:Yvan Castanou",
+    liens: "https://wa.me/p/25240342228951323/22890381883",
+  },
+     {
+    id: 5,
+    img: "./assets/La_ceinture_de_la_verite-souple.webp",
+    nom: "La ceinture de la vérité - Vol 2 - Les 7 armes de Dieu qui font fuir le diable",
+    stock: "Disponible",
+    prix: "11.000 Fcfa",
+    // Description de 20 mots Max
+    description:"Auteur:Yvan Castanou",
+    liens: "https://wa.me/p/25858492250419047/22890381883",
   },
   {
-    id: 27,
-    img: "./assets/Cable-USB-C.jpg",
-    nom: "CABLE-USB-C ",
+    id: 6,
+    img: "./assets/9-portes-dacces-au-diable-a_fermer-imperativement-volume1-couverture-souple.webp",
+    nom: "9 portes d'accès au diable à fermer impérativement - Volume 1",
     stock: "Disponible",
-    prix: "1.500 Fcfa",
+    prix: "11.000 Fcfa",
     // Description de 20 mots Max
-    description:"",
-    liens: "",
+    description:"Auteur:Yvan Castanou",
+    liens: "https://wa.me/p/9771303086328290/22890381883",
   },
   {
-    id: 26,
-    img: "./assets/Cable-Iphone.jpg",
-    nom: "CABLE-USB-IPHONE ",
+    id: 7,
+    img: "./assets/9-portes-dacces-au-diable-a_fermer-imperativement-volume2-couverture-souple.webp",
+    nom: "9 portes d'accès au diable à fermer impérativement - Volume 2",
     stock: "Disponible",
-    prix: "1.500 Fcfa",
+    prix: "11.000 Fcfa",
     // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25347864341488366/22890381883",
+    description:"Auteur:Yvan Castanou",
+    liens: "https://wa.me/p/33437552049162355/22890381883",
+  },
+   
+    {
+    id: 3,
+    img: "./assets/La-priere-qui-nechoue-jamais.webp",
+    nom: "La prière qui n'échoue jamais",
+    prix: "11.000 Fcfa",
+    // Description de 20 mots Max
+    description:"Auteur:Yvan Castanou",
+    liens: "https://wa.me/p/24656453704056526/22890381883",
   },
   {
-    id: 28,
-    img: "./assets/Cable-USB--C.jpg",
-    nom: "CABLE-USB-C ",
+    id: 8,
+    img: "./assets/Stop-ma-vie-doit-compter-volume-2.webp",
+    nom: "Stop ma vie doit compter volume 2",
     stock: "Disponible",
-    prix: "1.500 Fcfa",
+    prix: "11.000 Fcfa",
     // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/8426782847353567/22890381883",
-  },
-  {
-    id: 29,
-    img: "./assets/Cable-USB-V8.jpg",
-    nom: "CABLE-USB-V8 ",
-    stock: "Disponible",
-    prix: "1.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24960230283667071/22890381883",
-  },
-  {
-    id: 30,
-    img: "./assets/Chargeur-USB-IPHONE.jpg",
-    nom: "CHARGEUR-USB-IPHONE",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24846934394963991/22890381883",
-  },
-  {
-    id: 31,
-    img: "./assets/Chargeur-USB-C.jpg",
-    nom: "CHARGEUR-USB-C",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24867674429549533/22890381883",
-  },
-  {
-    id: 32,
-    img: "./assets/Chargeur-V8.jpg",
-    nom: "CHARGEUR-V8",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/32036224049357792/22890381883",
-  },
-  {
-    id: 33,
-    img: "./assets/Chargeur-C-Iphone.jpg",
-    nom: "CHARGEUR-C-IPHONE",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"https://wa.me/p/8233903843314762/22890381883",
-    liens: "",
+    description:"Auteur: Teddy NGBANDA",
+    liens: "https://wa.me/p/25001385659488547/22890381883",
   },
   
 ];

@@ -27,9 +27,9 @@ export const generateDialogHTML = (product) => {
       <div class="avantages">
         <div class="carte-service">
           <div class="icone">
-            <i class="fa-solid fa-undo"></i>
+            <i class="fa-solid fa-cart-arrow-down"></i>
           </div>
-          <p>Retour gratuit</p>
+          <p>Pré-commande</p>
         </div>
         <div class="carte-service">
           <div class="icone">
