@@ -1,7 +1,7 @@
 {
 	"name": "DAMAS | GLOBAL",
-	"short_name": "LIBRAIRIE | ICC-LOME",
-	"description": "Boutique en ligne LIBRAIRIE ICC-LOME — produits et contact",
+	"short_name": "DAMAS | GLOBAL",
+	"description": "Boutique en ligne DAMAS GLOBAL — produits et contact",
 	"start_url": "/index.html",
 	"scope": ".",
 	"display": "standalone",
