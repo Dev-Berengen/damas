@@ -9,7 +9,7 @@ const PRECACHE_URLS = [
   '/share.js',
    '/about.html',
   '/offline.html',
-  '/manifest.json',
+  '/Favicons/site.webmanifest',
   '/Favicons/android-chrome-192x192.png',
   '/Favicons/android-chrome-512x512.png',
   '/Favicons/favicon-32x32.png',
