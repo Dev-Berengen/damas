@@ -2,7 +2,7 @@
 	"name": "DAMAS GLOBAL",
 	"short_name": "DAMAS GLOBAL",
 	"description": "Boutique en ligne DAMAS GLOBAL — Boutique-Partager-A Propos",
-	"start_url": "https://dev-berengen.github.io/damas/",
+	"start_url":"./",
 	"scope": "/",
 	"display": "standalone",
 	"orientation": "portrait",
