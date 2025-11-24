@@ -1,6 +1,6 @@
 const CACHE_NAME = 'damas-cache-v1';
 const PRECACHE_URLS = [
-//   '/',
+  '/',
   '/index.html',
   '/styles.css',
   '/index.js',
@@ -9,7 +9,7 @@ const PRECACHE_URLS = [
   '/share.js',
    '/about.html',
   '/offline.html',
-  '/Favicons/site.webmanifest',
+  '/manifest.json',
   '/Favicons/android-chrome-192x192.png',
   '/Favicons/android-chrome-512x512.png',
   '/Favicons/favicon-32x32.png',
