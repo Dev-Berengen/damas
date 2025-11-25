@@ -39,7 +39,7 @@
   font-size: 0.8rem;
   font-weight: 700;
   align-items: center;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
   color: var( --co-one);
   padding: 0.1rem;
