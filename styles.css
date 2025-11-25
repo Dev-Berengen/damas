@@ -44,6 +44,14 @@
   color: var( --co-one);
   padding: 0.1rem;
 }
+.logoContainer{
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+ width: 2rem;
+ height: 2rem;
+}
 .logo span {
   border-top: 2px solid var( --co-two);
 }
