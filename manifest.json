@@ -2,8 +2,8 @@
 	"name": "DAMAS GLOBAL",
 	"short_name": "DAMAS GLOBAL",
 	"description": "Boutique en ligne DAMAS GLOBAL — Boutique-Partager-A Propos",
-	"start_url":"/",
-	"scope": "/",
+	"start_url":"https://dev-berengen.github.io/damas/",
+	"scope": "./",
 	"display": "standalone",
 	"orientation": "portrait",
 	"icons": [
@@ -36,42 +36,42 @@
 	"screenshots": [
 		{
 		"src":"./assets/profile/desktop-1.jpg",
-		"sizes":"1833x823",
+		"sizes":"1898x865",
 		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/desktop-2.jpg",
-		"sizes":"1833x823",
+		"sizes":"1898x865",
 		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/desktop-3.jpg",
-		"sizes":"1833x823",
+		"sizes":"1898x865",
 		"type":"image/jpg",
 		"formfactor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/mobile-1.png",
-		"sizes":"337x749",
+		"sizes":"350x761",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/mobile-2.png",
-		"sizes":"337x749",
+		"sizes":"350x761",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/mobile-3.png",
-		"sizes":"337x749",
+		"sizes":"350x761",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
