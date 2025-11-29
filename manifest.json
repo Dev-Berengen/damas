@@ -1,11 +1,13 @@
 {
 	"name": "DAMAS | GLOBAL",
 	"short_name": "DAMAS",
-	"description": "Boutique en ligne DAMAS GLOBAL | Boutique/Partager/A Propos",
+	"description": "DAMAS GLOBAL - Votre Boutique en ligne  Découvrez notre collection exclusive,accessoires et articles de mode pour tous les styles. Achetez en ligne dès aujourd'hui !",
 	"start_url":"https://dev-berengen.github.io/damas/",
 	"scope": "./",
 	"display": "standalone",
 	"orientation": "portrait",
+	"theme_color": "#206141",
+	"background_color": "#206141",
 	"icons": [
 		{
 			"src": "./Favicons/android-chrome-192x192.png",
@@ -76,7 +78,5 @@
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		}
-	],
-	"theme_color": "#206141",
-	"background_color": "#206141"
+	]
 }
