@@ -455,7 +455,7 @@ dialog .close{
 
 .share-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 0.8rem;
   justify-content: space-between;
 }
@@ -467,9 +467,9 @@ dialog .close{
   justify-content: center;
   text-align: center;
   padding: 0.6rem 0.5rem;
-  height: 2.8rem;
-  width: 6rem;
-  border-radius: 5px;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -496,7 +496,7 @@ dialog .close{
 .share-btn.qr { background: #9C27B0; }
 
 .share-btn i {
-  font-size: 1.15rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
