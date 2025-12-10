@@ -2,34 +2,33 @@
 <html lang="fr">
 
 <head>
-    <!-- Date de debut de création du site 18/08/2024 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--For  PWA  -->
-    <meta name="theme-color" content="#f5f5dc">
-    <meta name="msapplication-navbutton-color" content="#1e1043">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5dc">
-    <!--=============== Fontawesone-icones ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="styles.css">
-    <!--=============== html2canvas pour capture d'écran ===============-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <title>DAMAS | GLOBAL</title>
+  <!-- Date de debut de création du site 18/08/2024 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--For  PWA  -->
+  <meta name="theme-color" content="#206141">
+  <meta name="msapplication-navbutton-color" content="#206141">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#206141">
+    <link rel="manifest" href="manifest.json">
+  <!--=============== Fontawesone-icones ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="styles.css">
+  <title>DAMAS | GLOBAL</title>
 </head>
 
 <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="logo">
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="logo">
                 <div class="logoContainer">
                     <div>
                         <img src="./assets/profile/logo.png" alt="">
@@ -38,48 +37,62 @@
                 </div>
 
             </div>
-            <!-- Barre de recherche -->
-            <form class="Researche">
-                <input type="text" name="nom" id="" class="recherche" placeholder="Chercher Produit ..." />
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
-            <!-- fin Barre de recherche -->
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link">
-                            <i class="fa-solid fa-shop nav__icon"></i>
-                            <span class="nav__name">Boutique</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <button id="share-btn" class="nav__link" type="button" aria-haspopup="dialog">
-                            <i class="fa-solid fa-share-nodes nav__icon"></i>
-                            <span class="nav__name">Partager</span>
-                        </button>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">
-                            <i class="fa-solid fa-info nav__icon"></i>
-                            <span class="nav__name">À Propos</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Breadcrumb -->
-         <section class="filtre">
+      <!-- Barre de recherche -->
+      <form>
+        <input type="text" name="nom" id="" class="recherche" placeholder="Chercher Produit ..." />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <!-- fin Barre de recherche -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <i class="fa-solid fa-shop nav__icon"></i>
+              <span class="nav__name">Boutique</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <button id="share-btn" class="nav__link" type="button" aria-haspopup="dialog">
+              <i class="fa-solid fa-share-nodes nav__icon"></i>
+              <span class="nav__name">Partager</span>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <i class="fa-solid fa-info nav__icon"></i>
+              <span class="nav__name">À Propos</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- PWA install banner (hidden by default, shown when available) -->
+  <div id="install-banner" class="install-banner" style="display:none">
+    <div class="install-banner__content">
+      <img src="Favicons/android-chrome-192x192.png" alt="DAMAS" class="install-banner__icon">
+      <div class="install-banner__text">
+        <strong>Installer DAMAS GLOBAL</strong>
+        <div class="install-banner__subtitle">Ajouter l'application à votre écran d'accueil</div>
+      </div>
+    </div>
+    <div class="install-banner__actions">
+      <button id="install-btn" class="install-banner__install-btn btn action">Installer</button>
+      <button id="install-dismiss" class="install-banner__dismiss-btn">✕</button>
+    </div>
+  </div>
+  <main>
+    <!-- articles -->
+    <div class="main-content">
+      <section class="filtre">
         <div class="breadcumb">
-          <p><i class="fa-solid fa-chevron-right"></i>A Propos de nous ! </p>
+          <p><i class="fa-solid fa-chevron-right"></i>A Propos De Nous ! </p>
         </div>
       </section>
-        <!-- Hero Section -->
-        <section class="hero">
+      <div class="about">
+         <section class="hero">
             <div class="containers">
                 <h1>Votre confiance, notre engagement..</h1>
                 <p> Notre équipe dévouée travaille sans relâche pour s'assurer que
@@ -91,7 +104,7 @@
         <!-- Vision Section -->
         <section class="vision">
             <div class="containers">
-                <h2 class="section-title">🎯Vision</h2>
+                <h2 class="section-title">Notre Vision</h2>
                 <p class="section-subtitle">
                     Devenir la référence du commerce moderne,respectée pour sa qualité, son
                     professionnalisme et la confiance qu’elle inspire.
@@ -101,7 +114,7 @@
         <!-- Valeur Section -->
         <section class="vision">
             <div class="containers">
-                <h2 class="section-title">💎 Valeurs</h2>
+                <h2 class="section-title">Nos Valeurs</h2>
                 <p class="section-subtitle">
                 <h4>Qualité<br></h4>
                 Chaque produit est choisi avec exigence. <br>
@@ -121,7 +134,7 @@
         <!-- Mission Section -->
         <section class="mission">
             <div class="containers">
-                <h2 class="section-title">🚀 Mission</h2>
+                <h2 class="section-title">Notre Mission</h2>
                 <p class="section-subtitle">
                     Offrir aux consommateurs une expérience d’achat moderne et qualitative, en mettant l’accent sur :
                     la sélection rigoureuse des produits,la transparence,la satisfaction client,la livraison offerte.
@@ -150,7 +163,7 @@
         <!-- Data Insights Section -->
         <section class="adresse">
             <div class="container">
-                <h2 class="section-title">📊 Nos Réalisations</h2>
+                <h2 class="section-title">Nos Réalisations</h2>
                 <p class="section-subtitle">Depuis notre lancement, nous avons déjà impacté positivement des centaines
                     de foyers à Lomé et au-delà.</p>
                 <div class="stats-grid">
@@ -173,7 +186,11 @@
                 </div>
             </div>
         </section>
-        <!-- Footer -->
+      </div>
+
+      <section class="produits"></section>
+    </div>
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-grid">
@@ -195,23 +212,23 @@
           <div class="footer-section">
             <h3>Pages Social:</h3>
             <div class="social-links">
-              <a href="https://www.facebook.com/share/14NpuETmrAb/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/k.berengen?igsh=cjZrNHFqeGtocXZl" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.tiktok.com/@k.berengen?_r=1&_t=ZM-91YJLlDFmGp" title="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.facebook.com/share/1DmKiV11Uj/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/damas__global?igsh=cjZrNHFqeGtocXZl" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@damas.global?_r=1&_t=ZM-91yQ9MQo8cd" title="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://pin.it/7f4tDDbvY" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
               <a href="https://wa.me/22890381883" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
             </div>
           </div>
     </footer>
-
-        <!-- Boite de dialogue articles -->
-        <dialog class="one-product" id="dialog">
-            <div class="close">
-                <i class="fa-solid fa-times"></i>
-            </div>
-        </dialog>
-        <!-- Dialog de partage -->
-        <dialog id="share-dialog" class="share-dialog" aria-label="Partager le site">
+    <!-- Boite de dialogue articles -->
+    <dialog class="one-product" id="dialog">
+      <div class="close">
+        <i class="fa-solid fa-times"></i>
+      </div>
+    </dialog>
+    <!-- Dialog de partage -->
+    <dialog id="share-dialog" class="share-dialog" aria-label="Partager le site">
       <div class="share-header">
         <h3>Partager</h3>
         <button class="share-close" aria-label="Fermer">×</button>
@@ -271,12 +288,12 @@
         </div>
       </div>
     </dialog>
-    </main>
-    <script type="module">
-        import { initializeShare } from './share.js';
-        initializeShare();
-    </script>
-
+  </main>
+  <script type="module" src="index.js"></script>
+  <script type="module">
+    import { initializeShare } from './share.js';
+    initializeShare();
+  </script>
 </body>
 
 </html>

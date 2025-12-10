@@ -6,6 +6,7 @@ import { generateDialogHTML, generateProductHTML } from "./functions.js";
 
 // selection des elements
 const productsContainer = document.querySelector(".produits");
+const aboutContainer = document.querySelector(".about");
 const dialog = document.querySelector("dialog");
 const cartNumber = document.querySelector(".nombre");
 
@@ -40,6 +41,7 @@ input.addEventListener("keyup", (e) => {
 		(p.nom || "").toLocaleLowerCase().includes(query)
 	);
   productsContainer.innerHTML = "";
+  aboutContainer.innerHTML = "";
   if (resultat.length > 0) {
     afficherProduit(resultat);
     actionProduit();
