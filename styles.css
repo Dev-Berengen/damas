@@ -49,8 +49,8 @@
   justify-content: center;
 }
 .logo img {
- width: 3rem;
- height: 3rem;
+ width: 2.5rem;
+ height: 2.5rem;
 }
 .logo span {
   border-top: 2px solid var( --co-two);
