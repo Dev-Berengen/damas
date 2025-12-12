@@ -6,7 +6,7 @@ export const data = [
     stock: "Disponible",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
-    description:"Stock: disponible",
+    description:"",
     liens: "https://wa.me/p/24136586712690699/22890381883",
   },
   {
@@ -326,8 +326,8 @@ export const data = [
     stock: "Disponible",
     prix: "2.500 Fcfa",
     // Description de 20 mots Max
-    description:"https://wa.me/p/8233903843314762/22890381883",
-    liens: "",
+    description:"",
+    liens: "https://wa.me/p/8233903843314762/22890381883",
   },
   
 ];
