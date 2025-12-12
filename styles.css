@@ -378,10 +378,10 @@ dialog .close{
 /* Styles pour le dialog de partage */
 #share-dialog.share-dialog {
   width: 90%;
-  height: 23rem;
+  height: 20rem;
   max-width: 420px;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: var(--co-tree);
   color: var(--co-gris);
 }
@@ -511,8 +511,6 @@ dialog .close{
   .share-btn {
     height: 3.5rem;
     width: 3.5rem;}
-    #share-dialog.share-dialog {
-  height: 18rem;}
 
 }
 
