@@ -16,10 +16,7 @@
   --co-tree: #f5fbf8;
   --co-white: #fff;
   --co-gris: #333;
-  /* --co-gris: #2f2f2f; */
   --co-retour:#ff6900;
-
-
 }
 /*Header*/
 .header {
@@ -455,7 +452,7 @@ dialog .close{
 
 .share-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
   gap: 0.8rem;
   justify-content: space-between;
 }
@@ -490,7 +487,7 @@ dialog .close{
 .share-btn.facebook { background: #1877F2; }
 .share-btn.twitter { background: #1DA1F2; }
 .share-btn.gmail { background: #EA4335; }
-.share-btn.instagram { background: #E1306C; }
+.share-btn.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);}
 .share-btn.google-keep { background: #FBBC04; color: #333; }
 .share-btn.screenshot { background: #34A853; }
 .share-btn.qr { background: #9C27B0; }
@@ -511,7 +508,12 @@ dialog .close{
 @media (max-width: 420px) {
   .share-label { font-size: 0.7rem; }
   .share-buttons { grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); }
-  .share-btn { min-height: 64px; padding: 0.45rem 0.4rem; }
+  .share-btn {
+    height: 3.5rem;
+    width: 3.5rem;}
+    #share-dialog.share-dialog {
+  height: 18rem;}
+
 }
 
 dialog section .product-page {
