@@ -1074,7 +1074,6 @@ footer {
 @media (max-width: 480px) {
   .card{
   height: 2.5em;
-  /* flex:1rem; */
   }
   
  
