@@ -29,6 +29,7 @@
   transition: .4s;
   border-bottom: solid 0.1px var(--co-primary);
   padding: 0.5rem 2rem 0 2rem;
+  
 }
 /*Nav Bars*/
 .logo {
@@ -190,15 +191,15 @@ body main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   width: 100%;
 }
 
 .group {
+  padding-top:10rem;
   position: relative;
   width: 100%;
-  max-width: 600px;
-  height: 300px;
+  max-width: 65em;
+  height: 25em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +216,7 @@ body main {
   border-radius: 0.5em;
   background-color: lightblue;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .card.active {
@@ -278,7 +279,7 @@ main .filtre {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-top: 4rem; */
+  margin-top: 8rem;
 }
 
 .filtre .breadcumb {
@@ -1094,10 +1095,16 @@ footer {
 /* -----------------------------For small devices--------------------------------- */
 /* Remove if you choose, the minimalist design */
 @media (max-width: 480px) {
-  .card{
+  /* .card{
   height: 2.2em;
-  }
-  
+  } */
+  .group {
+ 
+  max-width: 20em;
+  height: 2em;
+
+}
+
  
     .hero h1 {
       padding-top: 2rem;
