@@ -560,7 +560,7 @@ dialog .close{
 .share-btn.gmail ,.gmail { background: #EA4335; }
 .share-btn.instagram ,.instagram  { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);}
 .share-btn.google-keep { background: #FBBC04; color: #333; }
-
+.tiktok { border: solid 1px var(--co-tree); background: #000000; color: #fff; }
 
 .share-btn i {
   font-size: 2.5rem;
@@ -1173,15 +1173,14 @@ footer {
     justify-content: center;
     width: 35px;
     height: 35px;
-    background-color:var(--co-tree);
     border-radius: 50%;
     text-decoration: none;
-    color: var(--co-gris);
+    color: var(--co-tree);
     transition: background-color 0.3s;
 }
 
 .social-links a:hover {
-    background-color: #0066cc;
+    background-color: var(--co-two);
 }
 
 .footer-bottom {
