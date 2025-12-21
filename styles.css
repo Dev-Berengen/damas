@@ -185,6 +185,54 @@ body main {
   width: 100%;
   min-height: 100vh;
 }
+*------------------ Carousel ---------------------*/
+.carousel {
+  margin: 10px auto;
+  width: 95%;
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  width: 180rem;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  animation: spin 100s linear infinite;
+  padding-right: 1em;
+  
+}
+.card{
+  margin-top: 5rem;
+  height: 7em;
+  display: flex;
+  /* padding: 1em; */
+  background-color: lightblue;
+  border-radius: .2em;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+}
+.card img{ 
+  width: 100%;
+  height: 100%;
+  border-radius: .2em;
+  object-fit: cover;
+}
+@keyframes spin{
+  from{
+    translate:0;
+  }
+  to{
+    translate:-100%;
+  } 
+}
+
+/* Actions */
 .actions {
   flex: 1;
   display: flex;
@@ -663,43 +711,6 @@ dialog section .product-page {
 .carte-service:nth-child(3) .icone {
   background-color: #5f69d5;
 }
-/*------------------ Carousel ---------------------*/
-.carousel {
-  margin: 10px auto;
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  gap: 1em;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-.group {
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-  align-items: center;
-  animation: spin 1000s linear infinite;
-  padding-right: 1em;
-}
-.card{
-  flex: 0 0 5em;
-  height: 5em;
-  padding: 1em;
-  background-color: lightblue;
-  border-radius: .2em;
-  align-items: center;
-  font-size: 3em;
-  text-align: center;
-}
-@keyframes spin{
-  from{
-    translate:0;
-  }
-  to{
-    translate:-100%;
-  } 
-}
 
 /* about */
 .containers {
@@ -1062,6 +1073,13 @@ footer {
 /* -----------------------------For small devices--------------------------------- */
 /* Remove if you choose, the minimalist design */
 @media (max-width: 480px) {
+  .group {
+  width: 150rem; 
+}
+.card{
+  height: 4em;
+}
+ 
     .hero h1 {
       padding-top: 2rem;
         font-size: 24px;
