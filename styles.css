@@ -1073,7 +1073,7 @@ footer {
 /* Remove if you choose, the minimalist design */
 @media (max-width: 480px) {
   .card{
-  height: 2em;
+  height: 2.2em;
   }
   
  
