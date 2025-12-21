@@ -206,7 +206,7 @@ body main {
   
 }
 .card{
-  width: 30rem;
+  /* width: 30rem; */
   margin-top: 5rem;
   height: 6em;
   display: flex;
