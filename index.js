@@ -4,6 +4,38 @@
 import { data } from "./data.js";
 import { generateDialogHTML, generateProductHTML } from "./functions.js";
 
+// ============ CAROUSEL ANIMATION ============
+const initCarousel = () => {
+  const cards = document.querySelectorAll(".card");
+  let currentIndex = 0;
+
+  const showCard = (index) => {
+    cards.forEach((card, i) => {
+      card.classList.remove("active", "prev");
+      if (i === index) {
+        card.classList.add("active");
+      } else {
+        card.classList.add("prev");
+      }
+    });
+  };
+
+  const nextCard = () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  };
+
+  // Initialize first card
+  if (cards.length > 0) {
+    showCard(0);
+    // Auto-advance carousel every 4 seconds
+    setInterval(nextCard, 4000);
+  }
+};
+
+// Initialize carousel when DOM is loaded
+document.addEventListener("DOMContentLoaded", initCarousel);
+
 // selection des elements
 const productsContainer = document.querySelector(".produits");
 const aboutContainer = document.querySelector(".about");
