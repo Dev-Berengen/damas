@@ -200,10 +200,10 @@ body main {
   margin-top: 5rem;
   /* width: max-content; */
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
   justify-content: center;
   align-items: center;
-  animation: spin 100s linear infinite;
+  animation: spin 10s linear infinite;
   /* padding-right: 1em; */
   
 }
