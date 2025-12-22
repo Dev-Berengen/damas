@@ -3,7 +3,6 @@
 // `index.js` is included as a module in the HTML page.
 import { data } from "./data.js";
 import { generateDialogHTML, generateProductHTML } from "./functions.js";
-
 // ============ CAROUSEL ANIMATION ============
 const initCarousel = () => {
   const cards = document.querySelectorAll(".card");
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", initCarousel);
 // selection des elements
 const productsContainer = document.querySelector(".produits");
 const aboutContainer = document.querySelector(".about");
+const carouselContainer = document.querySelector(".carousel");
 const dialog = document.querySelector("dialog");
 const cartNumber = document.querySelector(".nombre");
 
@@ -72,6 +72,7 @@ input.addEventListener("keyup", (e) => {
 	const resultat = data.filter((p) =>
 		(p.nom || "").toLocaleLowerCase().includes(query)
 	);
+  carouselContainer.innerHTML = "";
   productsContainer.innerHTML = "";
   aboutContainer.innerHTML = "";
   if (resultat.length > 0) {
