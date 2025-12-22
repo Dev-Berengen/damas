@@ -4,7 +4,7 @@ import { generateDialogHTML, generateProductHTML } from "./functions.js";
 // selection des elements
 const productsContainer = document.querySelector(".produits");
 const carouselContainer = document.querySelector(".carousel");
-const footerContainer = document.querySelector(".footer");
+const footerContainer = document.querySelector("footer");
 const dialog = document.querySelector("dialog");
 const cartNumber = document.querySelector(".nombre");
 let produitAffciher = data;
