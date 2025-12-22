@@ -71,10 +71,9 @@ input.addEventListener("keyup", (e) => {
 	const resultat = data.filter((p) =>
 		(p.nom || "").toLocaleLowerCase().includes(query)
 	);
-  carouselContainer.innerHTML = "";
   productsContainer.innerHTML = "";
-  footerContainer.innerHTML = "";
-  aboutContainer.innerHTML = "";
+ carouselContainer.style.display = "none";
+  footerContainer.style.display = "none";
   if (resultat.length > 0) {
     afficherProduit(resultat);
     actionProduit();
