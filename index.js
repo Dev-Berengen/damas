@@ -1,13 +1,20 @@
-// Section des Articles
-// Use relative imports so modules load correctly in the browser when
-// `index.js` is included as a module in the HTML page.
 import { data } from "./data.js";
 import { generateDialogHTML, generateProductHTML } from "./functions.js";
-// ============ CAROUSEL ANIMATION ============
+
+// selection des elements
+const productsContainer = document.querySelector(".produits");
+const carouselContainer = document.querySelector(".carousel");
+const footerContainer = document.querySelector(".footer");
+const dialog = document.querySelector("dialog");
+const cartNumber = document.querySelector(".nombre");
+let produitAffciher = data;
+let cartItems = [];
+let currentItem = null;
+
+// Carousel functionality
 const initCarousel = () => {
   const cards = document.querySelectorAll(".card");
   let currentIndex = 0;
-
   const showCard = (index) => {
     cards.forEach((card, i) => {
       card.classList.remove("active", "prev");
@@ -18,7 +25,6 @@ const initCarousel = () => {
       }
     });
   };
-
   const nextCard = () => {
     currentIndex = (currentIndex + 1) % cards.length;
     showCard(currentIndex);
@@ -35,22 +41,7 @@ const initCarousel = () => {
 // Initialize carousel when DOM is loaded
 document.addEventListener("DOMContentLoaded", initCarousel);
 
-// selection des elements
-const productsContainer = document.querySelector(".produits");
-const aboutContainer = document.querySelector(".about");
-const carouselContainer = document.querySelector(".carousel");
-const footerContainer = document.querySelector(".footer");
-const dialog = document.querySelector("dialog");
-const cartNumber = document.querySelector(".nombre");
-let currentItem = null;
-
-// Items in cart
-let cartItems = [];
-// cartNumber.textContent = cartItems.length;
-let produitAffciher = data;
-
 // Code pour looper entre différents produits et les afficher
-
 const afficherProduit = (produits) => {
   produits.forEach((product) => {
     const productHTML = document.createElement("div");
@@ -61,24 +52,24 @@ const afficherProduit = (produits) => {
     productsContainer.appendChild(productHTML);
   });
 };
-
 afficherProduit(produitAffciher);
+
 // Recherche des produits
-const input = document.querySelector(".recherche");
-input.addEventListener("keyup", (e) => {
+  const input = document.querySelector(".recherche");
+  input.addEventListener("keyup", (e) => {
   console.log(e.target.value);
 	const query = (e.target.value || "").toLocaleLowerCase().trim();
 	const resultat = data.filter((p) =>
 		(p.nom || "").toLocaleLowerCase().includes(query)
 	);
   productsContainer.innerHTML = "";
- carouselContainer.style.display = "none";
+  carouselContainer.style.display = "none";
   footerContainer.style.display = "none";
   if (resultat.length > 0) {
     afficherProduit(resultat);
     actionProduit();
   } else {
-    const vide = document.createElement("h3");
+    const vide = document.createElement("h4");
     vide.textContent = "Aucun produit trouvé";
     productsContainer.appendChild(vide);
   }
@@ -92,11 +83,8 @@ const actionProduit = () => {
     card.addEventListener("click", () => {
       // Selection des elements
       const dialog = document.querySelector("dialog");
-      
-
       // Effacer le contenu d'avant
       const dialogContent = document.querySelector(".dialog-menu");
-
       dialogContent && dialogContent.remove();
       dialog.showModal();
       dialog.scrollTo(0, 0);
@@ -129,7 +117,7 @@ const actionProduit = () => {
           const link = btnWhatsapp.getAttribute('data-product-link');
           const productName = btnWhatsapp.getAttribute('data-product-name');
           const phoneNumber = '22890381883'; // Numéro WhatsApp sans le +
-          const message = `Bonjour, je suis intéressé par ce produit:\n${productName}\n\n${link}`;
+          const message = `Bonjour, je suis intéressé par cet produit:\n${productName}\n\n${link}`;
           const encodedMessage = encodeURIComponent(message);
           const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
           window.open(whatsappUrl, '_blank', 'noopener');

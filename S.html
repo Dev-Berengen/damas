@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-<!-- Date de debut de création du site 18/08/2024 -->
+  <!-- Date de debut de création du site 18/08/2024 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -10,22 +10,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-<!--For  PWA  -->
+  <!--For  PWA  -->
   <meta name="theme-color" content="#206141">
   <meta name="msapplication-navbutton-color" content="#206141">
   <meta name="apple-mobile-web-app-status-bar-style" content="#206141">
     <link rel="manifest" href="manifest.json">
-<!-- Font Awesome -->
+  <!--=============== Fontawesone-icones ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- css -->
+  <!--=============== CSS ===============-->
   <link rel="stylesheet" href="styles.css">
   <title>DAMAS-GLOBAL</title>
 </head>
 
 <body>
-<!-- Header -->
+  <!--=============== HEADER ===============-->
   <header class="header" id="header">
     <nav class="nav container">
       <div class="logo">
@@ -35,14 +35,14 @@
                     </div>
                 </div>
             </div>
-<!-- Barre de recherche -->
+      <!-- Barre de recherche -->
       <form>
         <input type="text" name="nom" id="" class="recherche" placeholder="Chercher Produit ..." />
         <button>
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-<!-- Nav Barre -->
+      <!-- Nav Barre -->
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -67,7 +67,7 @@
       </div>
     </nav>
   </header>
-<!-- PWA install banner (hidden by default, shown when available) -->
+  <!-- PWA install banner (hidden by default, shown when available) -->
   <div id="install-banner" class="install-banner" style="display:none">
     <div class="install-banner__content">
       <img src="Favicons/android-chrome-192x192.png" alt="DAMAS" class="install-banner__icon">
@@ -81,35 +81,119 @@
       <button id="install-dismiss" class="install-banner__dismiss-btn">✕</button>
     </div>
   </div>
-<!-- body -->
   <main>
-<!-- carousel -->
-      <section class="carousel">
-      <div class="group">
-        <div class="card">
-          <img src="assets/about/slides-1.jpg" alt="diapo-1">
+    <!-- articles -->
+    <div class="main-content">
+      <section class="filtre">
+        <div class="breadcumb">
+          <p> </p>
         </div>
-        <div class="card">
-          <img src="assets/about/slides-2.jpg" alt="diapo-2">   
+      </section>
+      <div class="about">
+         <section class="hero">
+            <div class="containers">
+                <h1>Votre confiance, notre engagement..</h1>
+                <p> Notre équipe dévouée travaille sans relâche pour s'assurer que
+                    chaque expérience d'achat soit agréable et mémorable.</p>
+                <a href="https://wa.me/22890381883" class="cta-button">Nous écrire</a>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision">
+            <div class="containers">
+                <h2 class="section-title">Notre Vision</h2>
+                <p class="section-subtitle">
+                    Devenir la référence du commerce moderne,respectée pour sa qualité, son
+                    professionnalisme et la confiance qu’elle inspire.
+                </p>
+            </div>
+        </section>
+        <!-- Valeur Section -->
+        <section class="vision">
+            <div class="containers">
+                <h2 class="section-title">Nos Valeurs</h2>
+                <p class="section-subtitle">
+                <h4>Qualité<br></h4>
+                Chaque produit est choisi avec exigence. <br>
+                <h4>Professionnalisme <br></h4>
+                Nous respectons nos engagements.<br>
+                <h4>Confiance<br></h4>
+                Relation transparente et honnête.<br>
+                <h4>Accessibilité<br></h4>
+                Des produits utiles, au bon prix.<br>
+                <h4>Innovation<br></h4>
+                Un service toujours en évolution.<br>
+
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission">
+            <div class="containers">
+                <h2 class="section-title">Notre Mission</h2>
+                <p class="section-subtitle">
+                    Offrir aux consommateurs une expérience d’achat moderne et qualitative, en mettant l’accent sur :
+                    la sélection rigoureuse des produits,la transparence,la satisfaction client,la livraison offerte.
+                </p>
+                <div class="company-info">
+                    <p>
+                        DAMAS GLOBAL est née d’une vision : rendre le commerce moderne plus simple, plus fiable et
+                        plus humain.
+                        Depuis notre création, nous avons un engagement clair : offrir à chaque client une expérience où
+                        la qualité rencontre la confiance.
+                        Nous plaçons la qualité au cœur de chaque choix. Votre satisfaction n’est pas un objectif, c’est
+                        une promesse.
+                        <br>Et ce n’est que le début. <br>
+                    </p>
+                    <p>
+                        Chaque commande, chaque message, chaque visite contribue à construire une marque
+                        forte, moderne et inspirante.
+                        Nous vous remercions pour votre confiance et votre fidélité.
+                        L’excellence au service de votre quotidien <br>
+                        Merci de faire partie de l'histoire de <br> <strong> DAMAS-GLOBAL</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Insights Section -->
+        <section class="adresse">
+            <div class="container">
+                <h2 class="section-title">Nos Réalisations</h2>
+                <p class="section-subtitle">Depuis notre lancement, nous avons déjà impacté positivement des centaines
+                    de foyers à Lomé et au-delà.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">100+</div>
+                        <div class="stat-label">⭐Clients satisfaits</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">30+</div>
+                        <div class="stat-label">📦Produits disponibles</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">10+</div>
+                        <div class="stat-label">🚚 Zones de livraison couvertes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">4H–8H</div>
+                        <div class="stat-label"> ⚡De délai moyen de livraison</div>
+                    </div>
+                </div>
+            </div>
+        </section>
       </div>
-        <div class="card">
-          <img src="assets/about/slides-3.jpg" alt="diapo-3">
+<section class="filtre">
+        <div class="breadcumb">
+          <p> </p>
         </div>
-        <div class="card">
-          <img src="assets/about/slides-4.jpg" alt="diapo-4">
-        </div>
-        <div class="card">
-          <img src="assets/about/slides-5.jpg" alt="diapo-5">
-        </div>
-        <div class="card">
-          <img src="assets/about/slides-6.jpg" alt="diapo-6">
-        </div>
-      </div>   
-    </section>
-<!-- Produits -->
+      </section>
       <section class="produits"></section>
-<!-- Footer -->
-    <footer class="footer">
+    </div>
+    <!-- Footer -->
+    <footer>
       <div class="footer-content">
         <div class="footer-grid">
           <div class="footer-section">
@@ -128,23 +212,23 @@
             </ul>
           </div>
           <div class="footer-section">
-            <h3>Pages Social:</h3>
-            <div class="social-links">
+           <div class="social-links">
               <a class="facebook" href="https://www.facebook.com/share/1DmKiV11Uj/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
               <a class="instagram" href="https://www.instagram.com/damas__global?igsh=cjZrNHFqeGtocXZl" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
               <a class="tiktok" class="instagram" href="https://www.tiktok.com/@damas.global?_r=1&_t=ZM-91yQ9MQo8cd" title="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
               <a class="gmail" href="https://pin.it/7f4tDDbvY" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
               <a class="whatsapp" href="https://wa.me/22890381883" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
             </div>
           </div>
     </footer>
-<!-- Boite de dialogue articles -->
+    <!-- Boite de dialogue articles -->
     <dialog class="one-product" id="dialog">
       <div class="close">
         <i class="fa-solid fa-times"></i>
       </div>
     </dialog>
-<!-- Dialog de partage -->
+    <!-- Dialog de partage -->
     <dialog id="share-dialog" class="share-dialog" aria-label="Partager le site">
       <div class="share-header">
         <h3>Partager</h3>
@@ -157,37 +241,51 @@
           <button id="copy-link" class="btn action">Copier</button>
         </div>
         <div class="share-buttons">
+          <!-- <a id="share-whatsapp-business" class="share-btn whatsapp" target="_blank" rel="noopener"
+            title="Partager sur WhatsApp Business" aria-label="Partager sur WhatsApp Business">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span class="share-label">WhatsApp Bus.</span> -->
+          </a>
           <a id="share-whatsapp" class="share-btn whatsapp" target="_blank" rel="noopener" title="Partager sur WhatsApp"
             aria-label="Partager sur WhatsApp">
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-<!-- <span class="share-label">WhatsApp</span> -->
+            <!-- <span class="share-label">WhatsApp</span> -->
           </a>
           <a id="share-facebook" class="share-btn facebook" target="_blank" rel="noopener" title="Partager sur Facebook"
             aria-label="Partager sur Facebook">
             <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-<!-- <span class="share-label">Facebook</span> -->
+            <!-- <span class="share-label">Facebook</span> -->
           </a>
            <a id="share-instagram" class="share-btn instagram" target="_blank" rel="noopener" title="Ouvrir Instagram"
             aria-label="Ouvrir Instagram">
             <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-<!-- <span class="share-label">Instagram</span> -->
+            <!-- <span class="share-label">Instagram</span> -->
           </a>
           <a id="share-twitter" class="share-btn twitter" target="_blank" rel="noopener"
             title="Partager sur X (Twitter)" aria-label="Partager sur X (Twitter)">
             <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-<!-- <span class="share-label">X</span> -->
+            <!-- <span class="share-label">X</span> -->
           </a>
           <a id="share-gmail" class="share-btn gmail" target="_blank" rel="noopener" title="Partager par Gmail"
             aria-label="Partager par Gmail">
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-<!-- <span class="share-label">Gmail</span> -->
+            <!-- <span class="share-label">Gmail</span> -->
           </a>
          
           <a id="share-google-keep" class="share-btn google-keep" target="_blank" rel="noopener"
             title="Ouvrir Google Keep" aria-label="Ouvrir Google Keep">
             <i class="fa-solid fa-note-sticky" aria-hidden="true"></i>
-<!-- <span class="share-label">Keep</span> -->
+            <!-- <span class="share-label">Keep</span> -->
           </a>
+          <!-- <button id="share-screenshot" class="share-btn screenshot" title="Télécharger une capture d'écran"
+            aria-label="Télécharger une capture d'écran">
+            <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            <span class="share-label">Capture</span>
+          </button> -->
+          <!-- <button id="share-qr" class="share-btn qr" title="Télécharger le code QR" aria-label="Télécharger le code QR">
+            <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+            <span class="share-label">QR</span>
+          </button> -->
         </div>
       </div>
     </dialog>
