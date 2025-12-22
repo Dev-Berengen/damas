@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <!-- Date de debut de création du site 18/08/2024 -->
+<!-- Date de debut de création du site 18/08/2024 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -10,22 +10,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <!--For  PWA  -->
+<!--For  PWA  -->
   <meta name="theme-color" content="#206141">
   <meta name="msapplication-navbutton-color" content="#206141">
   <meta name="apple-mobile-web-app-status-bar-style" content="#206141">
     <link rel="manifest" href="manifest.json">
-  <!--=============== Fontawesone-icones ===============-->
+<!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--=============== CSS ===============-->
+<!-- css -->
   <link rel="stylesheet" href="styles.css">
   <title>DAMAS-GLOBAL</title>
 </head>
 
 <body>
-  <!--=============== HEADER ===============-->
+<!-- Header -->
   <header class="header" id="header">
     <nav class="nav container">
       <div class="logo">
@@ -33,18 +33,16 @@
                     <div>
                         <img src="./assets/profile/logo.png" alt="">
                     </div>
-                    <!-- <a href="#" class="logo">DAMAS <br><span>GLOBAL</span> </a> -->
                 </div>
-
             </div>
-      <!-- Barre de recherche -->
+<!-- Barre de recherche -->
       <form>
         <input type="text" name="nom" id="" class="recherche" placeholder="Chercher Produit ..." />
         <button>
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-      <!-- fin Barre de recherche -->
+<!-- Nav Barre -->
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -69,7 +67,7 @@
       </div>
     </nav>
   </header>
-  <!-- PWA install banner (hidden by default, shown when available) -->
+<!-- PWA install banner (hidden by default, shown when available) -->
   <div id="install-banner" class="install-banner" style="display:none">
     <div class="install-banner__content">
       <img src="Favicons/android-chrome-192x192.png" alt="DAMAS" class="install-banner__icon">
@@ -83,9 +81,9 @@
       <button id="install-dismiss" class="install-banner__dismiss-btn">✕</button>
     </div>
   </div>
+<!-- body -->
   <main>
-    <!-- articles -->
-    <div class="main-content">
+<!-- carousel -->
       <section class="carousel">
       <div class="group">
         <div class="card">
@@ -97,17 +95,11 @@
         <div class="card">
           <img src="assets/carousel/diapo-3.jpg" alt="diapo-3">
         </div>
-      </div>
-      
+      </div>   
     </section>
-      <section class="filtre">
-        <div class="breadcumb">
-          <p> </p>
-        </div>
-      </section>
+<!-- Produits -->
       <section class="produits"></section>
-    </div>
-    <!-- Footer -->
+<!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-grid">
@@ -138,13 +130,13 @@
             </div>
           </div>
     </footer>
-    <!-- Boite de dialogue articles -->
+<!-- Boite de dialogue articles -->
     <dialog class="one-product" id="dialog">
       <div class="close">
         <i class="fa-solid fa-times"></i>
       </div>
     </dialog>
-    <!-- Dialog de partage -->
+<!-- Dialog de partage -->
     <dialog id="share-dialog" class="share-dialog" aria-label="Partager le site">
       <div class="share-header">
         <h3>Partager</h3>
@@ -157,51 +149,37 @@
           <button id="copy-link" class="btn action">Copier</button>
         </div>
         <div class="share-buttons">
-          <!-- <a id="share-whatsapp-business" class="share-btn whatsapp" target="_blank" rel="noopener"
-            title="Partager sur WhatsApp Business" aria-label="Partager sur WhatsApp Business">
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-            <span class="share-label">WhatsApp Bus.</span> -->
-          </a>
           <a id="share-whatsapp" class="share-btn whatsapp" target="_blank" rel="noopener" title="Partager sur WhatsApp"
             aria-label="Partager sur WhatsApp">
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-            <!-- <span class="share-label">WhatsApp</span> -->
+<!-- <span class="share-label">WhatsApp</span> -->
           </a>
           <a id="share-facebook" class="share-btn facebook" target="_blank" rel="noopener" title="Partager sur Facebook"
             aria-label="Partager sur Facebook">
             <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-            <!-- <span class="share-label">Facebook</span> -->
+<!-- <span class="share-label">Facebook</span> -->
           </a>
            <a id="share-instagram" class="share-btn instagram" target="_blank" rel="noopener" title="Ouvrir Instagram"
             aria-label="Ouvrir Instagram">
             <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            <!-- <span class="share-label">Instagram</span> -->
+<!-- <span class="share-label">Instagram</span> -->
           </a>
           <a id="share-twitter" class="share-btn twitter" target="_blank" rel="noopener"
             title="Partager sur X (Twitter)" aria-label="Partager sur X (Twitter)">
             <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-            <!-- <span class="share-label">X</span> -->
+<!-- <span class="share-label">X</span> -->
           </a>
           <a id="share-gmail" class="share-btn gmail" target="_blank" rel="noopener" title="Partager par Gmail"
             aria-label="Partager par Gmail">
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            <!-- <span class="share-label">Gmail</span> -->
+<!-- <span class="share-label">Gmail</span> -->
           </a>
          
           <a id="share-google-keep" class="share-btn google-keep" target="_blank" rel="noopener"
             title="Ouvrir Google Keep" aria-label="Ouvrir Google Keep">
             <i class="fa-solid fa-note-sticky" aria-hidden="true"></i>
-            <!-- <span class="share-label">Keep</span> -->
+<!-- <span class="share-label">Keep</span> -->
           </a>
-          <!-- <button id="share-screenshot" class="share-btn screenshot" title="Télécharger une capture d'écran"
-            aria-label="Télécharger une capture d'écran">
-            <i class="fa-solid fa-camera" aria-hidden="true"></i>
-            <span class="share-label">Capture</span>
-          </button> -->
-          <!-- <button id="share-qr" class="share-btn qr" title="Télécharger le code QR" aria-label="Télécharger le code QR">
-            <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
-            <span class="share-label">QR</span>
-          </button> -->
         </div>
       </div>
     </dialog>
