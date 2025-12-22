@@ -21,6 +21,8 @@
 }
 /*Header*/
 .header {
+    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -986,6 +988,7 @@ footer {
     height: 4rem;
     display: grid;
     align-content: center;
+    border-top: solid 1px var(--co-line);
     border-radius: 1.25rem 1.25rem 0 0;
     transition: .4s;
   } 
