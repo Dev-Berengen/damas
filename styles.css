@@ -275,59 +275,6 @@ body main {
   border-radius: 10px;
   cursor: pointer;
 }
-
-main .filtre {
-  padding: var(--padding);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 6rem;
-}
-
-.filtre .breadcumb {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #3337;
-}
-
-.breadcumb p {
-  font-size: 0.8rem;
-  color: var(--co-gris);
-}
-.breadcumb i {
-  color: var(--co-gris);
-  font-size: 0.6rem;
-}
-
-.filtre .filtre-vrai {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-}
-.filtre-vrai button {
-  border: none;
-  outline: none;
-  background-color:#3337;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: var(--co-white);
-}
-.filtre-vrai .options {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: var(--co-white);
-  border-radius: 10px;
-  padding: 0.5rem;
-  display: none;
-  flex-direction: column;
-  gap: 0.5rem;
-  z-index: 1;
-}
 /* Mis en forme produits */
 
 .produits {

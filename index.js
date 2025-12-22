@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", initCarousel);
 const productsContainer = document.querySelector(".produits");
 const aboutContainer = document.querySelector(".about");
 const carouselContainer = document.querySelector(".carousel");
+const footerContainer = document.querySelector(".footer");
 const dialog = document.querySelector("dialog");
 const cartNumber = document.querySelector(".nombre");
-
 let currentItem = null;
 
 // Items in cart
@@ -63,7 +63,6 @@ const afficherProduit = (produits) => {
 };
 
 afficherProduit(produitAffciher);
-
 // Recherche des produits
 const input = document.querySelector(".recherche");
 input.addEventListener("keyup", (e) => {
@@ -74,6 +73,7 @@ input.addEventListener("keyup", (e) => {
 	);
   carouselContainer.innerHTML = "";
   productsContainer.innerHTML = "";
+  footerContainer.innerHTML = "";
   aboutContainer.innerHTML = "";
   if (resultat.length > 0) {
     afficherProduit(resultat);
