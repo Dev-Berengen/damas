@@ -209,6 +209,7 @@ body main {
 }
 
 .card {
+  border: solid 1px var(--co-one);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -253,6 +254,49 @@ body main {
   }
   to {
     opacity: 0;
+  }
+}
+/* storie */
+.storie {
+ padding-top: 7rem;
+  border: solid 1px var(--co-retour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 20s linear infinite;
+}
+
+.case {
+  flex: 0 0 5px;
+  padding-right: 1rem;
+  border: solid 1px var(--co-one);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  /* background-color: lightblue; */
+}
+
+.case img {
+  width: 20em;
+  height: 10em;
+  border-radius: 0.5em;
+  object-fit: cover;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
   }
 }
 
