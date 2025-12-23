@@ -258,12 +258,12 @@ body main {
 }
 /* storie */
 .storie {
- padding-top: 7rem;
+  margin: 8px auto;
   border: solid 1px var(--co-retour);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   overflow-x: auto;
 }
 
@@ -271,13 +271,14 @@ body main {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: spin 20s linear infinite;
+  padding-right: 1em;
+  gap: 1em;
+  animation: spin 60s linear infinite;
 }
 
 .case {
-  flex: 0 0 5px;
-  padding-right: 1rem;
-  border: solid 1px var(--co-one);
+  flex: 0 0 5em;
+  /* border: solid 1px var(--co-one); */
   justify-content: center;
   align-items: center;
   border-radius: 0.5em;
@@ -285,8 +286,8 @@ body main {
 }
 
 .case img {
-  width: 20em;
-  height: 10em;
+  width: 22em;
+  height: 12em;
   border-radius: 0.5em;
   object-fit: cover;
 }
