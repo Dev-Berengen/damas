@@ -235,6 +235,120 @@
     import { initializeShare } from './share.js';
     initializeShare();
   </script>
+  <script>
+    // Gestion du scroll manuel et automatique de la section storie
+    const storieContainer = document.querySelector('.storie');
+    const groups = document.querySelectorAll('.groups');
+    
+    if (storieContainer && groups.length > 0) {
+      // Variables pour le drag scroll
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      let isDragging = false;
+
+      // Événements pour le drag scroll
+      storieContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - storieContainer.offsetLeft;
+        scrollLeft = storieContainer.scrollLeft;
+        storieContainer.style.cursor = 'grabbing';
+        // Pause l'animation pendant le drag
+        groups.forEach(group => {
+          group.style.animationPlayState = 'paused';
+        });
+      });
+
+      storieContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        storieContainer.style.cursor = 'grab';
+        // Reprend l'animation
+        groups.forEach(group => {
+          group.style.animationPlayState = 'running';
+        });
+      });
+
+      storieContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        storieContainer.style.cursor = 'grab';
+        // Reprend l'animation
+        groups.forEach(group => {
+          group.style.animationPlayState = 'running';
+        });
+      });
+
+      storieContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        isDragging = true;
+        e.preventDefault();
+        const x = e.pageX - storieContainer.offsetLeft;
+        const walk = (x - startX) * 2; // Multiplie par 2 pour un scroll plus rapide
+        storieContainer.scrollLeft = scrollLeft - walk;
+      });
+
+      // Support du touch pour mobile
+      let touchStartX;
+      let touchScrollLeft;
+
+      storieContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].pageX - storieContainer.offsetLeft;
+        touchScrollLeft = storieContainer.scrollLeft;
+        groups.forEach(group => {
+          group.style.animationPlayState = 'paused';
+        });
+      });
+
+      storieContainer.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX - storieContainer.offsetLeft;
+        const walk = (x - touchStartX) * 1.5;
+        storieContainer.scrollLeft = touchScrollLeft - walk;
+      });
+
+      storieContainer.addEventListener('touchend', () => {
+        groups.forEach(group => {
+          group.style.animationPlayState = 'running';
+        });
+      });
+
+      // Ajouter des boutons de navigation
+      const nav = document.createElement('div');
+      nav.className = 'storie-nav';
+      nav.innerHTML = `
+        <button class="storie-btn storie-prev" title="Scroll à gauche">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="storie-btn storie-next" title="Scroll à droite">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      `;
+      
+      storieContainer.parentElement.style.position = 'relative';
+      storieContainer.parentElement.appendChild(nav);
+
+      const prevBtn = document.querySelector('.storie-prev');
+      const nextBtn = document.querySelector('.storie-next');
+
+      prevBtn.addEventListener('click', () => {
+        groups.forEach(group => {
+          group.style.animationPlayState = 'paused';
+        });
+        storieContainer.scrollBy({
+          left: -300,
+          behavior: 'smooth'
+        });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        groups.forEach(group => {
+          group.style.animationPlayState = 'paused';
+        });
+        storieContainer.scrollBy({
+          left: 300,
+          behavior: 'smooth'
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>
