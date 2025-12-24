@@ -294,7 +294,7 @@ body main {
   align-items: center;
   padding-right: 1em;
   gap: 1em;
-  animation: spin 60s linear infinite;
+  animation: scrollBidirectional 80s linear infinite;
 }
 
 .groups:hover {
@@ -334,6 +334,18 @@ body main {
   }
   to {
     translate: -100%;
+  }
+}
+
+@keyframes scrollBidirectional {
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: -100%;
+  }
+  100% {
+    translate: 0;
   }
 }
 
