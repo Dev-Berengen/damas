@@ -296,7 +296,7 @@ body main {
   align-items: center;
   padding-right: 1em;
   gap: 1em;
-  animation: scrollBidirectional 80s linear infinite;
+  animation: spin 100s linear infinite;
 }
 
 .groups:hover {
