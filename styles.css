@@ -259,7 +259,6 @@ body main {
 /* storie */
 .storie {
   margin: 8px auto;
-  border: solid 1px var(--co-retour);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,13 +350,13 @@ body main {
 
 /* Navigation buttons for storie */
 .storie-nav {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   pointer-events: none;
-  /* top: -10; */
+
   transform: translateY(-300%);
 }
 
