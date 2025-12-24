@@ -264,13 +264,16 @@ body main {
   align-items: center;
   width: 90%;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: var(--co-retour) var(--co-tree);
+  scrollbar-color: var(--co-retour) var(--co-tree); */
+}
+ .storie::-webkit-scrollbar {
+  display: none;
 }
 
 /* Style pour la scrollbar */
-.storie::-webkit-scrollbar {
+/* .storie::-webkit-scrollbar {
   height: 8px;
 }
 
@@ -285,7 +288,7 @@ body main {
 
 .storie::-webkit-scrollbar-thumb:hover {
   background: var(--co-one);
-}
+} */
 
 .groups {
   display: flex;
@@ -336,7 +339,7 @@ body main {
   }
 }
 
-@keyframes scrollBidirectional {
+/* @keyframes scrollBidirectional {
   0% {
     translate: 0;
   }
@@ -346,7 +349,7 @@ body main {
   100% {
     translate: 0;
   }
-}
+} */
 
 /* Navigation buttons for storie */
 .storie-nav {
