@@ -104,6 +104,8 @@
 <!-- Produits -->
       <section class="produits"></section>
           <!-- carousel-storie -->
+          
+          
       <section class="storie">
       <div class="groups">
         <div class="case">
@@ -146,6 +148,14 @@
         </div>
       </div> 
     </section>
+     <div class="storie-nav">
+ <button class="storie-btn storie-prev" title="Scroll à gauche">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="storie-btn storie-next" title="Scroll à droite">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+           </div>
 <!-- Footer -->
     <footer>
       <div class="footer-content">
@@ -313,14 +323,14 @@
       // Ajouter des boutons de navigation
       const nav = document.createElement('div');
       nav.className = 'storie-nav';
-      nav.innerHTML = `
-        <button class="storie-btn storie-prev" title="Scroll à gauche">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button class="storie-btn storie-next" title="Scroll à droite">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      `;
+      // nav.innerHTML = `
+      //   <button class="storie-btn storie-prev" title="Scroll à gauche">
+      //     <i class="fa-solid fa-chevron-left"></i>
+      //   </button>
+      //   <button class="storie-btn storie-next" title="Scroll à droite">
+      //     <i class="fa-solid fa-chevron-right"></i>
+      //   </button>
+      // `;
       
       storieContainer.parentElement.style.position = 'relative';
       storieContainer.parentElement.appendChild(nav);

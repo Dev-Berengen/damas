@@ -351,14 +351,14 @@ body main {
 
 /* Navigation buttons for storie */
 .storie-nav {
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   pointer-events: none;
-  top: 50%;
-  transform: translateY(-50%);
+  /* top: -10; */
+  transform: translateY(-300%);
 }
 
 .storie-btn {
@@ -375,7 +375,7 @@ body main {
   align-items: center;
   font-size: 1.2rem;
   transition: all 0.3s ease;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   z-index: 10;
 }
 
