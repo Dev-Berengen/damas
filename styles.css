@@ -318,8 +318,8 @@ body main {
 }
 
 .case img {
-  width: 22em;
-  height: 12em;
+  width: 20em;
+  height: 10em;
   border-radius: 0.5em;
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -340,10 +340,10 @@ body main {
 } */
 
 @keyframes scrollBidirectional {
-  50% {
+  0% {
     translate: 0;
   }
-  90% {
+  -100% {
     translate: -100%;
   }
   100% {
