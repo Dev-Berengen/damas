@@ -296,7 +296,7 @@ body main {
   align-items: center;
   padding-right: 1em;
   gap: 1em;
-  animation: spin 100s linear infinite;
+  animation: scrollBidirectional 100s linear infinite;
 }
 
 .groups:hover {
@@ -330,26 +330,26 @@ body main {
   transform: scale(1.05);
 }
 
-@keyframes spin {
+/* @keyframes spin {
   from {
     translate: 0;
   }
   to {
     translate: -100%;
   }
-}
+} */
 
-/* @keyframes scrollBidirectional {
-  0% {
+@keyframes scrollBidirectional {
+  50% {
     translate: 0;
   }
-  50% {
+  90% {
     translate: -100%;
   }
   100% {
     translate: 0;
   }
-} */
+}
 
 /* Navigation buttons for storie */
 .storie-nav {
@@ -1279,6 +1279,10 @@ footer {
 }
 
 @media screen and (max-width:455px) {
+  .storie-nav {
+ padding: 0 25px;
+}
+
     .produits {
   /* padding: 0 1rem; */
   display: grid;
