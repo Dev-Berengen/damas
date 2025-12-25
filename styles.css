@@ -296,7 +296,7 @@ body main {
   align-items: center;
   padding-right: 1em;
   gap: 1em;
-  animation: scrollBidirectional 100s linear infinite;
+  animation: none;
 }
 
 .groups:hover {
@@ -324,6 +324,15 @@ body main {
   object-fit: cover;
   transition: transform 0.3s ease;
   user-select: none;
+}
+
+/* enable snapping for JS-driven slide movement */
+.storie {
+  scroll-snap-type: x mandatory;
+}
+
+.case {
+  scroll-snap-align: center;
 }
 
 .case:hover img {

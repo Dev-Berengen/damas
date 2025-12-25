@@ -148,14 +148,14 @@
         </div>
       </div>  -->
     </section>
-     <div class="storie-nav">
+     <!-- <div class="storie-nav">
  <button class="storie-btn storie-prev" title="Scroll à gauche">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
         <button class="storie-btn storie-next" title="Scroll à droite">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
-           </div>
+           </div> -->
 <!-- Footer -->
     <footer>
       <div class="footer-content">
@@ -246,130 +246,68 @@
     initializeShare();
   </script>
   <script>
-    // Gestion du scroll manuel et automatique de la section storie
-    const storieContainer = document.querySelector('.storie');
-    const groups = document.querySelectorAll('.groups');
-    
-    if (storieContainer && groups.length > 0) {
-      // Variables pour le drag scroll
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-      let isDragging = false;
+    (function(){
+      const storie = document.querySelector('.storie');
+      if (!storie) return;
+      const group = storie.querySelector('.groups');
+      if (!group) return;
 
-      // Événements pour le drag scroll
-      storieContainer.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - storieContainer.offsetLeft;
-        scrollLeft = storieContainer.scrollLeft;
-        storieContainer.style.cursor = 'grabbing';
-        // Pause l'animation pendant le drag
-        groups.forEach(group => {
-          group.style.animationPlayState = 'paused';
-        });
-      });
+      const originalSlides = Array.from(group.querySelectorAll('.case'));
+      if (originalSlides.length === 0) return;
 
-      storieContainer.addEventListener('mouseleave', () => {
-        isDown = false;
-        storieContainer.style.cursor = 'grab';
-        // Reprend l'animation
-        groups.forEach(group => {
-          group.style.animationPlayState = 'running';
-        });
-      });
+      const originalCount = originalSlides.length;
+      // Clone slides to allow seamless looping
+      originalSlides.forEach(s => group.appendChild(s.cloneNode(true)));
 
-      storieContainer.addEventListener('mouseup', () => {
-        isDown = false;
-        storieContainer.style.cursor = 'grab';
-        // Reprend l'animation
-        groups.forEach(group => {
-          group.style.animationPlayState = 'running';
-        });
-      });
+      const gap = parseFloat(getComputedStyle(group).gap) || 0;
+      let slideWidth = 0;
+      function calcSlideWidth(){
+        slideWidth = originalSlides[0].getBoundingClientRect().width + gap;
+      }
+      calcSlideWidth();
+      window.addEventListener('resize', calcSlideWidth);
 
-      storieContainer.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        isDragging = true;
-        e.preventDefault();
-        const x = e.pageX - storieContainer.offsetLeft;
-        const walk = (x - startX) * 2; // Multiplie par 2 pour un scroll plus rapide
-        storieContainer.scrollLeft = scrollLeft - walk;
-      });
+      let index = 0;
+      let timer = null;
+      const transitionDuration = 600; // ms (approx for smooth scroll)
 
-      // Support du touch pour mobile
-      let touchStartX;
-      let touchScrollLeft;
+      function scrollToIndex(i, smooth = true){
+        const left = Math.round(i * slideWidth);
+        storie.scrollTo({ left, behavior: smooth ? 'smooth' : 'auto' });
+      }
 
-      storieContainer.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].pageX - storieContainer.offsetLeft;
-        touchScrollLeft = storieContainer.scrollLeft;
-        groups.forEach(group => {
-          group.style.animationPlayState = 'paused';
-        });
-      });
+      function startAutoplay(){
+        stopAutoplay();
+        timer = setTimeout(() => next(), 5000);
+      }
 
-      storieContainer.addEventListener('touchmove', (e) => {
-        const x = e.touches[0].pageX - storieContainer.offsetLeft;
-        const walk = (x - touchStartX) * 1.5;
-        storieContainer.scrollLeft = touchScrollLeft - walk;
-      });
+      function stopAutoplay(){
+        if (timer) { clearTimeout(timer); timer = null; }
+      }
 
-      storieContainer.addEventListener('touchend', () => {
-        groups.forEach(group => {
-          group.style.animationPlayState = 'running';
-        });
-      });
+      function next(){
+        index++;
+        scrollToIndex(index, true);
+        if (index >= originalCount){
+          // reached cloned first slide — after transition, reset to real start
+          setTimeout(() => {
+            storie.scrollTo({ left: 0, behavior: 'auto' });
+            index = 0;
+            startAutoplay();
+          }, transitionDuration);
+        } else {
+          startAutoplay();
+        }
+      }
 
-      // Ajouter des boutons de navigation
-      const nav = document.createElement('div');
-      nav.className = 'storie-nav';
-      // nav.innerHTML = `
-      //   <button class="storie-btn storie-prev" title="Scroll à gauche">
-      //     <i class="fa-solid fa-chevron-left"></i>
-      //   </button>
-      //   <button class="storie-btn storie-next" title="Scroll à droite">
-      //     <i class="fa-solid fa-chevron-right"></i>
-      //   </button>
-      // `;
-      
-      storieContainer.parentElement.style.position = 'relative';
-      storieContainer.parentElement.appendChild(nav);
+      // Pause/resume on user interaction
+      ['mouseenter','focusin','touchstart','pointerdown'].forEach(ev => storie.addEventListener(ev, stopAutoplay, { passive: true }));
+      ['mouseleave','focusout','touchend','pointerup'].forEach(ev => storie.addEventListener(ev, () => startAutoplay(), { passive: true }));
 
-      const prevBtn = document.querySelector('.storie-prev');
-      const nextBtn = document.querySelector('.storie-next');
-
-      prevBtn.addEventListener('click', () => {
-        groups.forEach(group => {
-          group.style.animationPlayState = 'paused';
-        });
-        storieContainer.scrollBy({
-          left: -300,
-          behavior: 'smooth'
-        });
-        // Reprendre l'animation après un délai
-        setTimeout(() => {
-          groups.forEach(group => {
-            group.style.animationPlayState = 'running';
-          });
-        }, 600);
-      });
-
-      nextBtn.addEventListener('click', () => {
-        groups.forEach(group => {
-          group.style.animationPlayState = 'paused';
-        });
-        storieContainer.scrollBy({
-          left: 300,
-          behavior: 'smooth'
-        });
-        // Reprendre l'animation après un délai
-        setTimeout(() => {
-          groups.forEach(group => {
-            group.style.animationPlayState = 'running';
-          });
-        }, 600);
-      });
-    }
+      // Start at first slide
+      storie.scrollLeft = 0;
+      startAutoplay();
+    })();
   </script>
 </body>
 
