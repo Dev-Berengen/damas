@@ -1,9 +1,19 @@
 export const data = [
   {
+    id: 3,
+    img: "./assets/3310.jpg",
+    nom: "NOKIA 3310 | DOUBLE SIM",
+    prix: "6.000 Fcfa",
+    stock: "Disponible",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/26634452412867674/22890381883",
+  },
+  {
     id: 1,
     img: "./assets/105.jpg",
     nom: "NOKIA 105 | DOUBLE SIM",
-    stock: "Disponible",
+    stock: "Rupture",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",
@@ -13,21 +23,13 @@ export const data = [
     id: 2,
     img: "./assets/106.jpg",
     nom: "NOKIA 106 | DOUBLE SIM",
-    stock: "Disponible",
+    stock: "Rupture",
     prix: "6.000 Fcfa",
     // Description de 20 mots Max
     description:"",
     liens: "https://wa.me/p/26634452412867674/22890381883",
   },
-  //  {
-  //   id: 3,
-  //   img: "./assets/3310.jpg",
-  //   nom: "NOKIA 3310 | DOUBLE SIM",
-  //   prix: "7.000 Fcfa",
-  //   // Description de 20 mots Max
-  //   description:"",
-  //   liens: "",
-  // },
+   
    {
     id: 4,
     img: "./assets/Bose.jpg",
