@@ -200,7 +200,9 @@ body main {
   padding-top:10rem;
   position: relative;
   width: 100%;
-  max-width: 65em;
+  height: 100%;
+  max-width: 45em;
+  min-height: 10em;
   height: 25em;
   display: flex;
   justify-content: center;
@@ -211,13 +213,13 @@ body main {
 .card {
   border: solid 1px var(--co-one);
   position: absolute;
-  width: 100%;
+   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.5em;
-  background-color: lightblue;
+  background-color: var(--co-tree);
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
@@ -233,7 +235,7 @@ body main {
 }
 
 .card img {
-  width: 100%;
+ width: 100%;
   height: 100%;
   border-radius: 0.5em;
   object-fit: cover;
@@ -262,33 +264,12 @@ body main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 95%;
   overflow-x: auto;
-  /* scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: var(--co-retour) var(--co-tree); */
 }
  .storie::-webkit-scrollbar {
   display: none;
 }
-
-/* Style pour la scrollbar */
-/* .storie::-webkit-scrollbar {
-  height: 8px;
-}
-
-.storie::-webkit-scrollbar-track {
-  background: var(--co-tree);
-}
-
-.storie::-webkit-scrollbar-thumb {
-  background: var(--co-retour);
-  border-radius: 4px;
-}
-
-.storie::-webkit-scrollbar-thumb:hover {
-  background: var(--co-one);
-} */
 
 .groups {
   display: flex;
@@ -318,9 +299,9 @@ body main {
 }
 
 .case img {
-  width: 20em;
-  height: 10em;
-  border-radius: 0.5em;
+   max-width: 45em;
+  min-height: 10em;
+  border-radius: 0.9em;
   object-fit: cover;
   transition: transform 0.3s ease;
   user-select: none;
@@ -337,66 +318,6 @@ body main {
 
 .case:hover img {
   transform: scale(1.05);
-}
-
-/* @keyframes spin {
-  from {
-    translate: 0;
-  }
-  to {
-    translate: -100%;
-  }
-} */
-
-@keyframes scrollBidirectional {
-  0% {
-    translate: 0;
-  }
-  -100% {
-    translate: -100%;
-  }
-  100% {
-    translate: 0;
-  }
-}
-
-/* Navigation buttons for storie */
-.storie-nav {
-  /* position: relative; */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
-
-  transform: translateY(-300%);
-}
-
-.storie-btn {
-  pointer-events: auto;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(32, 97, 65, 0.7);
-  color: var(--co-white);
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  /* margin: 0 10px; */
-  z-index: 10;
-}
-
-.storie-btn:hover {
-  background-color: var(--co-retour);
-  transform: scale(1.1);
-}
-
-.storie-btn:active {
-  transform: scale(0.95);
 }
 
 /* Actions */
@@ -1288,10 +1209,12 @@ footer {
 }
 
 @media screen and (max-width:455px) {
-  .storie-nav {
- padding: 0 25px;
-}
+.case img {
+   width: 20em;
+  height: 10em;
+  border-radius: 0.5em;
 
+}
     .produits {
   /* padding: 0 1rem; */
   display: grid;
