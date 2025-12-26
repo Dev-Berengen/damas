@@ -15,7 +15,7 @@
   --co-treee: #f5fbf8;
   --co-white: #fff;
   --co-line: #d1d1cb;
-  --co-noir: #1f1f1f;
+  --co-noir: #000000;
   --co-gris: #333;
   --co-retour:#ff6900;
 
@@ -160,7 +160,7 @@ header form button:hover {
 }
 .nav__name {
   font-size: 1rem;
-  color: var(--co-noir);
+  color: var(--co-one);
 }.nav__list
 .nav__name:hover {
   color: var(--co-gris);
@@ -350,10 +350,13 @@ body main {
 /* Mis en forme produits */
 
 .produits {
+  /* width: 92%; */
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   place-items: center;
+  margin:  0 1rem;;
 }
 
 .produits .carte-produit {
@@ -363,7 +366,6 @@ body main {
   border-radius: 15px;
   cursor: pointer;
   background-color:#fff;
-  /* margin-bottom: 1rem; */
   box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
 
 }
