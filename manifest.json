@@ -58,23 +58,23 @@
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"./assets/profile/mobile-1.png",
+		"src":"./assets/profile/mobile-1.jpg",
 		"sizes":"303x616",
-		"type":"image/png",
+		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"./assets/profile/mobile-2.png",
+		"src":"./assets/profile/mobile-2.jpg",
 		"sizes":"303x616",
-		"type":"image/png",
+		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"./assets/profile/mobile-3.png",
+		"src":"./assets/profile/mobile-3.jpg",
 		"sizes":"303x616",
-		"type":"image/png",
+		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		}
