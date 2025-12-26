@@ -440,18 +440,18 @@ dialog::backdrop {
 
 dialog .close{
   position: absolute;
-  top: 0rem;
-  right: 0px;
+  top: 0;
+  right: -1px;
   cursor: pointer;
   font-size: 0.8rem;
   width: 35px;
-  color: #fff;
   height: 35px;
   display: flex;
   gap: 3px;
   align-items: center;
   justify-content: center;
   border-radius: 0px 0px 0px 8px;
+  color: var(--co-tree);
   background-color: var( --co-two);
   transition: all 0.2s ease-in;
 }
