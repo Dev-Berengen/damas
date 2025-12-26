@@ -350,7 +350,6 @@ body main {
 /* Mis en forme produits */
 
 .produits {
-  /* width: 92%; */
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -612,7 +611,7 @@ dialog section .product-page {
 }
 .product-page .gauche {
   flex: 2;
-  background-color: #fff;
+  background-color: var(--co-treee);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1032,12 +1031,10 @@ footer {
  
   .produits .carte-produit {
   width: 100%;
-  /* gap: 0.5rem; */
   padding: 0.7rem;
   border-radius: 15px;
   cursor: pointer;
   background-color:#fff;
-  /* margin-bottom: 1rem; */
 }
 .carte-produit .img {
     width: 100%;
