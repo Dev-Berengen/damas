@@ -1094,7 +1094,6 @@ footer {
       background-color: var(--co-one);
       width: 2rem;
       height: 2rem;
-      border-radius: 25%;
       cursor: pointer;
       color: var(--co-white);
     }
@@ -1128,52 +1127,6 @@ footer {
 
 }
 
- 
-    .hero h1 {
-      /* padding-top: 2rem; */
-        font-size: 18px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-      .section-title {
-        font-size: 22px;
-    }
-
-    .section-subtitle {
-        font-size: 14px;
-    }
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .stat-card {
-        padding: 15px;
-    }
-
-    .stat-value {
-        font-size: 20px;
-    }
-    
-    /* .hero {
-        padding: 40px 15px;
-    } */
-
-    .cta-button {
-        padding: 10px 25px;
-        font-size: 14px;
-    }
-
-    .containers {
-        padding: 0 15px;
-    }
-
-    .company-info {
-        padding: 15px;
-        font-size: 13px;
-    }
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 20px;
