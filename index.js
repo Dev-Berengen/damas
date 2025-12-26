@@ -3,8 +3,8 @@ import { generateDialogHTML, generateProductHTML } from "./functions.js";
 
 // selection des elements
 const productsContainer = document.querySelector(".produits");
-const histoContainer = document.querySelector(".storie");
 const carouselContainer = document.querySelector(".carousel");
+const storieContainer = document.querySelector(".storie");
 const storiesContainer = document.querySelector(".stories");
 const footerContainer = document.querySelector("footer");
 const dialog = document.querySelector("dialog");
@@ -66,9 +66,10 @@ afficherProduit(produitAffciher);
 	);
   productsContainer.innerHTML = "";
   carouselContainer.style.display = "none";
-  histoContainer.style.display = "none";
-  footerContainer.style.display = "none";
+  storieContainer.style.display = "none";
   storiesContainer.style.display = "none";
+  footerContainer.style.display = "none";
+
   if (resultat.length > 0) {
     afficherProduit(resultat);
     actionProduit();

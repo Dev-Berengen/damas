@@ -249,6 +249,7 @@ body main {
 }
 /* storie */
 .stories {
+  display: flex;
   margin: 2rem auto;
 }
 .grouw{
