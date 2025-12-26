@@ -397,6 +397,7 @@ body main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .footer .prix p {
   font-size: 0.85rem;
@@ -611,12 +612,14 @@ dialog section .product-page {
 }
 .product-page .gauche {
   flex: 2;
-  background-color: var(--co-treee);
+  background-color: var(--co-tree);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
+
 }
 
 .gauche img {
@@ -631,6 +634,8 @@ dialog section .product-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
+
 }
 
 .droite .titre {
@@ -659,6 +664,7 @@ dialog section .product-page {
   color: var(--co-gris);
 }
 .footer {
+  
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -726,6 +732,8 @@ dialog section .product-page {
   align-items:self-start;
   justify-content: space-between;
   padding: 1rem;
+  box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
+
 }
 
 .avantages .carte-service {
@@ -758,6 +766,8 @@ footer {
     background-color: #1a1a1a;
     color: white;
     padding: 60px 20px 30px;
+  box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
+
 }
 
 .footer-content {
@@ -980,6 +990,7 @@ footer {
     }
 
     footer {
+      
         padding: 40px 20px 20px;
     }
 }
