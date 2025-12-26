@@ -36,7 +36,7 @@ position: relative;
   left: 3%;
   background-color: var(--co-tree);
   transition: .4s;
-  padding: 0.5rem 2rem 0 2rem;
+  padding: 0.5rem 2rem 0 1rem;
   border: solid 1px var(--co-line);
   border-radius: 2rem;
   /* overflow-y: hidden; */
@@ -103,7 +103,7 @@ header ul li a:hover {
 }
 
 header form {
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +133,7 @@ header form button {
   background-color: var( --co-one);
   width: 40px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   color: var(--co-white);
 }
@@ -1082,7 +1082,7 @@ footer {
   
 @media screen and (max-width: 724px) {
       header form input {
-      width: 10rem;
+      width: 12rem;
       padding: 0.4rem 0.1rem;
       font-size: 0.7rem;
     background: var(--co-tree);
@@ -1117,9 +1117,10 @@ footer {
 /* -----------------------------For small devices--------------------------------- */
 /* Remove if you choose, the minimalist design */
 @media (max-width: 480px) {
-  /* .card{
-  height: 2.2em;
-  } */
+
+   .header {
+  padding: 0 1rem;
+}
   .group {
  
   max-width: 20em;
