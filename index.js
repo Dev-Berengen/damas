@@ -4,6 +4,7 @@ import { generateDialogHTML, generateProductHTML } from "./functions.js";
 // selection des elements
 const productsContainer = document.querySelector(".produits");
 const carouselContainer = document.querySelector(".carousel");
+const storiesContainer = document.querySelector(".stories");
 const footerContainer = document.querySelector("footer");
 const dialog = document.querySelector("dialog");
 const cartNumber = document.querySelector(".nombre");
@@ -64,6 +65,7 @@ afficherProduit(produitAffciher);
 	);
   productsContainer.innerHTML = "";
   carouselContainer.style.display = "none";
+  storiesContainer.style.display = "none";
   footerContainer.style.display = "none";
   if (resultat.length > 0) {
     afficherProduit(resultat);
