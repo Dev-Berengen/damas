@@ -27,19 +27,19 @@
   background-color:var(--co-tree);
 }
 .header {
+
   width: 95%;
   height: 4rem;
-position: relative;
-  /* margin-top: 5px; */
-  box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
-  top: 0.4rem;
+  position: relative;
+  background-color:var(--co-tree);
+  box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
+  border: 1px solid #171717;
+  border-color: var(--co-line);
+  top: 1rem;
   left: 3%;
-  background-color: var(--co-tree);
   transition: .4s;
   padding: 0.5rem 2rem 0 1rem;
-  border: solid 1px var(--co-line);
-  border-radius: 2rem;
-  /* overflow-y: hidden; */
+  border-radius: 1rem;  
 }
 /*Nav Bars*/
 .logo {
@@ -92,7 +92,7 @@ header ul li #share-btn {
   border: none; 
 }
 #share-btn span {
-   font-size: 0.7rem;
+   font-size: 1rem;
   font-weight: 600;
   font-family: "Spectral", serif;
 }
@@ -115,7 +115,7 @@ header form {
 
 header form input {
   width: clamp(300px, 50%, 400px);
-  padding: 0.8rem 0.1rem;
+  /* padding: 0.8rem 0.1rem; */
   border: none;
   outline: none;
   border: none;
@@ -162,8 +162,8 @@ header form button:hover {
 }
 
 .nav__name {
-  font-size: 0.7rem;
-  color: var(--co-gris);
+  font-size: 1rem;
+  color: var(--co-one);
 }.nav__list
 .nav__name:hover {
   color: var(--co-gris);
@@ -195,6 +195,7 @@ body {
 
 /* Mis en forme main */
 body main {
+  padding-top:7rem;
   width: 100%;
   min-height: 100vh;
 }
@@ -207,7 +208,6 @@ body main {
 }
 
 .group {
-  padding-top:10rem;
   position: relative;
   width: 100%;
   height: 100%;
