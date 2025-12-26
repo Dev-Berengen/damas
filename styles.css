@@ -441,18 +441,18 @@ dialog::backdrop {
 dialog .close{
   position: absolute;
   top: 0rem;
-  right: 0px;
+  right: 50%;
   cursor: pointer;
-  font-size: 0.8rem;
-  width: 30px;
+  font-size: 0.5rem;
+  width: 70px;
   color: #fff;
   height: 30px;
   display: flex;
   gap: 3px;
   align-items: center;
   justify-content: center;
-  border-radius: 0px 8px;
-  background-color: var( --co-two);
+  border-radius: 0 0 8px 8px;
+  background-color: var( --co-one);
   transition: all 0.2s ease-in;
 }
 
@@ -464,7 +464,7 @@ dialog .close{
   font-size: 0.5rem;
 }
 .close i {
-  font-size: small;
+  font-size: 1rem;
 }
 
 /* Styles pour le dialog de partage */
