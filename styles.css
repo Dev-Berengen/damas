@@ -20,18 +20,25 @@
   --co-retour:#ff6900;
 }
 /*Header*/
-.header {
-    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+.heds {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: var(--co-tree);
   z-index: 100;
+  background-color:var(--co-tree);
+}
+.header {
+  width: 90%;
+position: relative;
+  /* margin-top: 5px; */
+  box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+  top: 0.4rem;
+  left: 5.2%;
+  background-color: var(--co-tree);
   transition: .4s;
-  border-bottom: solid 0.1px var(--co-primary);
   padding: 0.5rem 2rem 0 2rem;
-  border-bottom: solid 1px var(--co-line);
+  border: solid 1px var(--co-line);
+  border-radius: 2rem;
+  /* overflow-y: hidden; */
 }
 /*Nav Bars*/
 .logo {
