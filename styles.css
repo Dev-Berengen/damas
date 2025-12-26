@@ -27,13 +27,13 @@
   background-color:var(--co-tree);
 }
 .header {
-  width: 98%;
+  width: 95%;
   height: 4rem;
 position: relative;
   /* margin-top: 5px; */
   box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
   top: 0.4rem;
-  left: 1%;
+  left: 3%;
   background-color: var(--co-tree);
   transition: .4s;
   padding: 0.5rem 2rem 0 2rem;
@@ -108,7 +108,8 @@ header form {
   align-items: center;
   justify-content: center;
   padding: 0 0 0 0.5rem;
-  background-color: var(--co-white);
+  background-color: var(--co-tree);
+  border: solid 1px var(--co-line);
   backdrop-filter: blur(15px);
 }
 
@@ -118,12 +119,13 @@ header form input {
   border: none;
   outline: none;
   border: none;
-  background-color: var(--co-white);
+  background-color: var(--co-tree);
 }
 header form input:focus {
   border: none;
   outline: none;
-  background-color:var(--co-white);
+  background-color:var(--co-tree);
+
 }
 header form button {
   border: none;
@@ -1080,9 +1082,10 @@ footer {
   
 @media screen and (max-width: 724px) {
       header form input {
-      width: 13rem;
+      width: 10rem;
       padding: 0.4rem 0.1rem;
       font-size: 0.7rem;
+    background: var(--co-tree);
 
       }
       header form button{
