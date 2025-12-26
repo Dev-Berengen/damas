@@ -937,7 +937,6 @@ footer {
 @media screen and (max-width: 724px) {
       header form input {
       width: 12rem;
-      padding: 0.4rem 0.1rem;
       font-size: 0.7rem;
     background: var(--co-tree);
 
