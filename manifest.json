@@ -38,42 +38,42 @@
 	"screenshots": [
 		{
 		"src":"./assets/profile/desktop-1.jpg",
-		"sizes":"1898x865",
+		"sizes":"659x379",
 		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/desktop-2.jpg",
-		"sizes":"1898x865",
+		"sizes":"659x379",
 		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/desktop-3.jpg",
-		"sizes":"1898x865",
+		"sizes":"659x379",
 		"type":"image/jpg",
 		"formfactor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/mobile-1.png",
-		"sizes":"350x761",
+		"sizes":"303x616",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/mobile-2.png",
-		"sizes":"350x761",
+		"sizes":"303x616",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
 		"src":"./assets/profile/mobile-3.png",
-		"sizes":"350x761",
+		"sizes":"303x616",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
