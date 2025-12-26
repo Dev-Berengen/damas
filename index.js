@@ -3,6 +3,7 @@ import { generateDialogHTML, generateProductHTML } from "./functions.js";
 
 // selection des elements
 const productsContainer = document.querySelector(".produits");
+const histoContainer = document.querySelector(".storie");
 const carouselContainer = document.querySelector(".carousel");
 const storiesContainer = document.querySelector(".stories");
 const footerContainer = document.querySelector("footer");
@@ -65,8 +66,9 @@ afficherProduit(produitAffciher);
 	);
   productsContainer.innerHTML = "";
   carouselContainer.style.display = "none";
-  storiesContainer.style.display = "none";
+  histoContainer.style.display = "none";
   footerContainer.style.display = "none";
+  storiesContainer.style.display = "none";
   if (resultat.length > 0) {
     afficherProduit(resultat);
     actionProduit();
