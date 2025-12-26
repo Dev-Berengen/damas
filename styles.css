@@ -11,10 +11,11 @@
    --padding: 0 2rem;
   --co-one:#206141;
   --co-two: #fecc33;
-  --co-tree: #fafafa;
+  --co-tree: #ffffff;
   --co-treee: #f5fbf8;
   --co-white: #fff;
   --co-line: #d1d1cb;
+  --co-noir: #1f1f1f;
   --co-gris: #333;
   --co-retour:#ff6900;
 
@@ -159,7 +160,7 @@ header form button:hover {
 }
 .nav__name {
   font-size: 1rem;
-  color: var(--co-one);
+  color: var(--co-noir);
 }.nav__list
 .nav__name:hover {
   color: var(--co-gris);
@@ -191,6 +192,7 @@ body main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .group {
   position: relative;
@@ -362,6 +364,8 @@ body main {
   cursor: pointer;
   background-color:#fff;
   /* margin-bottom: 1rem; */
+  box-shadow: 0 4px 8px #0000000d, 0 15px 15px #0000000d, 0 33px 20px #00000008, 0 58px 23px #00000003, 0 91px 26px #0000;
+
 }
 
 .carte-produit .img {
