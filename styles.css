@@ -11,7 +11,8 @@
    --padding: 0 2rem;
   --co-one:#206141;
   --co-two: #fecc33;
-  --co-tree: #f5fbf8;
+  --co-tree: #fafafa;
+  --co-treee: #f5fbf8;
   --co-white: #fff;
   --co-line: #d1d1cb;
   --co-gris: #333;
@@ -360,7 +361,7 @@ body main {
   border-radius: 15px;
   cursor: pointer;
   background-color:#fff;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .carte-produit .img {
@@ -1024,13 +1025,13 @@ footer {
 }
  
   .produits .carte-produit {
-  width: 155px;
-  gap: 0.5rem;
+  width: 100%;
+  /* gap: 0.5rem; */
   padding: 0.7rem;
   border-radius: 15px;
   cursor: pointer;
   background-color:#fff;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .carte-produit .img {
     width: 100%;
