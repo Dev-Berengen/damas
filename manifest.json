@@ -40,7 +40,6 @@
 		"src":"./assets/profile/desktop-1.png",
 		"sizes":"1318x757",
 		"type":"image/png",
-		"propose":"maskable",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
