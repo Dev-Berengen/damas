@@ -10,14 +10,14 @@
   font-family: "Spectral", serif; 
    --padding: 0 2rem;
   --co-one:#206141;
-  --co-two: #fecc33;
-  --co-tree: #ffffff;
+  --co-two: #febe00;
+  --co-tree: #fff;
   --co-treee: #f5fbf8;
   --co-white: #fff;
   --co-line: #d1d1cb;
   --co-noir: #000000;
   --co-gris: #333;
-  --co-retour:#ff6900;
+  --co-retour:#6e0031;
 
 }
 
@@ -968,7 +968,10 @@ footer {
 }
 /* -----------------------------For small devices--------------------------------- */
 @media (max-width: 480px) {
-
+  .nav__name ,#share-btn span {
+    font-size: 0.7rem;
+  }
+ 
    .header {
   padding: 0 1rem;
 }
