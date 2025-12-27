@@ -809,6 +809,93 @@ footer {
 .Researche{
   display:none;
 }
+/* PWA Install Banner */
+.install-banner {
+  position: fixed;
+  top: 95px;
+  left: 16px;
+  right: 16px;
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: 1200;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.install-banner__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.install-banner__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.install-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.install-banner__text strong {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.install-banner__subtitle {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.install-banner__actions {
+  /* display: flex; */
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.install-banner__install-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.install-banner__dismiss-btn {
+  position: absolute;
+  border: none;
+  top: -12px;
+  right:-12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--co-tree);
+  background-color: var( --co-two);
+}
+
+.install-banner__dismiss-btn:hover {
+  color: #333;
+}
+
 
 /*----------------- MEDIA QUERIES----------------------------------*/
 @media (max-width: 992px) {
@@ -968,6 +1055,14 @@ footer {
 }
 /* -----------------------------For small devices--------------------------------- */
 @media (max-width: 480px) {
+
+  .install-banner__text strong {
+  font-size: 0.7rem;
+}
+.install-banner__subtitle {
+  font-size: 0.7rem;
+}
+
   .nav__name ,#share-btn span {
     font-size: 0.7rem;
   }
@@ -1073,87 +1168,6 @@ footer {
   font-size: 0.6rem;
 }
 
-}
-
-/* PWA Install Banner */
-.install-banner {
-  position: fixed;
-  top: 50px;
-  left: 16px;
-  right: 16px;
-  background: #ffffff;
-  padding: 12px 16px;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  z-index: 1200;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.install-banner__content {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-  min-width: 0;
-}
-
-.install-banner__icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 6px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.install-banner__text {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.install-banner__text strong {
-  font-size: 0.95rem;
-  color: #1a1a1a;
-}
-
-.install-banner__subtitle {
-  font-size: 0.8rem;
-  color: #666;
-}
-
-.install-banner__actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.install-banner__install-btn {
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-
-.install-banner__dismiss-btn {
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  color: #999;
-  cursor: pointer;
-  padding: 4px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-
-.install-banner__dismiss-btn:hover {
-  color: #333;
 }
 
 @media screen and (max-width: 320px) {
