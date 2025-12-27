@@ -37,45 +37,18 @@
 	],
 	"screenshots": [
 		{
-		"src":"./assets/profile/desktop-1.jpg",
-		"sizes":"659x379",
-		"type":"image/jpg",
+		"src":"./assets/profile/desktop-1.png",
+		"sizes":"1318x757",
+		"type":"image/png",
+		"propose":"maskable",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"./assets/profile/desktop-2.jpg",
-		"sizes":"659x379",
-		"type":"image/jpg",
-		"form_factor":"wide",
-		"label":"Wonder Widgets"
-		},
-		{
-		"src":"./assets/profile/desktop-3.jpg",
-		"sizes":"659x379",
-		"type":"image/jpg",
-		"formfactor":"wide",
-		"label":"Wonder Widgets"
-		},
-		{
-		"src":"./assets/profile/mobile-1.jpg",
-		"sizes":"303x616",
-		"type":"image/jpg",
-		"form_factor":"wide",
-		"label":"Wonder Widgets"
-		},
-		{
-		"src":"./assets/profile/mobile-2.jpg",
-		"sizes":"303x616",
-		"type":"image/jpg",
-		"form_factor":"wide",
-		"label":"Wonder Widgets"
-		},
-		{
-		"src":"./assets/profile/mobile-3.jpg",
-		"sizes":"303x616",
-		"type":"image/jpg",
-		"form_factor":"wide",
+		"src":"./assets/profile/mobile-1.png",
+		"sizes":"338x734",
+		"type":"image/png",
+		"form_factor":"",
 		"label":"Wonder Widgets"
 		}
 	]
