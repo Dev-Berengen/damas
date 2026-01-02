@@ -335,7 +335,7 @@ export const data = [
 
    {
     id: 34,
-    img: "./assets/Micro-Cravate-K9.jpg",
+    img: "./assets/Micro-cravate-K9.jpg",
     nom: "MICRO CRAVATE | K9",
     stock: "Disponible",
     prix: "5.000 Fcfa",
