@@ -345,7 +345,7 @@ export const data = [
   },
      {
     id: 35,
-    img: "./assets/Micro-Cravate-X.jpg",
+    img: "./assets/Micro-cravate-X.jpg",
     nom: "MICRO CRAVATE | X ",
     stock: "Disponible",
     prix: "7.000 Fcfa",
@@ -355,7 +355,7 @@ export const data = [
   },
   {
     id: 36,
-    img: "./assets/Micro-Cravate-F15.jpg",
+    img: "./assets/Micro-cravate-F15.jpg",
     nom: "MICRO CRAVATE | F15-2",
     stock: "Disponible",
     prix: "10.000 Fcfa",
@@ -365,7 +365,7 @@ export const data = [
   },
      {
     id: 37,
-    img: "./assets/Micro-Cravate-F11.jpg",
+    img: "./assets/Micro-cravate-F11.jpg",
     nom: "MICRO CRAVATE | F11-2",
     stock: "Disponible",
     prix: "10.000 Fcfa",
