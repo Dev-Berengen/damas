@@ -331,6 +331,49 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/8233903843314762/22890381883",
   },
+
+
+   {
+    id: 34,
+    img: "./assets/Chargeur-C-Iphone.jpg",
+    nom: "MICRO CRAVATE | K9",
+    stock: "Disponible",
+    prix: "5.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/32930975783216646/22890381883",
+  },
+     {
+    id: 35,
+    img: "./assets/Chargeur-C-Iphone.jpg",
+    nom: "MICRO CRAVATE | X ",
+    stock: "Disponible",
+    prix: "7.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25471436715881703/22890381883",
+  },
+  {
+    id: 36,
+    img: "./assets/Chargeur-C-Iphone.jpg",
+    nom: "MICRO CRAVATE | F15-2",
+    stock: "Disponible",
+    prix: "10.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/33043067268641920/22890381883",
+  },
+     {
+    id: 37,
+    img: "./assets/Chargeur-C-Iphone.jpg",
+    nom: "MICRO CRAVATE | F11-2",
+    stock: "Disponible",
+    prix: "10.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25469921762674094/22890381883",
+  },
+  
   
 ];
-// Dernier numero id:33
+// Dernier numero id:37
