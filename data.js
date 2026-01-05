@@ -70,6 +70,17 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/8516769631740342/22890381883",
   },
+    {
+    id: 38,
+    img: "./assets/TUNE-270.jpg",
+    nom: "ECOUTEUR JBL | TUNE 270",
+    stock: "Disponible",
+    prix: "4.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/26228064003461231/22890381883",
+  },
+  
    {
     id: 8,
     img: "./assets/Souris-Chargable.jpg",
@@ -376,4 +387,4 @@ export const data = [
   
   
 ];
-// Dernier numero id:37
+// Dernier numero id:38
