@@ -29,6 +29,26 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/26634452412867674/22890381883",
   },
+   {
+    id: 39,
+    img: "./assets/NOKIA_150.jpg",
+    nom: "NOKIA 150 | DOUBLE SIM",
+    stock: "Disponible",
+    prix: "14.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/33298969486413147/22890381883",
+  },
+  {
+    id: 40,
+    img: "./assets/Nokia_5310.jpg",
+    nom: "NOKIA 5310 | DOUBLE SIM",
+    stock: "Disponible",
+    prix: "12.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/33900042406245913/22890381883",
+  },
    
    {
     id: 4,
@@ -50,6 +70,17 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/29293678393609133/22890381883",
   },
+   {
+    id: 38,
+    img: "./assets/TUNE-270.jpg",
+    nom: "ECOUTEUR JBL | TUNE 270",
+    stock: "Disponible",
+    prix: "4.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/26228064003461231/22890381883",
+  },
+    
   {
     id: 6,
     img: "./assets/K30.jpg",
@@ -59,6 +90,17 @@ export const data = [
     // Description de 20 mots Max
     description:"",
     liens: "https://wa.me/p/24639409115754029/22890381883",
+  },
+  
+  {
+    id: 41,
+    img: "./assets/SAMSUNG-K63.jpg",
+    nom: "ECOUTEUR SAMSUNG K63",
+    stock: "Disponible",
+    prix: "4.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/24979435098402886/22890381883",
   },
   {
     id: 7,
@@ -70,17 +112,38 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/8516769631740342/22890381883",
   },
-    {
-    id: 38,
-    img: "./assets/TUNE-270.jpg",
-    nom: "ECOUTEUR JBL | TUNE 270",
+  {
+    id: 48,
+    img: "./assets/Samsung-K73.jpg",
+    nom: "ECOUTEUR SAMSUNG | K73",
     stock: "Disponible",
-    prix: "4.000 Fcfa",
+    prix: "5.000 Fcfa",
     // Description de 20 mots Max
     description:"",
-    liens: "https://wa.me/p/26228064003461231/22890381883",
+    liens: "https://wa.me/p/26425727940393211/22890381883",
   },
-  
+     {
+    id: 43,
+    img: "./assets/SPEAKER -JBL-BOOMS.jpg",
+    nom: "SPEAKER JBL BOOMS",
+    stock: "Disponible",
+    prix: "6.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25683910091261730/22890381883",
+  },
+  {
+    id: 42,
+    img: "./assets/Smart-Watch-H4-PRO.jpg",
+    nom: "SMART WATCH H4 PRO",
+    stock: "Disponible",
+    prix: "15.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25514654774858837/22890381883",
+  },
+   
+
    {
     id: 8,
     img: "./assets/Souris-Chargable.jpg",
@@ -121,6 +184,26 @@ export const data = [
     // Description de 20 mots Max
     description:"",
     liens: "https://wa.me/p/24867674429549533/22890381883",
+  },
+  {
+    id: 50,
+    img: "./assets/Chargeur iPhone-67W.jpg",
+    nom: "CHARGEUR 67W | IPHONE",
+    stock: "Disponible",
+    prix: "3.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25741130572244919/22890381883",
+  },
+  {
+    id: 47,
+    img: "./assets/CHARGEUR PIXEL.jpg",
+    nom: "CHARGEUR PIXEL",
+    stock: "Disponible",
+    prix: "4.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25426279850334307/22890381883",
   },
   {
     id: 11,
@@ -384,7 +467,53 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/25469921762674094/22890381883",
   },
+ 
   
-  
+   
+  {
+    id: 44,
+    img: "./assets/Calculator-KADIO-K838.jpg",
+    nom: "CALCULATOR KADIO | K838",
+    stock: "Disponible",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/9863220897135520/22890381883",
+  },
+     {
+    id: 45,
+    img: "./assets/Calculator-Dexin-Moyen.jpg",
+    nom: "CALCULATOR DEXIN MOYEN",
+    stock: "Disponible",
+    prix: "2.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25528600460136286/22890381883",
+  },
+  ,
+     {
+    id: 46,
+    img: "./assets/Calculator-Porpo.jpg",
+    nom: "CALCULATRICE PORPO",
+    stock: "Disponible",
+    prix: "2.500 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25622277270766141/22890381883",
+  },
+     
+    {
+    id: 49,
+    img: "./assets/Detector.jpg",
+    nom: "DETECTOR | RECHARGEABLE",
+    stock: "Disponible",
+    prix: "9.000 Fcfa",
+    // Description de 20 mots Max
+    description:"",
+    liens: "https://wa.me/p/25706924475617464/22890381883",
+  },
+  ,
+     
 ];
-// Dernier numero id:38
+
+// Dernier numero id:50
