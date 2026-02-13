@@ -1,14 +1,14 @@
 export const data = [
-  {
-    id: 3,
-    img: "./assets/3310.jpg",
-    nom: "NOKIA 3310 | DOUBLE SIM",
-    prix: "6.000 Fcfa",
-    stock: "Disponible",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/26634452412867674/22890381883",
-  },
+  // {
+  //   id: 3,
+  //   img: "./assets/3310.jpg",
+  //   nom: "NOKIA 3310 | DOUBLE SIM",
+  //   prix: "6.000 Fcfa",
+  //   stock: "Disponible",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "https://wa.me/p/26634452412867674/22890381883",
+  // },
   {
     id: 1,
     img: "./assets/105.jpg",
@@ -29,26 +29,26 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/26634452412867674/22890381883",
   },
-   {
-    id: 39,
-    img: "./assets/NOKIA_150.jpg",
-    nom: "NOKIA 150 | DOUBLE SIM",
-    stock: "Disponible",
-    prix: "14.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/33298969486413147/22890381883",
-  },
-  {
-    id: 40,
-    img: "./assets/Nokia_5310.jpg",
-    nom: "NOKIA 5310 | DOUBLE SIM",
-    stock: "Disponible",
-    prix: "12.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/33900042406245913/22890381883",
-  },
+  //  {
+  //   id: 39,
+  //   img: "./assets/NOKIA_150.jpg",
+  //   nom: "NOKIA 150 | DOUBLE SIM",
+  //   stock: "Disponible",
+  //   prix: "14.000 Fcfa",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "https://wa.me/p/33298969486413147/22890381883",
+  // },
+  // {
+  //   id: 40,
+  //   img: "./assets/Nokia_5310.jpg",
+  //   nom: "NOKIA 5310 | DOUBLE SIM",
+  //   stock: "Disponible",
+  //   prix: "12.000 Fcfa",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "https://wa.me/p/33900042406245913/22890381883",
+  // },
    
    {
     id: 4,
@@ -81,16 +81,16 @@ export const data = [
     liens: "https://wa.me/p/26228064003461231/22890381883",
   },
     
-  {
-    id: 6,
-    img: "./assets/K30.jpg",
-    nom: "ECOUTEUR JBL | K30",
-    stock: "Disponible",
-    prix: "4.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/24639409115754029/22890381883",
-  },
+  // {
+  //   id: 6,
+  //   img: "./assets/K30.jpg",
+  //   nom: "ECOUTEUR JBL | K30",
+  //   stock: "Disponible",
+  //   prix: "4.500 Fcfa",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "https://wa.me/p/24639409115754029/22890381883",
+  // },
   
   {
     id: 41,
@@ -122,26 +122,26 @@ export const data = [
     description:"",
     liens: "https://wa.me/p/26425727940393211/22890381883",
   },
-     {
-    id: 43,
-    img: "./assets/SPEAKER -JBL-BOOMS.jpg",
-    nom: "SPEAKER JBL BOOMS",
-    stock: "Disponible",
-    prix: "6.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25683910091261730/22890381883",
-  },
-  {
-    id: 42,
-    img: "./assets/Smart-Watch-H4-PRO.jpg",
-    nom: "SMART WATCH H4 PRO",
-    stock: "Disponible",
-    prix: "15.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25514654774858837/22890381883",
-  },
+  //    {
+  //   id: 43,
+  //   img: "./assets/SPEAKER -JBL-BOOMS.jpg",
+  //   nom: "SPEAKER JBL BOOMS",
+  //   stock: "Disponible",
+  //   prix: "6.000 Fcfa",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "https://wa.me/p/25683910091261730/22890381883",
+  // },
+  // {
+  //   id: 42,
+  //   img: "./assets/Smart-Watch-H4-PRO.jpg",
+  //   nom: "SMART WATCH H4 PRO",
+  //   stock: "Disponible",
+  //   prix: "15.000 Fcfa",
+  //   // Description de 20 mots Max
+  //   description:"",
+  //   liens: "https://wa.me/p/25514654774858837/22890381883",
+  // },
    
 
    {
@@ -466,51 +466,6 @@ export const data = [
     // Description de 20 mots Max
     description:"",
     liens: "https://wa.me/p/25469921762674094/22890381883",
-  },
- 
-  
-   
-  {
-    id: 44,
-    img: "./assets/Calculator-KADIO-K838.jpg",
-    nom: "CALCULATOR KADIO | K838",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/9863220897135520/22890381883",
-  },
-     {
-    id: 45,
-    img: "./assets/Calculator-Dexin-Moyen.jpg",
-    nom: "CALCULATOR DEXIN MOYEN",
-    stock: "Disponible",
-    prix: "2.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25528600460136286/22890381883",
-  },
-  ,
-     {
-    id: 46,
-    img: "./assets/Calculator-Porpo.jpg",
-    nom: "CALCULATRICE PORPO",
-    stock: "Disponible",
-    prix: "2.500 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25622277270766141/22890381883",
-  },
-     
-    {
-    id: 49,
-    img: "./assets/Detector.jpg",
-    nom: "DETECTOR | RECHARGEABLE",
-    stock: "Disponible",
-    prix: "9.000 Fcfa",
-    // Description de 20 mots Max
-    description:"",
-    liens: "https://wa.me/p/25706924475617464/22890381883",
   },
   ,
      
