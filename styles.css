@@ -470,7 +470,7 @@ dialog .close{
 /* Styles pour le dialog de partage */
 #share-dialog.share-dialog {
   width: 90%;
-  height: 20rem;
+  height: 17rem;
   max-width: 420px;
   padding: 1rem;
   border-radius: 8px;
